@@ -1,5 +1,6 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { buildExamples } from "./lessonExamples.mjs";
+import { SIGHT_WORD_EXTRAS } from "./sightWordExtras.mjs";
 
 const SOURCE = new URL("./sightWords.source.json", import.meta.url);
 const OUTPUT = new URL("./sightWords.json", import.meta.url);
@@ -115,6 +116,9 @@ const lessons = sourceLessons.map((lesson) => {
     lesson.example,
     SIGHT_WORD_EMOJIS,
     "👁️",
+    lesson.meaning,
+    lesson.usage,
+    SIGHT_WORD_EXTRAS[lesson.word] ?? [],
   );
 
   return {

@@ -1,5 +1,6 @@
 import { writeFileSync } from "node:fs";
 import { buildExamples } from "./lessonExamples.mjs";
+import { READING_EXTRAS } from "./readingWordExtras.mjs";
 
 /** Daily reading list — 7 columns × 22 rows, read top-to-bottom in each column. */
 export const READING_WORDS = [
@@ -43,7 +44,7 @@ const defs = {
   swing: ["To move back and forth on a seat or rope.", "Use swing at the playground.", "We swing at the park."],
   queen: ["A woman who rules a kingdom.", "Say queen for chess or fairy tales.", "The queen wore a golden crown."],
   stand: ["To be on your feet, not sitting.", "Use stand when you rise up.", "Please stand in a line."],
-  block: ["A solid piece of wood, stone, or toy.", "Say block for building or road blocks.", "He built a tower with blocks."],
+  block: ["A solid piece of wood, stone, or toy.", "Say block for building or road blocks.", "He built a tower with one block."],
   spell: ["To say or write letters in order.", "Use spell when you form a word.", "Can you spell your name?"],
   glad: ["Happy and pleased about something.", "Say glad when you feel joy.", "I am glad you came."],
   black: ["The darkest colour, like night.", "Use black for coal or a crow.", "The cat has black fur."],
@@ -197,7 +198,15 @@ const lessons = READING_WORDS.map((word) => {
     throw new Error(`Missing definition for: ${word}`);
   }
   const [meaning, usage, example] = entry;
-  const { emoji, examples } = buildExamples(word, example, WORD_EMOJIS);
+  const { emoji, examples } = buildExamples(
+    word,
+    example,
+    WORD_EMOJIS,
+    "📖",
+    meaning,
+    usage,
+    READING_EXTRAS[word] ?? [],
+  );
   return { word, emoji, meaning, usage, examples };
 });
 

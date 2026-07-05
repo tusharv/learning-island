@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ProgressProvider } from "@/components/ProgressProvider";
 import { SoundProvider } from "@/components/SoundProvider";
+import { SpeechEngineBootstrap } from "@/components/SpeechEngineBootstrap";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -17,7 +18,10 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ProgressProvider>
-          <SoundProvider>{children}</SoundProvider>
+          <SoundProvider>
+            <SpeechEngineBootstrap />
+            {children}
+          </SoundProvider>
         </ProgressProvider>
       </body>
     </html>

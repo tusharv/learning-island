@@ -32,8 +32,9 @@ export function SpeakButton({
         return;
       }
 
-      playSound("select");
+      // Speak before other audio so Samsung Browser keeps the user gesture.
       speakText(text);
+      playSound("select");
     },
     [playSound, soundEnabled, supported, text],
   );
