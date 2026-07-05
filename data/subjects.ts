@@ -1,13 +1,33 @@
-import type { QuizQuestion, Subject, Topic } from "../types/learning";
+import type {
+  ActivityIconName,
+  QuizQuestion,
+  Subject,
+  Topic,
+} from "../types/learning";
+import readingWordLessons from "./readingWords.json" with { type: "json" };
 import sightWordLessons from "./sightWords.json" with { type: "json" };
 
 const SIGHT_WORDS = sightWordLessons.map((lesson) => lesson.word);
+const READING_WORDS = readingWordLessons.map((lesson) => lesson.word);
 
 const SIGHT_WORD_SENTENCES: Record<string, string> = Object.fromEntries(
-  sightWordLessons.map((lesson) => [
-    lesson.word,
-    lesson.example.replace(new RegExp(`\\b${escapeRegExp(lesson.word)}\\b`, "i"), "___"),
-  ]),
+  sightWordLessons.map((lesson) => {
+    const primary = lesson.examples?.[0]?.text ?? lesson.word;
+    return [
+      lesson.word,
+      primary.replace(new RegExp(`\\b${escapeRegExp(lesson.word)}\\b`, "i"), "___"),
+    ];
+  }),
+);
+
+const READING_WORD_SENTENCES: Record<string, string> = Object.fromEntries(
+  readingWordLessons.map((lesson) => {
+    const primary = lesson.examples?.[0]?.text ?? lesson.word;
+    return [
+      lesson.word,
+      primary.replace(new RegExp(`\\b${escapeRegExp(lesson.word)}\\b`, "i"), "___"),
+    ];
+  }),
 );
 
 function escapeRegExp(value: string): string {
@@ -43,6 +63,7 @@ function topic(
   id: string,
   title: string,
   subtitle: string,
+  icon: ActivityIconName,
   questions: RawQuestion[],
   poolSize: number = QUESTIONS_PER_TOPIC,
 ): Topic {
@@ -58,6 +79,7 @@ function topic(
     id,
     title,
     subtitle,
+    icon,
     questions: questions.slice(0, size).map((question, index) => ({
       ...question,
       id: `${subjectId}-${id}-${index + 1}`,
@@ -238,6 +260,35 @@ function englishSightWordQuestions(): RawQuestion[] {
       options,
       answerIndex,
       encouragement: `"${word}" is a sight word. Well done!`,
+    };
+  });
+}
+
+function englishReadingWordQuestions(): RawQuestion[] {
+  return READING_WORDS.map((word, index) => {
+    const others = READING_WORDS.filter((item) => item !== word);
+    const distractors = [
+      others[index % others.length],
+      others[(index + 13) % others.length],
+      others[(index + 41) % others.length],
+    ];
+    const { options, answerIndex } = shuffleOptions(word, distractors, index);
+
+    const sentence = READING_WORD_SENTENCES[word];
+    if (sentence && index % 2 === 0) {
+      return {
+        prompt: `Which word completes the sentence? ${sentence}`,
+        options,
+        answerIndex,
+        encouragement: `"${word}" fits perfectly. Great reading!`,
+      };
+    }
+
+    return {
+      prompt: `Find the reading word: ${word}`,
+      options,
+      answerIndex,
+      encouragement: `"${word}" is on your daily reading list. Well done!`,
     };
   });
 }
@@ -726,19 +777,65 @@ export const subjects: Subject[] = [
     title: "English",
     subtitle: "Letters and words",
     color: "blue",
+    icon: "abc",
     topics: [
-      topic("english", "abcd", "ABCD", "Capital letters", englishCapitalQuestions()),
-      topic("english", "abcd-small", "abcd", "Small letters", englishSmallQuestions()),
-      topic("english", "vowels", "Vowels", "a, e, i, o, u", englishVowelQuestions()),
-      topic("english", "rhyming", "Rhyming", "Words that sound alike", englishRhymeQuestions()),
-      topic("english", "words", "Words", "Names and things", englishWordQuestions()),
+      topic(
+        "english",
+        "abcd",
+        "ABCD",
+        "Capital letters",
+        "capital-letters",
+        englishCapitalQuestions(),
+      ),
+      topic(
+        "english",
+        "abcd-small",
+        "abcd",
+        "Small letters",
+        "small-letters",
+        englishSmallQuestions(),
+      ),
+      topic(
+        "english",
+        "vowels",
+        "Vowels",
+        "a, e, i, o, u",
+        "vowels",
+        englishVowelQuestions(),
+      ),
+      topic(
+        "english",
+        "rhyming",
+        "Rhyming",
+        "Words that sound alike",
+        "rhyming",
+        englishRhymeQuestions(),
+      ),
+      topic(
+        "english",
+        "words",
+        "Words",
+        "Names and things",
+        "words",
+        englishWordQuestions(),
+      ),
       topic(
         "english",
         "sight-words",
         "Sight Words",
         "100 common words",
+        "sight-words",
         englishSightWordQuestions(),
         SIGHT_WORDS.length,
+      ),
+      topic(
+        "english",
+        "reading",
+        "Reading",
+        "154 daily words",
+        "reading",
+        englishReadingWordQuestions(),
+        READING_WORDS.length,
       ),
     ],
   },
@@ -747,12 +844,14 @@ export const subjects: Subject[] = [
     title: "Hindi",
     subtitle: "शब्द और पहचान",
     color: "rose",
+    icon: "devanagari",
     topics: [
       topic(
         "hindi",
         "swar",
         "स्वर",
         "Vowels",
+        "vowels",
         devanagariRecognitionQuestions(HINDI_SWAR, "कौन सा स्वर है", "kaun sa swar hai"),
       ),
       topic(
@@ -760,6 +859,7 @@ export const subjects: Subject[] = [
         "vyanjan",
         "व्यंजन",
         "Consonants",
+        "devanagari",
         devanagariRecognitionQuestions(
           HINDI_VYANJAN,
           "कौन सा व्यंजन है",
@@ -771,10 +871,11 @@ export const subjects: Subject[] = [
         "akshar",
         "अक्षर",
         "Letter recognition",
+        "letters",
         devanagariRecognitionQuestions(HINDI_LETTERS, "कौन सा अक्षर है", "kaun sa akshar hai"),
       ),
-      topic("hindi", "shabd", "शब्द", "Word building", hindiWordQuestions(0)),
-      topic("hindi", "arth", "अर्थ", "Meanings", hindiWordQuestions(2)),
+      topic("hindi", "shabd", "शब्द", "Word building", "words", hindiWordQuestions(0)),
+      topic("hindi", "arth", "अर्थ", "Meanings", "meaning", hindiWordQuestions(2)),
     ],
   },
   {
@@ -782,12 +883,14 @@ export const subjects: Subject[] = [
     title: "Marathi",
     subtitle: "शब्द आणि ओळख",
     color: "violet",
+    icon: "devanagari",
     topics: [
       topic(
         "marathi",
         "swar",
         "स्वर",
         "Vowels",
+        "vowels",
         devanagariRecognitionQuestions(HINDI_SWAR, "कोणता स्वर आहे", "konta swar aahe"),
       ),
       topic(
@@ -795,6 +898,7 @@ export const subjects: Subject[] = [
         "vyanjan",
         "व्यंजन",
         "Consonants",
+        "devanagari",
         devanagariRecognitionQuestions(
           HINDI_VYANJAN,
           "कोणते व्यंजन आहे",
@@ -806,14 +910,15 @@ export const subjects: Subject[] = [
         "akshar",
         "अक्षर",
         "Letter recognition",
+        "letters",
         devanagariRecognitionQuestions(
           HINDI_LETTERS,
           "कोणते अक्षर आहे",
           "konte akshar aahe",
         ),
       ),
-      topic("marathi", "shabd", "शब्द", "Words", marathiWordQuestions(0)),
-      topic("marathi", "arth", "अर्थ", "Meanings", marathiWordQuestions(2)),
+      topic("marathi", "shabd", "शब्द", "Words", "words", marathiWordQuestions(0)),
+      topic("marathi", "arth", "अर्थ", "Meanings", "meaning", marathiWordQuestions(2)),
     ],
   },
   {
@@ -821,12 +926,41 @@ export const subjects: Subject[] = [
     title: "Maths",
     subtitle: "Numbers and shapes",
     color: "green",
+    icon: "numbers",
     topics: [
-      topic("maths", "numbers", "Numbers", "Counting 1 to 10", mathsNumberQuestions()),
-      topic("maths", "addition", "Addition", "Putting numbers together", mathsAdditionQuestions()),
-      topic("maths", "subtraction", "Subtraction", "Taking away", mathsSubtractionQuestions()),
-      topic("maths", "shapes", "Shapes", "Circles, squares and more", mathsShapeQuestions()),
-      topic("maths", "compare", "Compare", "Big, small and equal", mathsCompareQuestions()),
+      topic("maths", "numbers", "Numbers", "Counting 1 to 10", "numbers", mathsNumberQuestions()),
+      topic(
+        "maths",
+        "addition",
+        "Addition",
+        "Putting numbers together",
+        "addition",
+        mathsAdditionQuestions(),
+      ),
+      topic(
+        "maths",
+        "subtraction",
+        "Subtraction",
+        "Taking away",
+        "subtraction",
+        mathsSubtractionQuestions(),
+      ),
+      topic(
+        "maths",
+        "shapes",
+        "Shapes",
+        "Circles, squares and more",
+        "shapes",
+        mathsShapeQuestions(),
+      ),
+      topic(
+        "maths",
+        "compare",
+        "Compare",
+        "Big, small and equal",
+        "compare",
+        mathsCompareQuestions(),
+      ),
     ],
   },
   {
@@ -834,12 +968,13 @@ export const subjects: Subject[] = [
     title: "EVS",
     subtitle: "World around us",
     color: "orange",
+    icon: "nature",
     topics: [
-      topic("evs", "animals", "Animals", "Creatures around us", factQuestions(EVS_ANIMALS)),
-      topic("evs", "body", "My Body", "Parts of the body", factQuestions(EVS_BODY)),
-      topic("evs", "plants", "Plants", "Growing green things", factQuestions(EVS_PLANTS)),
-      topic("evs", "clean", "Keep Clean", "Good habits", factQuestions(EVS_CLEAN)),
-      topic("evs", "food", "Food", "Fruits and healthy eating", factQuestions(EVS_FOOD)),
+      topic("evs", "animals", "Animals", "Creatures around us", "animals", factQuestions(EVS_ANIMALS)),
+      topic("evs", "body", "My Body", "Parts of the body", "body", factQuestions(EVS_BODY)),
+      topic("evs", "plants", "Plants", "Growing green things", "plants", factQuestions(EVS_PLANTS)),
+      topic("evs", "clean", "Keep Clean", "Good habits", "clean", factQuestions(EVS_CLEAN)),
+      topic("evs", "food", "Food", "Fruits and healthy eating", "food", factQuestions(EVS_FOOD)),
     ],
   },
 ];

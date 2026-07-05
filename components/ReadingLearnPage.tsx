@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState, type CSSProperties } from "react";
-import { sightWordLessons } from "../data/sightWords";
+import { readingWordLessons } from "../data/readingWords";
 import type { Subject } from "../types/learning";
 import { cancelSpeech } from "../lib/textToSpeech";
 import { isBackKey } from "../lib/remoteNavigation";
@@ -9,12 +9,13 @@ import { SoundToggle } from "./SoundToggle";
 import { SpeakButton } from "./SpeakButton";
 import { useSound } from "./SoundProvider";
 
-type SightWordsLearnPageProps = {
+type ReadingLearnPageProps = {
   subject: Subject;
   onBack: () => void;
 };
 
-const WORDS_PER_STRIP = 10;
+const ROWS_PER_COLUMN = 22;
+const COLUMNS = 7;
 
 function highlightWord(sentence: string, word: string) {
   const pattern = word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -32,25 +33,26 @@ function highlightWord(sentence: string, word: string) {
   );
 }
 
-export function SightWordsLearnPage({
-  subject,
-  onBack,
-}: SightWordsLearnPageProps) {
+export function ReadingLearnPage({ subject, onBack }: ReadingLearnPageProps) {
   const { playSound } = useSound();
   const [wordIndex, setWordIndex] = useState(0);
 
-  const lesson = sightWordLessons[wordIndex];
-  const totalWords = sightWordLessons.length;
+  const lesson = readingWordLessons[wordIndex];
+  const totalWords = readingWordLessons.length;
 
-  const stripWords = useMemo(() => {
-    const groupStart = Math.floor(wordIndex / WORDS_PER_STRIP) * WORDS_PER_STRIP;
+  const rowWords = useMemo(() => {
+    const row = wordIndex % ROWS_PER_COLUMN;
 
-    return sightWordLessons
-      .slice(groupStart, groupStart + WORDS_PER_STRIP)
-      .map((item, offset) => ({
-        item,
-        index: groupStart + offset,
-      }));
+    return Array.from({ length: COLUMNS }, (_, column) => {
+      const index = column * ROWS_PER_COLUMN + row;
+      const item = readingWordLessons[index];
+      return item ? { item, index } : null;
+    }).filter(
+      (
+        entry,
+      ): entry is { item: (typeof readingWordLessons)[number]; index: number } =>
+        entry !== null,
+    );
   }, [wordIndex]);
 
   const selectWord = useCallback(
@@ -116,7 +118,7 @@ export function SightWordsLearnPage({
     return null;
   }
 
-  const setNumber = Math.floor(wordIndex / WORDS_PER_STRIP) + 1;
+  const rowNumber = (wordIndex % ROWS_PER_COLUMN) + 1;
 
   return (
     <main className="reading-learn-screen" data-color={subject.color}>
@@ -126,18 +128,18 @@ export function SightWordsLearnPage({
         </button>
         <p className="reading-learn-progress">
           Word <strong>{wordIndex + 1}</strong> of {totalWords}
-          <span className="reading-learn-progress-row"> · Set {setNumber}</span>
+          <span className="reading-learn-progress-row"> · Row {rowNumber}</span>
         </p>
         <SoundToggle />
       </header>
 
       <div className="reading-learn-body">
-        <section className="reading-learn-hero" aria-labelledby="sight-word-title">
+        <section className="reading-learn-hero" aria-labelledby="reading-word-title">
           <span className="reading-learn-hero-emoji" aria-hidden="true">
             {lesson.emoji}
           </span>
           <div className="reading-learn-word-row">
-            <h1 id="sight-word-title" className="reading-learn-word">
+            <h1 id="reading-word-title" className="reading-learn-word">
               {lesson.word}
             </h1>
             <SpeakButton
@@ -180,10 +182,9 @@ export function SightWordsLearnPage({
       <footer className="reading-learn-footer">
         <div
           className="reading-learn-row-strip"
-          data-cols={WORDS_PER_STRIP}
-          aria-label={`Sight words in set ${setNumber}`}
+          aria-label={`Words in row ${rowNumber}`}
         >
-          {stripWords.map(({ item, index }) => {
+          {rowWords.map(({ item, index }) => {
             const isActive = index === wordIndex;
 
             return (

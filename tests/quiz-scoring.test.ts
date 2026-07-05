@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import {
   QUESTIONS_PER_QUIZ,
+  formatStarsCollected,
   nextRoundStars,
   pickQuizQuestions,
 } from "../lib/quizScoring.ts";
@@ -9,6 +10,11 @@ import type { QuizQuestion } from "../types/learning.ts";
 
 test("adds one star for a correct answer", () => {
   assert.equal(nextRoundStars(4, 1, 1), 5);
+});
+
+test("formats collected stars with the right singular and plural wording", () => {
+  assert.equal(formatStarsCollected(1), "You collected 1 star!");
+  assert.equal(formatStarsCollected(2), "You collected 2 stars!");
 });
 
 test("keeps the same star count for an incorrect answer", () => {

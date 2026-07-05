@@ -2,43 +2,43 @@
 
 import { useRouter } from "next/navigation";
 import { useCallback, useState } from "react";
-import { SightWordsHubPage } from "@/components/SightWordsHubPage";
+import { ReadingHubPage } from "@/components/ReadingHubPage";
+import { READING_TOPIC_ID } from "@/data/readingWords";
 import { topicLearnPath, topicQuizPath, subjectPath } from "@/lib/paths";
 import type { Subject } from "@/types/learning";
 import { useSound } from "@/components/SoundProvider";
 
-type SightWordsHubRouteProps = {
+type ReadingHubRouteProps = {
   subject: Subject;
 };
 
-export function SightWordsHubRoute({ subject }: SightWordsHubRouteProps) {
+export function ReadingHubRoute({ subject }: ReadingHubRouteProps) {
   const router = useRouter();
   const { playSound } = useSound();
-  const [focusedSightWordsModeIndex, setFocusedSightWordsModeIndex] =
-    useState(0);
+  const [focusedReadingModeIndex, setFocusedReadingModeIndex] = useState(0);
 
   const returnToSubject = useCallback(() => {
     playSound("select");
     router.push(subjectPath(subject.id));
   }, [playSound, router, subject.id]);
 
-  const openSightWordsLearn = useCallback(() => {
+  const openReadingLearn = useCallback(() => {
     playSound("select");
-    router.push(topicLearnPath(subject.id, "sight-words"));
+    router.push(topicLearnPath(subject.id, READING_TOPIC_ID));
   }, [playSound, router, subject.id]);
 
-  const startTopicQuiz = useCallback(() => {
+  const startReadingTest = useCallback(() => {
     playSound("select");
-    router.push(topicQuizPath(subject.id, "sight-words"));
+    router.push(topicQuizPath(subject.id, READING_TOPIC_ID));
   }, [playSound, router, subject.id]);
 
   return (
-    <SightWordsHubPage
+    <ReadingHubPage
       subject={subject}
-      focusedIndex={focusedSightWordsModeIndex}
-      onFocusMode={setFocusedSightWordsModeIndex}
-      onSelectLearn={openSightWordsLearn}
-      onSelectPlay={startTopicQuiz}
+      focusedIndex={focusedReadingModeIndex}
+      onFocusMode={setFocusedReadingModeIndex}
+      onSelectLearn={openReadingLearn}
+      onSelectPlay={startReadingTest}
       onBack={returnToSubject}
     />
   );

@@ -1,0 +1,602 @@
+[
+  {
+    "word": "am",
+    "meaning": "Am tells about yourself right now.",
+    "example": "I am happy.",
+    "usage": "Use am with the word I."
+  },
+  {
+    "word": "I",
+    "meaning": "I means yourself — the person speaking.",
+    "example": "I can read.",
+    "usage": "Say I when you talk about yourself."
+  },
+  {
+    "word": "can",
+    "meaning": "Can means you are able to do something.",
+    "example": "We can play.",
+    "usage": "Use can before an action word like run or jump."
+  },
+  {
+    "word": "we",
+    "meaning": "We means you and other people together.",
+    "example": "We are friends.",
+    "usage": "Say we when you mean a group that includes you."
+  },
+  {
+    "word": "the",
+    "meaning": "The points to one special thing we already know.",
+    "example": "Look at the cat.",
+    "usage": "Use the before a noun like cat, ball, or book."
+  },
+  {
+    "word": "like",
+    "meaning": "Like means you enjoy something.",
+    "example": "I like ice cream.",
+    "usage": "Say I like when something makes you happy."
+  },
+  {
+    "word": "a",
+    "meaning": "A means one of something.",
+    "example": "I see a dog.",
+    "usage": "Use a before a word that starts with a consonant sound."
+  },
+  {
+    "word": "see",
+    "meaning": "See means to look with your eyes.",
+    "example": "I see a bird.",
+    "usage": "Use see when you spot something with your eyes."
+  },
+  {
+    "word": "go",
+    "meaning": "Go means to move from one place to another.",
+    "example": "We go to school.",
+    "usage": "Use go when you leave to visit a place."
+  },
+  {
+    "word": "to",
+    "meaning": "To shows where you are going or what you want.",
+    "example": "I want to run.",
+    "usage": "Use to before an action or a place."
+  },
+  {
+    "word": "have",
+    "meaning": "Have means you own or hold something.",
+    "example": "I have a book.",
+    "usage": "Say I have when something belongs to you."
+  },
+  {
+    "word": "is",
+    "meaning": "Is tells about one person, animal, or thing.",
+    "example": "She is kind.",
+    "usage": "Use is with he, she, it, or one name."
+  },
+  {
+    "word": "play",
+    "meaning": "Play means to have fun and enjoy games.",
+    "example": "We play outside.",
+    "usage": "Use play when you do something fun."
+  },
+  {
+    "word": "are",
+    "meaning": "Are tells about more than one person or thing.",
+    "example": "They are here.",
+    "usage": "Use are with we, you, or they."
+  },
+  {
+    "word": "for",
+    "meaning": "For shows who something is meant for.",
+    "example": "This gift is for you.",
+    "usage": "Use for when you give something to someone."
+  },
+  {
+    "word": "you",
+    "meaning": "You means the person you are talking to.",
+    "example": "You are my friend.",
+    "usage": "Say you when you speak to another person."
+  },
+  {
+    "word": "on",
+    "meaning": "On means something is touching the top of a surface.",
+    "example": "The cat is on the mat.",
+    "usage": "Use on when something sits above something else."
+  },
+  {
+    "word": "in",
+    "meaning": "In means something is inside a place.",
+    "example": "The ball is in the box.",
+    "usage": "Use in when something is within a space."
+  },
+  {
+    "word": "so",
+    "meaning": "So can mean very or because of that.",
+    "example": "I am so happy.",
+    "usage": "Use so to make a feeling stronger."
+  },
+  {
+    "word": "this",
+    "meaning": "This points to something close to you.",
+    "example": "This is my toy.",
+    "usage": "Point and say this for something near you."
+  },
+  {
+    "word": "and",
+    "meaning": "And joins two things together.",
+    "example": "Mom and Dad came.",
+    "usage": "Use and to connect two words or ideas."
+  },
+  {
+    "word": "what",
+    "meaning": "What asks for information or a name.",
+    "example": "What is your name?",
+    "usage": "Start a question with what when you want to know something."
+  },
+  {
+    "word": "it",
+    "meaning": "It means one thing or animal.",
+    "example": "It is a ball.",
+    "usage": "Use it for one object or animal."
+  },
+  {
+    "word": "at",
+    "meaning": "At shows a place or time.",
+    "example": "Look at me.",
+    "usage": "Use at when you point to a spot or moment."
+  },
+  {
+    "word": "do",
+    "meaning": "Do helps ask or tell about an action.",
+    "example": "Do you like milk?",
+    "usage": "Use do at the start of a yes-or-no question."
+  },
+  {
+    "word": "an",
+    "meaning": "An means one of something.",
+    "example": "I ate an apple.",
+    "usage": "Use an before a word that starts with a vowel sound."
+  },
+  {
+    "word": "no",
+    "meaning": "No means not yes or not any.",
+    "example": "No, thank you.",
+    "usage": "Say no when you refuse or disagree politely."
+  },
+  {
+    "word": "up",
+    "meaning": "Up means toward a higher place.",
+    "example": "Stand up, please.",
+    "usage": "Use up when you rise or look higher."
+  },
+  {
+    "word": "little",
+    "meaning": "Little means small in size.",
+    "example": "A little bird sang.",
+    "usage": "Use little to describe something small."
+  },
+  {
+    "word": "said",
+    "meaning": "Said means spoke words in the past.",
+    "example": "She said hello.",
+    "usage": "Use said when someone already talked."
+  },
+  {
+    "word": "here",
+    "meaning": "Here means in this place.",
+    "example": "Come here, please.",
+    "usage": "Say here when you want someone close to you."
+  },
+  {
+    "word": "was",
+    "meaning": "Was tells about something in the past.",
+    "example": "She was happy.",
+    "usage": "Use was with one person or thing in the past."
+  },
+  {
+    "word": "she",
+    "meaning": "She means one girl or woman.",
+    "example": "She is my sister.",
+    "usage": "Use she for a female person."
+  },
+  {
+    "word": "he",
+    "meaning": "He means one boy or man.",
+    "example": "He is my brother.",
+    "usage": "Use he for a male person."
+  },
+  {
+    "word": "has",
+    "meaning": "Has means someone owns or holds something.",
+    "example": "She has a doll.",
+    "usage": "Use has with he, she, or it."
+  },
+  {
+    "word": "look",
+    "meaning": "Look means to use your eyes on purpose.",
+    "example": "Look at the sky.",
+    "usage": "Say look when you want someone to see something."
+  },
+  {
+    "word": "with",
+    "meaning": "With means together or using something.",
+    "example": "Come with me.",
+    "usage": "Use with when you are not alone."
+  },
+  {
+    "word": "my",
+    "meaning": "My shows something belongs to me.",
+    "example": "This is my book.",
+    "usage": "Say my before things that are yours."
+  },
+  {
+    "word": "me",
+    "meaning": "Me means yourself when someone does something to you.",
+    "example": "Give me the pen.",
+    "usage": "Use me after words like give, tell, or help."
+  },
+  {
+    "word": "where",
+    "meaning": "Where asks about a place.",
+    "example": "Where are you?",
+    "usage": "Start a question with where to find a place."
+  },
+  {
+    "word": "went",
+    "meaning": "Went means moved in the past.",
+    "example": "We went home.",
+    "usage": "Use went when go already happened."
+  },
+  {
+    "word": "get",
+    "meaning": "Get means to receive or fetch something.",
+    "example": "Please get the ball.",
+    "usage": "Use get when you pick up or receive something."
+  },
+  {
+    "word": "come",
+    "meaning": "Come means to move toward the speaker.",
+    "example": "Please come here.",
+    "usage": "Say come when you want someone to move to you."
+  },
+  {
+    "word": "got",
+    "meaning": "Got means received something in the past.",
+    "example": "I got a star.",
+    "usage": "Use got when you already have something."
+  },
+  {
+    "word": "had",
+    "meaning": "Had means owned or felt something in the past.",
+    "example": "We had fun.",
+    "usage": "Use had when something was true before."
+  },
+  {
+    "word": "they",
+    "meaning": "They means more than one person or thing.",
+    "example": "They are playing.",
+    "usage": "Use they for a group of people or things."
+  },
+  {
+    "word": "will",
+    "meaning": "Will means something will happen later.",
+    "example": "I will help you.",
+    "usage": "Use will to talk about the future."
+  },
+  {
+    "word": "too",
+    "meaning": "Too means also or very much.",
+    "example": "I like it too.",
+    "usage": "Say too when you feel the same as someone else."
+  },
+  {
+    "word": "all",
+    "meaning": "All means every one with nothing left out.",
+    "example": "We ate all the cake.",
+    "usage": "Use all when you mean the whole group."
+  },
+  {
+    "word": "be",
+    "meaning": "Be means to exist or act in a certain way.",
+    "example": "Please be quiet.",
+    "usage": "Use be after please or can."
+  },
+  {
+    "word": "as",
+    "meaning": "As can compare two things.",
+    "example": "Run as fast as you can.",
+    "usage": "Use as…as to show sameness."
+  },
+  {
+    "word": "ball",
+    "meaning": "Ball is a round toy you can throw or kick.",
+    "example": "Kick the ball.",
+    "usage": "Say ball when you play with a round toy."
+  },
+  {
+    "word": "by",
+    "meaning": "By can mean next to or before a time.",
+    "example": "Sit by me.",
+    "usage": "Use by when something is beside you."
+  },
+  {
+    "word": "day",
+    "meaning": "Day is the time when the sun is out.",
+    "example": "Have a nice day.",
+    "usage": "Use day when you talk about daytime."
+  },
+  {
+    "word": "did",
+    "meaning": "Did helps talk about the past.",
+    "example": "What did you do?",
+    "usage": "Use did in past questions."
+  },
+  {
+    "word": "not",
+    "meaning": "Not makes a sentence negative.",
+    "example": "I am not sad.",
+    "usage": "Put not after am, is, or are to say no."
+  },
+  {
+    "word": "her",
+    "meaning": "Her means belonging to a girl or woman.",
+    "example": "Give her the book.",
+    "usage": "Use her for a female person."
+  },
+  {
+    "word": "him",
+    "meaning": "Him means a boy or man receiving an action.",
+    "example": "Tell him a story.",
+    "usage": "Use him after verbs like tell or help."
+  },
+  {
+    "word": "fun",
+    "meaning": "Fun means something enjoyable.",
+    "example": "We had fun.",
+    "usage": "Say fun when you enjoy an activity."
+  },
+  {
+    "word": "eat",
+    "meaning": "Eat means to put food in your mouth.",
+    "example": "I eat an apple.",
+    "usage": "Use eat when you have food."
+  },
+  {
+    "word": "if",
+    "meaning": "If starts a condition — when one thing depends on another.",
+    "example": "If you are ready, go.",
+    "usage": "Use if to say something happens only when another thing is true."
+  },
+  {
+    "word": "jump",
+    "meaning": "Jump means to push off the ground with your feet.",
+    "example": "I can jump.",
+    "usage": "Use jump when you leap into the air."
+  },
+  {
+    "word": "man",
+    "meaning": "Man means an adult male person.",
+    "example": "The man waved.",
+    "usage": "Use man for a grown-up male."
+  },
+  {
+    "word": "or",
+    "meaning": "Or gives a choice between two things.",
+    "example": "Tea or milk?",
+    "usage": "Use or when you pick one of two options."
+  },
+  {
+    "word": "put",
+    "meaning": "Put means to place something somewhere.",
+    "example": "Put it here.",
+    "usage": "Say put when you set something down."
+  },
+  {
+    "word": "mom",
+    "meaning": "Mom means your mother.",
+    "example": "Mom is cooking.",
+    "usage": "Say mom when you talk about your mother."
+  },
+  {
+    "word": "out",
+    "meaning": "Out means away from the inside.",
+    "example": "Go out and play.",
+    "usage": "Use out when you leave a room or house."
+  },
+  {
+    "word": "now",
+    "meaning": "Now means at this moment.",
+    "example": "Do it now.",
+    "usage": "Say now when you mean right away."
+  },
+  {
+    "word": "of",
+    "meaning": "Of shows what something is made from or part of.",
+    "example": "A cup of milk.",
+    "usage": "Use of to connect two nouns."
+  },
+  {
+    "word": "yes",
+    "meaning": "Yes means you agree.",
+    "example": "Yes, please!",
+    "usage": "Say yes when you accept or agree."
+  },
+  {
+    "word": "ran",
+    "meaning": "Ran means moved fast on foot in the past.",
+    "example": "The dog ran.",
+    "usage": "Use ran when run already happened."
+  },
+  {
+    "word": "sat",
+    "meaning": "Sat means rested on a chair in the past.",
+    "example": "She sat down.",
+    "usage": "Use sat when sit already happened."
+  },
+  {
+    "word": "read",
+    "meaning": "Read means to look at words in a book.",
+    "example": "I read a book.",
+    "usage": "Use read when you look at written words."
+  },
+  {
+    "word": "run",
+    "meaning": "Run means to move fast on your feet.",
+    "example": "I can run.",
+    "usage": "Use run when you move quickly."
+  },
+  {
+    "word": "sit",
+    "meaning": "Sit means to rest on a chair or floor.",
+    "example": "Please sit here.",
+    "usage": "Say sit when you want someone to take a seat."
+  },
+  {
+    "word": "then",
+    "meaning": "Then means what happens next.",
+    "example": "First eat, then play.",
+    "usage": "Use then to show the order of events."
+  },
+  {
+    "word": "his",
+    "meaning": "His shows something belongs to a boy or man.",
+    "example": "This is his hat.",
+    "usage": "Use his before things that belong to him."
+  },
+  {
+    "word": "say",
+    "meaning": "Say means to speak words.",
+    "example": "Say hello.",
+    "usage": "Use say when you tell someone to speak."
+  },
+  {
+    "word": "us",
+    "meaning": "Us means me and others receiving an action.",
+    "example": "Come with us.",
+    "usage": "Use us after verbs like help or join."
+  },
+  {
+    "word": "them",
+    "meaning": "Them means more than one person or thing receiving an action.",
+    "example": "I see them.",
+    "usage": "Use them after verbs like give or see."
+  },
+  {
+    "word": "saw",
+    "meaning": "Saw means looked with your eyes in the past.",
+    "example": "I saw a rainbow.",
+    "usage": "Use saw when see already happened."
+  },
+  {
+    "word": "girl",
+    "meaning": "Girl means a young female child.",
+    "example": "The girl smiled.",
+    "usage": "Use girl for a young female person."
+  },
+  {
+    "word": "how",
+    "meaning": "How asks about the way something happens.",
+    "example": "How are you?",
+    "usage": "Start a question with how to learn the way."
+  },
+  {
+    "word": "when",
+    "meaning": "When asks about time.",
+    "example": "When will we go?",
+    "usage": "Use when to ask about time."
+  },
+  {
+    "word": "your",
+    "meaning": "Your shows something belongs to the listener.",
+    "example": "Is this your bag?",
+    "usage": "Say your when something belongs to the person you talk to."
+  },
+  {
+    "word": "about",
+    "meaning": "About means on the topic of something.",
+    "example": "Tell me about school.",
+    "usage": "Use about when you discuss a topic."
+  },
+  {
+    "word": "from",
+    "meaning": "From shows where something starts.",
+    "example": "I came from home.",
+    "usage": "Use from to show a starting place."
+  },
+  {
+    "word": "than",
+    "meaning": "Than compares two things.",
+    "example": "Bigger than before.",
+    "usage": "Use than after bigger, smaller, or more."
+  },
+  {
+    "word": "away",
+    "meaning": "Away means far from here.",
+    "example": "Go away.",
+    "usage": "Use away when something moves to a distance."
+  },
+  {
+    "word": "came",
+    "meaning": "Came means moved toward a place in the past.",
+    "example": "She came home.",
+    "usage": "Use came when come already happened."
+  },
+  {
+    "word": "could",
+    "meaning": "Could means was able to in the past.",
+    "example": "I could not find it.",
+    "usage": "Use could for ability in the past."
+  },
+  {
+    "word": "big",
+    "meaning": "Big means large in size.",
+    "example": "A big tree.",
+    "usage": "Use big to describe something large."
+  },
+  {
+    "word": "been",
+    "meaning": "Been goes with have to show a past visit or state.",
+    "example": "I have been there.",
+    "usage": "Use been after have or has."
+  },
+  {
+    "word": "after",
+    "meaning": "After means later than something else.",
+    "example": "We play after lunch.",
+    "usage": "Use after to show what comes next in time."
+  },
+  {
+    "word": "who",
+    "meaning": "Who asks about a person.",
+    "example": "Who is that?",
+    "usage": "Start a question with who to name a person."
+  },
+  {
+    "word": "back",
+    "meaning": "Back means returning to a place.",
+    "example": "Come back.",
+    "usage": "Use back when someone returns."
+  },
+  {
+    "word": "I'm",
+    "meaning": "I'm is a short way to say I am.",
+    "example": "I'm five years old.",
+    "usage": "Use I'm when you talk about yourself quickly."
+  },
+  {
+    "word": "because",
+    "meaning": "Because gives a reason.",
+    "example": "Happy because of you.",
+    "usage": "Use because to explain why."
+  },
+  {
+    "word": "very",
+    "meaning": "Very makes a word stronger.",
+    "example": "I am very happy.",
+    "usage": "Put very before a describing word."
+  },
+  {
+    "word": "over",
+    "meaning": "Over can mean above or finished.",
+    "example": "Jump over.",
+    "usage": "Use over when you go across something."
+  }
+]

@@ -1,0 +1,3082 @@
+[
+  {
+    "word": "blush",
+    "emoji": "😊",
+    "meaning": "Your face turns pink when you feel shy.",
+    "usage": "Say blush when cheeks look rosy.",
+    "examples": [
+      {
+        "emoji": "😊",
+        "text": "She gave a little blush."
+      },
+      {
+        "emoji": "🎯",
+        "text": "He gave a little blush."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"blush\"."
+      }
+    ]
+  },
+  {
+    "word": "flow",
+    "emoji": "🌊",
+    "meaning": "To move smoothly like water in a stream.",
+    "usage": "Use flow for water, hair, or a dress moving gently.",
+    "examples": [
+      {
+        "emoji": "🌊",
+        "text": "The river will flow to the sea."
+      },
+      {
+        "emoji": "🎯",
+        "text": "My river will flow to the sea."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"flow\"."
+      }
+    ]
+  },
+  {
+    "word": "plot",
+    "emoji": "🌱",
+    "meaning": "A small piece of land or a story plan.",
+    "usage": "Use plot for a garden patch or story idea.",
+    "examples": [
+      {
+        "emoji": "🌱",
+        "text": "We planted seeds in the plot."
+      },
+      {
+        "emoji": "👀",
+        "text": "I planted seeds in the plot."
+      },
+      {
+        "emoji": "🌟",
+        "text": "Clap your hands when you hear \"plot\"."
+      }
+    ]
+  },
+  {
+    "word": "sleep",
+    "emoji": "😴",
+    "meaning": "Rest with your eyes closed at night.",
+    "usage": "Say sleep when it is time for bed.",
+    "examples": [
+      {
+        "emoji": "😴",
+        "text": "I sleep in my cosy bed."
+      },
+      {
+        "emoji": "👀",
+        "text": "We sleep in my cosy bed."
+      },
+      {
+        "emoji": "🌟",
+        "text": "Clap your hands when you hear \"sleep\"."
+      }
+    ]
+  },
+  {
+    "word": "slow",
+    "emoji": "🐢",
+    "meaning": "Not fast; taking a long time.",
+    "usage": "Use slow for turtles, traffic, or careful steps.",
+    "examples": [
+      {
+        "emoji": "🐢",
+        "text": "The snail is very slow."
+      },
+      {
+        "emoji": "👀",
+        "text": "My snail is very slow."
+      },
+      {
+        "emoji": "🌟",
+        "text": "Clap your hands when you hear \"slow\"."
+      }
+    ]
+  },
+  {
+    "word": "flame",
+    "emoji": "🔥",
+    "meaning": "A bright, hot fire that dances.",
+    "usage": "Say flame for the fire on a candle.",
+    "examples": [
+      {
+        "emoji": "🔥",
+        "text": "The flame lit up the room."
+      },
+      {
+        "emoji": "💡",
+        "text": "My flame lit up the room."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"flame\"."
+      }
+    ]
+  },
+  {
+    "word": "flag",
+    "emoji": "🚩",
+    "meaning": "A cloth with colours that waves in the wind.",
+    "usage": "Use flag for a country or school banner.",
+    "examples": [
+      {
+        "emoji": "🚩",
+        "text": "The flag flew high today."
+      },
+      {
+        "emoji": "🎯",
+        "text": "My flag flew high today."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"flag\"."
+      }
+    ]
+  },
+  {
+    "word": "smoke",
+    "emoji": "💨",
+    "meaning": "Grey or white air that rises from fire.",
+    "usage": "Say smoke when something is burning.",
+    "examples": [
+      {
+        "emoji": "💨",
+        "text": "Smoke rose from the chimney."
+      },
+      {
+        "emoji": "👀",
+        "text": "Can you say \"smoke\" out loud?"
+      },
+      {
+        "emoji": "🌟",
+        "text": "Smoke is on our word list."
+      }
+    ]
+  },
+  {
+    "word": "spout",
+    "emoji": "🚿",
+    "meaning": "A tube where liquid pours out.",
+    "usage": "Use spout for a kettle or whale.",
+    "examples": [
+      {
+        "emoji": "🚿",
+        "text": "Water came from the spout."
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"spout\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word spout in class today."
+      }
+    ]
+  },
+  {
+    "word": "smart",
+    "emoji": "🧠",
+    "meaning": "Clever and quick at learning.",
+    "usage": "Say smart when someone thinks well.",
+    "examples": [
+      {
+        "emoji": "🧠",
+        "text": "You are a smart reader."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My teacher wrote smart on the board."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Look for \"smart\" on the page."
+      }
+    ]
+  },
+  {
+    "word": "spoon",
+    "emoji": "🥄",
+    "meaning": "A small tool for eating soup or rice.",
+    "usage": "Use spoon at the table.",
+    "examples": [
+      {
+        "emoji": "🥄",
+        "text": "Stir the soup with a spoon."
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"spoon\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word spoon in class today."
+      }
+    ]
+  },
+  {
+    "word": "blow",
+    "emoji": "🎂",
+    "meaning": "To push air out of your mouth.",
+    "usage": "Say blow for wind or birthday candles.",
+    "examples": [
+      {
+        "emoji": "🎂",
+        "text": "Blow out the candles."
+      },
+      {
+        "emoji": "📚",
+        "text": "Look for \"blow\" on the page."
+      },
+      {
+        "emoji": "💡",
+        "text": "Can you say \"blow\" out loud?"
+      }
+    ]
+  },
+  {
+    "word": "brake",
+    "emoji": "🛑",
+    "meaning": "A part that stops a car or cycle.",
+    "usage": "Use brake when you need to stop.",
+    "examples": [
+      {
+        "emoji": "🛑",
+        "text": "Press the brake to slow down."
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"brake\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word brake in class today."
+      }
+    ]
+  },
+  {
+    "word": "grass",
+    "emoji": "🌿",
+    "meaning": "The green plants that cover the ground.",
+    "usage": "Say grass for lawns and fields.",
+    "examples": [
+      {
+        "emoji": "🌿",
+        "text": "We sat on the soft grass."
+      },
+      {
+        "emoji": "📚",
+        "text": "I sat on the soft grass."
+      },
+      {
+        "emoji": "💡",
+        "text": "Clap your hands when you hear \"grass\"."
+      }
+    ]
+  },
+  {
+    "word": "clump",
+    "emoji": "🌸",
+    "meaning": "A small group or lump stuck together.",
+    "usage": "Use clump for mud or flowers in a bunch.",
+    "examples": [
+      {
+        "emoji": "🌸",
+        "text": "A clump of flowers grew there."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My teacher wrote clump on the board."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Look for \"clump\" on the page."
+      }
+    ]
+  },
+  {
+    "word": "greet",
+    "emoji": "👋",
+    "meaning": "To say hello in a friendly way.",
+    "usage": "Use greet when you meet someone.",
+    "examples": [
+      {
+        "emoji": "👋",
+        "text": "I greet my teacher each morning."
+      },
+      {
+        "emoji": "💡",
+        "text": "We greet my teacher each morning."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"greet\"."
+      }
+    ]
+  },
+  {
+    "word": "shout",
+    "emoji": "📢",
+    "meaning": "To call out in a loud voice.",
+    "usage": "Say shout for cheers or warnings.",
+    "examples": [
+      {
+        "emoji": "📢",
+        "text": "Do not shout in the library."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My teacher wrote shout on the board."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Look for \"shout\" on the page."
+      }
+    ]
+  },
+  {
+    "word": "quilt",
+    "emoji": "🛏️",
+    "meaning": "A warm blanket made of stitched pieces.",
+    "usage": "Use quilt on a bed in winter.",
+    "examples": [
+      {
+        "emoji": "🛏️",
+        "text": "Grandma made a colourful quilt."
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"quilt\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word quilt in class today."
+      }
+    ]
+  },
+  {
+    "word": "brave",
+    "emoji": "🦁",
+    "meaning": "Not afraid to try hard things.",
+    "usage": "Say brave for heroes and kind acts.",
+    "examples": [
+      {
+        "emoji": "🦁",
+        "text": "The brave firefighter helped us."
+      },
+      {
+        "emoji": "🌟",
+        "text": "My brave firefighter helped us."
+      },
+      {
+        "emoji": "👀",
+        "text": "Clap your hands when you hear \"brave\"."
+      }
+    ]
+  },
+  {
+    "word": "grand",
+    "emoji": "🏰",
+    "meaning": "Very big, fine, or wonderful.",
+    "usage": "Use grand for a palace or a party.",
+    "examples": [
+      {
+        "emoji": "🏰",
+        "text": "We had a grand celebration."
+      },
+      {
+        "emoji": "🎯",
+        "text": "I had a grand celebration."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"grand\"."
+      }
+    ]
+  },
+  {
+    "word": "smell",
+    "emoji": "👃",
+    "meaning": "What your nose notices about something.",
+    "usage": "Say smell for flowers or food.",
+    "examples": [
+      {
+        "emoji": "👃",
+        "text": "I smell fresh bread baking."
+      },
+      {
+        "emoji": "💡",
+        "text": "We smell fresh bread baking."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"smell\"."
+      }
+    ]
+  },
+  {
+    "word": "frizz",
+    "emoji": "💇",
+    "meaning": "Hair that sticks up in curly tufts.",
+    "usage": "Use frizz after rain or humidity.",
+    "examples": [
+      {
+        "emoji": "💇",
+        "text": "The rain made my hair frizz."
+      },
+      {
+        "emoji": "💡",
+        "text": "My rain made my hair frizz."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"frizz\"."
+      }
+    ]
+  },
+  {
+    "word": "sweet",
+    "emoji": "🍬",
+    "meaning": "Tasting like sugar or honey.",
+    "usage": "Say sweet for candy, fruit, or kind words.",
+    "examples": [
+      {
+        "emoji": "🍬",
+        "text": "The mango is very sweet."
+      },
+      {
+        "emoji": "🌟",
+        "text": "My mango is very sweet."
+      },
+      {
+        "emoji": "👀",
+        "text": "Clap your hands when you hear \"sweet\"."
+      }
+    ]
+  },
+  {
+    "word": "broom",
+    "emoji": "🧹",
+    "meaning": "A brush with a long handle for sweeping.",
+    "usage": "Use broom to clean the floor.",
+    "examples": [
+      {
+        "emoji": "🧹",
+        "text": "She swept with a broom."
+      },
+      {
+        "emoji": "👀",
+        "text": "He swept with a broom."
+      },
+      {
+        "emoji": "🌟",
+        "text": "Clap your hands when you hear \"broom\"."
+      }
+    ]
+  },
+  {
+    "word": "strong",
+    "emoji": "💪",
+    "meaning": "Having great power or muscle.",
+    "usage": "Say strong for heroes, ropes, or tea.",
+    "examples": [
+      {
+        "emoji": "💪",
+        "text": "The bridge is very strong."
+      },
+      {
+        "emoji": "👀",
+        "text": "My bridge is very strong."
+      },
+      {
+        "emoji": "🌟",
+        "text": "Clap your hands when you hear \"strong\"."
+      }
+    ]
+  },
+  {
+    "word": "sweep",
+    "emoji": "🧽",
+    "meaning": "To clean by brushing the floor.",
+    "usage": "Use sweep with a broom.",
+    "examples": [
+      {
+        "emoji": "🧽",
+        "text": "Please sweep the classroom."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Sweep is on our word list."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Listen for \"sweep\" in the story."
+      }
+    ]
+  },
+  {
+    "word": "trust",
+    "emoji": "🤝",
+    "meaning": "To believe someone will help and be honest.",
+    "usage": "Say trust for good friends.",
+    "examples": [
+      {
+        "emoji": "🤝",
+        "text": "I trust my best friend."
+      },
+      {
+        "emoji": "🎯",
+        "text": "We trust my best friend."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"trust\"."
+      }
+    ]
+  },
+  {
+    "word": "swing",
+    "emoji": "🛝",
+    "meaning": "To move back and forth on a seat or rope.",
+    "usage": "Use swing at the playground.",
+    "examples": [
+      {
+        "emoji": "🛝",
+        "text": "We swing at the park."
+      },
+      {
+        "emoji": "🌟",
+        "text": "I swing at the park."
+      },
+      {
+        "emoji": "👀",
+        "text": "Clap your hands when you hear \"swing\"."
+      }
+    ]
+  },
+  {
+    "word": "queen",
+    "emoji": "👑",
+    "meaning": "A woman who rules a kingdom.",
+    "usage": "Say queen for chess or fairy tales.",
+    "examples": [
+      {
+        "emoji": "👑",
+        "text": "The queen wore a golden crown."
+      },
+      {
+        "emoji": "🎯",
+        "text": "My queen wore a golden crown."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"queen\"."
+      }
+    ]
+  },
+  {
+    "word": "stand",
+    "emoji": "🧍",
+    "meaning": "To be on your feet, not sitting.",
+    "usage": "Use stand when you rise up.",
+    "examples": [
+      {
+        "emoji": "🧍",
+        "text": "Please stand in a line."
+      },
+      {
+        "emoji": "📚",
+        "text": "Look for \"stand\" on the page."
+      },
+      {
+        "emoji": "💡",
+        "text": "Can you say \"stand\" out loud?"
+      }
+    ]
+  },
+  {
+    "word": "block",
+    "emoji": "🧱",
+    "meaning": "A solid piece of wood, stone, or toy.",
+    "usage": "Say block for building or road blocks.",
+    "examples": [
+      {
+        "emoji": "🧱",
+        "text": "He built a tower with blocks."
+      },
+      {
+        "emoji": "💡",
+        "text": "She built a tower with blocks."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"block\"."
+      }
+    ]
+  },
+  {
+    "word": "spell",
+    "emoji": "🔤",
+    "meaning": "To say or write letters in order.",
+    "usage": "Use spell when you form a word.",
+    "examples": [
+      {
+        "emoji": "🔤",
+        "text": "Can you spell your name?"
+      },
+      {
+        "emoji": "📚",
+        "text": "Look for \"spell\" on the page."
+      },
+      {
+        "emoji": "💡",
+        "text": "Can you say \"spell\" out loud?"
+      }
+    ]
+  },
+  {
+    "word": "glad",
+    "emoji": "😄",
+    "meaning": "Happy and pleased about something.",
+    "usage": "Say glad when you feel joy.",
+    "examples": [
+      {
+        "emoji": "😄",
+        "text": "I am glad you came."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We are glad you came."
+      },
+      {
+        "emoji": "👀",
+        "text": "Clap your hands when you hear \"glad\"."
+      }
+    ]
+  },
+  {
+    "word": "black",
+    "emoji": "🖤",
+    "meaning": "The darkest colour, like night.",
+    "usage": "Use black for coal or a crow.",
+    "examples": [
+      {
+        "emoji": "🖤",
+        "text": "The cat has black fur."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My cat has black fur."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap your hands when you hear \"black\"."
+      }
+    ]
+  },
+  {
+    "word": "stop",
+    "emoji": "🛑",
+    "meaning": "To not move or to end something.",
+    "usage": "Say stop at a red light.",
+    "examples": [
+      {
+        "emoji": "🛑",
+        "text": "Stop and look both ways."
+      },
+      {
+        "emoji": "📚",
+        "text": "Look for \"stop\" on the page."
+      },
+      {
+        "emoji": "💡",
+        "text": "Can you say \"stop\" out loud?"
+      }
+    ]
+  },
+  {
+    "word": "brown",
+    "emoji": "🤎",
+    "meaning": "A colour like chocolate or soil.",
+    "usage": "Use brown for bears and bread.",
+    "examples": [
+      {
+        "emoji": "🤎",
+        "text": "The dog is brown and fluffy."
+      },
+      {
+        "emoji": "🌟",
+        "text": "My dog is brown and fluffy."
+      },
+      {
+        "emoji": "👀",
+        "text": "Clap your hands when you hear \"brown\"."
+      }
+    ]
+  },
+  {
+    "word": "spent",
+    "emoji": "💸",
+    "meaning": "Used up or already paid.",
+    "usage": "Say spent when money or energy is gone.",
+    "examples": [
+      {
+        "emoji": "💸",
+        "text": "We spent the day at the park."
+      },
+      {
+        "emoji": "🎯",
+        "text": "I spent the day at the park."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"spent\"."
+      }
+    ]
+  },
+  {
+    "word": "smile",
+    "emoji": "😁",
+    "meaning": "A happy look on your face.",
+    "usage": "Use smile when you feel good.",
+    "examples": [
+      {
+        "emoji": "😁",
+        "text": "She gave a warm smile."
+      },
+      {
+        "emoji": "📚",
+        "text": "He gave a warm smile."
+      },
+      {
+        "emoji": "💡",
+        "text": "Clap your hands when you hear \"smile\"."
+      }
+    ]
+  },
+  {
+    "word": "glow",
+    "emoji": "✨",
+    "meaning": "To shine with a soft light.",
+    "usage": "Say glow for lamps or fireflies.",
+    "examples": [
+      {
+        "emoji": "✨",
+        "text": "The lamp will glow at night."
+      },
+      {
+        "emoji": "👀",
+        "text": "My lamp will glow at night."
+      },
+      {
+        "emoji": "🌟",
+        "text": "Clap your hands when you hear \"glow\"."
+      }
+    ]
+  },
+  {
+    "word": "blue",
+    "emoji": "💙",
+    "meaning": "A colour like the sky on a clear day.",
+    "usage": "Use blue for water and jeans.",
+    "examples": [
+      {
+        "emoji": "💙",
+        "text": "The sky is bright blue."
+      },
+      {
+        "emoji": "📚",
+        "text": "My sky is bright blue."
+      },
+      {
+        "emoji": "💡",
+        "text": "Clap your hands when you hear \"blue\"."
+      }
+    ]
+  },
+  {
+    "word": "small",
+    "emoji": "🐜",
+    "meaning": "Little, not big.",
+    "usage": "Say small for ants, cups, or puppies.",
+    "examples": [
+      {
+        "emoji": "🐜",
+        "text": "The small bird sang sweetly."
+      },
+      {
+        "emoji": "👀",
+        "text": "My small bird sang sweetly."
+      },
+      {
+        "emoji": "🌟",
+        "text": "Clap your hands when you hear \"small\"."
+      }
+    ]
+  },
+  {
+    "word": "flock",
+    "emoji": "🐑",
+    "meaning": "A group of birds or sheep together.",
+    "usage": "Use flock for animals in a crowd.",
+    "examples": [
+      {
+        "emoji": "🐑",
+        "text": "A flock of birds flew south."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My teacher wrote flock on the board."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Look for \"flock\" on the page."
+      }
+    ]
+  },
+  {
+    "word": "swept",
+    "emoji": "✨",
+    "meaning": "Cleaned by brushing the floor.",
+    "usage": "Say swept after using a broom.",
+    "examples": [
+      {
+        "emoji": "✨",
+        "text": "She swept the porch clean."
+      },
+      {
+        "emoji": "🌈",
+        "text": "He swept the porch clean."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap your hands when you hear \"swept\"."
+      }
+    ]
+  },
+  {
+    "word": "quench",
+    "emoji": "💧",
+    "meaning": "To make thirst go away by drinking.",
+    "usage": "Use quench with water on a hot day.",
+    "examples": [
+      {
+        "emoji": "💧",
+        "text": "Cold water will quench your thirst."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Quench is on our word list."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Listen for \"quench\" in the story."
+      }
+    ]
+  },
+  {
+    "word": "drink",
+    "emoji": "🥤",
+    "meaning": "Liquid you swallow, or to swallow it.",
+    "usage": "Say drink for juice, milk, or water.",
+    "examples": [
+      {
+        "emoji": "🥤",
+        "text": "I drink water after play."
+      },
+      {
+        "emoji": "🎯",
+        "text": "We drink water after play."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"drink\"."
+      }
+    ]
+  },
+  {
+    "word": "clap",
+    "emoji": "👏",
+    "meaning": "To hit your hands together to make a sound.",
+    "usage": "Use clap to cheer or keep rhythm.",
+    "examples": [
+      {
+        "emoji": "👏",
+        "text": "Clap for the singer."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap is on our word list."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Listen for \"clap\" in the story."
+      }
+    ]
+  },
+  {
+    "word": "craft",
+    "emoji": "✂️",
+    "meaning": "A skillful art or a handmade thing.",
+    "usage": "Say craft for paper boats or knitting.",
+    "examples": [
+      {
+        "emoji": "✂️",
+        "text": "We made a craft in class."
+      },
+      {
+        "emoji": "🌟",
+        "text": "I made a craft in class."
+      },
+      {
+        "emoji": "👀",
+        "text": "Clap your hands when you hear \"craft\"."
+      }
+    ]
+  },
+  {
+    "word": "hurt",
+    "emoji": "🤕",
+    "meaning": "To feel pain or to cause pain.",
+    "usage": "Use hurt when something aches.",
+    "examples": [
+      {
+        "emoji": "🤕",
+        "text": "My knee hurt after the fall."
+      },
+      {
+        "emoji": "💡",
+        "text": "The knee hurt after the fall."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"hurt\"."
+      }
+    ]
+  },
+  {
+    "word": "drag",
+    "emoji": "↔️",
+    "meaning": "To pull something along the ground.",
+    "usage": "Say drag for heavy bags or sleds.",
+    "examples": [
+      {
+        "emoji": "↔️",
+        "text": "Do not drag your feet."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We read the word drag in class today."
+      },
+      {
+        "emoji": "👀",
+        "text": "My teacher wrote drag on the board."
+      }
+    ]
+  },
+  {
+    "word": "plate",
+    "emoji": "🍽️",
+    "meaning": "A flat dish for food.",
+    "usage": "Use plate at lunch time.",
+    "examples": [
+      {
+        "emoji": "🍽️",
+        "text": "Put the rice on your plate."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We read the word plate in class today."
+      },
+      {
+        "emoji": "👀",
+        "text": "My teacher wrote plate on the board."
+      }
+    ]
+  },
+  {
+    "word": "clown",
+    "emoji": "🤡",
+    "meaning": "A funny performer with bright clothes.",
+    "usage": "Say clown at a circus.",
+    "examples": [
+      {
+        "emoji": "🤡",
+        "text": "The clown made us laugh."
+      },
+      {
+        "emoji": "💡",
+        "text": "My clown made us laugh."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"clown\"."
+      }
+    ]
+  },
+  {
+    "word": "plant",
+    "emoji": "🌱",
+    "meaning": "A living green thing that grows, or to put seeds in soil.",
+    "usage": "Use plant for trees, flowers, or gardening.",
+    "examples": [
+      {
+        "emoji": "🌱",
+        "text": "We plant seeds in spring."
+      },
+      {
+        "emoji": "👀",
+        "text": "I plant seeds in spring."
+      },
+      {
+        "emoji": "🌟",
+        "text": "Clap your hands when you hear \"plant\"."
+      }
+    ]
+  },
+  {
+    "word": "slope",
+    "emoji": "⛷️",
+    "meaning": "A surface that goes up or down at an angle.",
+    "usage": "Say slope for hills or slides.",
+    "examples": [
+      {
+        "emoji": "⛷️",
+        "text": "We ran down the grassy slope."
+      },
+      {
+        "emoji": "💡",
+        "text": "I ran down the grassy slope."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"slope\"."
+      }
+    ]
+  },
+  {
+    "word": "bring",
+    "emoji": "🎁",
+    "meaning": "To carry something to a place.",
+    "usage": "Use bring when you take an item here.",
+    "examples": [
+      {
+        "emoji": "🎁",
+        "text": "Please bring your book tomorrow."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Bring is on our word list."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Listen for \"bring\" in the story."
+      }
+    ]
+  },
+  {
+    "word": "snake",
+    "emoji": "🐍",
+    "meaning": "A long animal with no legs that slithers.",
+    "usage": "Say snake for reptiles in stories.",
+    "examples": [
+      {
+        "emoji": "🐍",
+        "text": "The snake hid in the grass."
+      },
+      {
+        "emoji": "🎯",
+        "text": "My snake hid in the grass."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"snake\"."
+      }
+    ]
+  },
+  {
+    "word": "crush",
+    "emoji": "🍇",
+    "meaning": "To press very hard, or strong liking.",
+    "usage": "Use crush for grapes or a squashed box.",
+    "examples": [
+      {
+        "emoji": "🍇",
+        "text": "Do not crush the flowers."
+      },
+      {
+        "emoji": "👀",
+        "text": "Can you say \"crush\" out loud?"
+      },
+      {
+        "emoji": "🌟",
+        "text": "Crush is on our word list."
+      }
+    ]
+  },
+  {
+    "word": "thorn",
+    "emoji": "🌹",
+    "meaning": "A sharp point on a stem.",
+    "usage": "Say thorn on roses.",
+    "examples": [
+      {
+        "emoji": "🌹",
+        "text": "Watch out for the thorn."
+      },
+      {
+        "emoji": "👀",
+        "text": "Can you say \"thorn\" out loud?"
+      },
+      {
+        "emoji": "🌟",
+        "text": "Thorn is on our word list."
+      }
+    ]
+  },
+  {
+    "word": "white",
+    "emoji": "🤍",
+    "meaning": "The colour of milk or fresh snow.",
+    "usage": "Use white for clouds and paper.",
+    "examples": [
+      {
+        "emoji": "🤍",
+        "text": "The rabbit is soft and white."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My rabbit is soft and white."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap your hands when you hear \"white\"."
+      }
+    ]
+  },
+  {
+    "word": "slide",
+    "emoji": "🛝",
+    "meaning": "To move smoothly along, or a playground chute.",
+    "usage": "Say slide on ice or at the park.",
+    "examples": [
+      {
+        "emoji": "🛝",
+        "text": "We slide down the hill."
+      },
+      {
+        "emoji": "💡",
+        "text": "I slide down the hill."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"slide\"."
+      }
+    ]
+  },
+  {
+    "word": "trip",
+    "emoji": "🧳",
+    "meaning": "A short journey, or to stumble.",
+    "usage": "Use trip for holidays or a small fall.",
+    "examples": [
+      {
+        "emoji": "🧳",
+        "text": "Our class took a trip to the zoo."
+      },
+      {
+        "emoji": "👀",
+        "text": "Can you say \"trip\" out loud?"
+      },
+      {
+        "emoji": "🌟",
+        "text": "Trip is on our word list."
+      }
+    ]
+  },
+  {
+    "word": "green",
+    "emoji": "💚",
+    "meaning": "The colour of leaves and fresh grass.",
+    "usage": "Say green for frogs and trees.",
+    "examples": [
+      {
+        "emoji": "💚",
+        "text": "The frog is bright green."
+      },
+      {
+        "emoji": "💡",
+        "text": "My frog is bright green."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"green\"."
+      }
+    ]
+  },
+  {
+    "word": "print",
+    "emoji": "🖨️",
+    "meaning": "Letters on a page, or to make them.",
+    "usage": "Use print for books and writing.",
+    "examples": [
+      {
+        "emoji": "🖨️",
+        "text": "The teacher will print the worksheet."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My teacher will print the worksheet."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap your hands when you hear \"print\"."
+      }
+    ]
+  },
+  {
+    "word": "whale",
+    "emoji": "🐋",
+    "meaning": "A very large sea animal.",
+    "usage": "Say whale for the ocean.",
+    "examples": [
+      {
+        "emoji": "🐋",
+        "text": "The whale spouted water."
+      },
+      {
+        "emoji": "💡",
+        "text": "My whale spouted water."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"whale\"."
+      }
+    ]
+  },
+  {
+    "word": "cloud",
+    "emoji": "☁️",
+    "meaning": "A white or grey puff in the sky.",
+    "usage": "Use cloud for weather.",
+    "examples": [
+      {
+        "emoji": "☁️",
+        "text": "A fluffy cloud floated by."
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"cloud\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word cloud in class today."
+      }
+    ]
+  },
+  {
+    "word": "gate",
+    "emoji": "🚪",
+    "meaning": "A door in a fence or wall.",
+    "usage": "Say gate at the school entrance.",
+    "examples": [
+      {
+        "emoji": "🚪",
+        "text": "Close the gate behind you."
+      },
+      {
+        "emoji": "👀",
+        "text": "Can you say \"gate\" out loud?"
+      },
+      {
+        "emoji": "🌟",
+        "text": "Gate is on our word list."
+      }
+    ]
+  },
+  {
+    "word": "grew",
+    "emoji": "📈",
+    "meaning": "Became bigger over time.",
+    "usage": "Use grew for plants, children, or hair.",
+    "examples": [
+      {
+        "emoji": "📈",
+        "text": "The plant grew tall."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My plant grew tall."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap your hands when you hear \"grew\"."
+      }
+    ]
+  },
+  {
+    "word": "fly",
+    "emoji": "🪰",
+    "meaning": "To move through the air, or a small insect.",
+    "usage": "Say fly for birds, kites, or planes.",
+    "examples": [
+      {
+        "emoji": "🪰",
+        "text": "Birds fly in the sky."
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"fly\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word fly in class today."
+      }
+    ]
+  },
+  {
+    "word": "close",
+    "emoji": "🚪",
+    "meaning": "Near, or to shut something.",
+    "usage": "Use close for doors and friends nearby.",
+    "examples": [
+      {
+        "emoji": "🚪",
+        "text": "Please close the window."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We read the word close in class today."
+      },
+      {
+        "emoji": "👀",
+        "text": "My teacher wrote close on the board."
+      }
+    ]
+  },
+  {
+    "word": "glass",
+    "emoji": "🥛",
+    "meaning": "Hard clear material in windows or cups.",
+    "usage": "Say glass for bottles and panes.",
+    "examples": [
+      {
+        "emoji": "🥛",
+        "text": "The glass is full of juice."
+      },
+      {
+        "emoji": "📚",
+        "text": "My glass is full of juice."
+      },
+      {
+        "emoji": "💡",
+        "text": "Clap your hands when you hear \"glass\"."
+      }
+    ]
+  },
+  {
+    "word": "blunt",
+    "emoji": "✏️",
+    "meaning": "Not sharp; rounded at the edge.",
+    "usage": "Use blunt for safe scissors or pencils.",
+    "examples": [
+      {
+        "emoji": "✏️",
+        "text": "Use the blunt end of the pencil."
+      },
+      {
+        "emoji": "👀",
+        "text": "Can you say \"blunt\" out loud?"
+      },
+      {
+        "emoji": "🌟",
+        "text": "Blunt is on our word list."
+      }
+    ]
+  },
+  {
+    "word": "globe",
+    "emoji": "🌍",
+    "meaning": "A round model of the Earth.",
+    "usage": "Say globe in geography class.",
+    "examples": [
+      {
+        "emoji": "🌍",
+        "text": "We spun the globe in class."
+      },
+      {
+        "emoji": "🌈",
+        "text": "I spun the globe in class."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap your hands when you hear \"globe\"."
+      }
+    ]
+  },
+  {
+    "word": "sky",
+    "emoji": "🌤️",
+    "meaning": "The space above us where clouds and sun are.",
+    "usage": "Use sky on a clear day.",
+    "examples": [
+      {
+        "emoji": "🌤️",
+        "text": "The sky turned orange at sunset."
+      },
+      {
+        "emoji": "💡",
+        "text": "My sky turned orange at sunset."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"sky\"."
+      }
+    ]
+  },
+  {
+    "word": "swim",
+    "emoji": "🏊",
+    "meaning": "To move in water using arms and legs.",
+    "usage": "Say swim in a pool or river.",
+    "examples": [
+      {
+        "emoji": "🏊",
+        "text": "Fish swim in the lake."
+      },
+      {
+        "emoji": "📚",
+        "text": "Look for \"swim\" on the page."
+      },
+      {
+        "emoji": "💡",
+        "text": "Can you say \"swim\" out loud?"
+      }
+    ]
+  },
+  {
+    "word": "brood",
+    "emoji": "🐣",
+    "meaning": "A group of young birds, or to worry quietly.",
+    "usage": "Use brood for chicks under a hen.",
+    "examples": [
+      {
+        "emoji": "🐣",
+        "text": "The hen watched her brood."
+      },
+      {
+        "emoji": "🌟",
+        "text": "My hen watched her brood."
+      },
+      {
+        "emoji": "👀",
+        "text": "Clap your hands when you hear \"brood\"."
+      }
+    ]
+  },
+  {
+    "word": "drop",
+    "emoji": "💧",
+    "meaning": "To let something fall, or a tiny bit of liquid.",
+    "usage": "Say drop when you release an object.",
+    "examples": [
+      {
+        "emoji": "💧",
+        "text": "Do not drop the egg."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My teacher wrote drop on the board."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Look for \"drop\" on the page."
+      }
+    ]
+  },
+  {
+    "word": "dress",
+    "emoji": "👗",
+    "meaning": "Clothes a girl or woman wears, or to put them on.",
+    "usage": "Use dress for frocks and getting ready.",
+    "examples": [
+      {
+        "emoji": "👗",
+        "text": "She wore a red dress."
+      },
+      {
+        "emoji": "🌈",
+        "text": "He wore a red dress."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap your hands when you hear \"dress\"."
+      }
+    ]
+  },
+  {
+    "word": "broke",
+    "emoji": "💔",
+    "meaning": "Split into pieces or stopped working.",
+    "usage": "Say broke for a torn toy or empty piggy bank.",
+    "examples": [
+      {
+        "emoji": "💔",
+        "text": "The old toy broke."
+      },
+      {
+        "emoji": "👀",
+        "text": "My old toy broke."
+      },
+      {
+        "emoji": "🌟",
+        "text": "Clap your hands when you hear \"broke\"."
+      }
+    ]
+  },
+  {
+    "word": "ask",
+    "emoji": "❓",
+    "meaning": "To say a question to get an answer.",
+    "usage": "Use ask when you need help.",
+    "examples": [
+      {
+        "emoji": "❓",
+        "text": "Ask the teacher if you are unsure."
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"ask\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word ask in class today."
+      }
+    ]
+  },
+  {
+    "word": "stuck",
+    "emoji": "🪤",
+    "meaning": "Not able to move or come out.",
+    "usage": "Say stuck for glue or mud.",
+    "examples": [
+      {
+        "emoji": "🪤",
+        "text": "My shoe got stuck in the mud."
+      },
+      {
+        "emoji": "🎯",
+        "text": "The shoe got stuck in the mud."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"stuck\"."
+      }
+    ]
+  },
+  {
+    "word": "bend",
+    "emoji": "🔄",
+    "meaning": "To curve or fold something.",
+    "usage": "Use bend for knees, roads, or wire.",
+    "examples": [
+      {
+        "emoji": "🔄",
+        "text": "Bend your knees when you jump."
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"bend\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word bend in class today."
+      }
+    ]
+  },
+  {
+    "word": "wheel",
+    "emoji": "🎡",
+    "meaning": "A round part that turns on cars and cycles.",
+    "usage": "Say wheel for vehicles.",
+    "examples": [
+      {
+        "emoji": "🎡",
+        "text": "The wheel spun fast."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My wheel spun fast."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap your hands when you hear \"wheel\"."
+      }
+    ]
+  },
+  {
+    "word": "send",
+    "emoji": "📮",
+    "meaning": "To make something go to another place.",
+    "usage": "Use send for letters or messages.",
+    "examples": [
+      {
+        "emoji": "📮",
+        "text": "Send a card to Grandma."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We read the word send in class today."
+      },
+      {
+        "emoji": "👀",
+        "text": "My teacher wrote send on the board."
+      }
+    ]
+  },
+  {
+    "word": "fund",
+    "emoji": "💰",
+    "meaning": "Money saved for a special purpose.",
+    "usage": "Say fund for school trips or charity.",
+    "examples": [
+      {
+        "emoji": "💰",
+        "text": "We raised a fund for books."
+      },
+      {
+        "emoji": "👀",
+        "text": "I raised a fund for books."
+      },
+      {
+        "emoji": "🌟",
+        "text": "Clap your hands when you hear \"fund\"."
+      }
+    ]
+  },
+  {
+    "word": "clock",
+    "emoji": "🕐",
+    "meaning": "A device that shows the time.",
+    "usage": "Use clock on the wall or wrist.",
+    "examples": [
+      {
+        "emoji": "🕐",
+        "text": "The clock struck three."
+      },
+      {
+        "emoji": "🎯",
+        "text": "My clock struck three."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"clock\"."
+      }
+    ]
+  },
+  {
+    "word": "quack",
+    "emoji": "🦆",
+    "meaning": "The sound a duck makes.",
+    "usage": "Say quack for ducks.",
+    "examples": [
+      {
+        "emoji": "🦆",
+        "text": "The duck said quack."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My duck said quack."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap your hands when you hear \"quack\"."
+      }
+    ]
+  },
+  {
+    "word": "tree",
+    "emoji": "🌳",
+    "meaning": "A tall plant with a trunk and branches.",
+    "usage": "Use tree for shade and fruit.",
+    "examples": [
+      {
+        "emoji": "🌳",
+        "text": "The mango tree is tall."
+      },
+      {
+        "emoji": "🌟",
+        "text": "My mango tree is tall."
+      },
+      {
+        "emoji": "👀",
+        "text": "Clap your hands when you hear \"tree\"."
+      }
+    ]
+  },
+  {
+    "word": "branch",
+    "emoji": "🌿",
+    "meaning": "A woody arm of a tree.",
+    "usage": "Say branch for nests and swings.",
+    "examples": [
+      {
+        "emoji": "🌿",
+        "text": "A bird sat on the branch."
+      },
+      {
+        "emoji": "📚",
+        "text": "Look for \"branch\" on the page."
+      },
+      {
+        "emoji": "💡",
+        "text": "Can you say \"branch\" out loud?"
+      }
+    ]
+  },
+  {
+    "word": "threw",
+    "emoji": "⚾",
+    "meaning": "Sent something flying through the air.",
+    "usage": "Use threw for balls and stones.",
+    "examples": [
+      {
+        "emoji": "⚾",
+        "text": "He threw the ball to me."
+      },
+      {
+        "emoji": "🎯",
+        "text": "She threw the ball to me."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"threw\"."
+      }
+    ]
+  },
+  {
+    "word": "chart",
+    "emoji": "📊",
+    "meaning": "A picture or table that shows information.",
+    "usage": "Say chart in class.",
+    "examples": [
+      {
+        "emoji": "📊",
+        "text": "We read the weather chart."
+      },
+      {
+        "emoji": "🎯",
+        "text": "I read the weather chart."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"chart\"."
+      }
+    ]
+  },
+  {
+    "word": "bell",
+    "emoji": "🔔",
+    "meaning": "A metal object that rings.",
+    "usage": "Use bell at school or on a door.",
+    "examples": [
+      {
+        "emoji": "🔔",
+        "text": "The school bell rang."
+      },
+      {
+        "emoji": "💡",
+        "text": "My school bell rang."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"bell\"."
+      }
+    ]
+  },
+  {
+    "word": "true",
+    "emoji": "✅",
+    "meaning": "Correct and honest, not false.",
+    "usage": "Say true for facts you can trust.",
+    "examples": [
+      {
+        "emoji": "✅",
+        "text": "It is true that the sun rises."
+      },
+      {
+        "emoji": "📚",
+        "text": "Look for \"true\" on the page."
+      },
+      {
+        "emoji": "💡",
+        "text": "Can you say \"true\" out loud?"
+      }
+    ]
+  },
+  {
+    "word": "cheek",
+    "emoji": "😊",
+    "meaning": "The soft part of your face below the eye.",
+    "usage": "Use cheek for smiles and kisses.",
+    "examples": [
+      {
+        "emoji": "😊",
+        "text": "A rosy cheek showed she was warm."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Cheek is on our word list."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Listen for \"cheek\" in the story."
+      }
+    ]
+  },
+  {
+    "word": "doll",
+    "emoji": "🪆",
+    "meaning": "A toy that looks like a baby or person.",
+    "usage": "Say doll for playtime.",
+    "examples": [
+      {
+        "emoji": "🪆",
+        "text": "She hugged her doll."
+      },
+      {
+        "emoji": "💡",
+        "text": "He hugged her doll."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"doll\"."
+      }
+    ]
+  },
+  {
+    "word": "shelf",
+    "emoji": "📚",
+    "meaning": "A flat board to hold books or cups.",
+    "usage": "Use shelf in a cupboard.",
+    "examples": [
+      {
+        "emoji": "📚",
+        "text": "Put the cup on the shelf."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Shelf is on our word list."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Listen for \"shelf\" in the story."
+      }
+    ]
+  },
+  {
+    "word": "think",
+    "emoji": "🤔",
+    "meaning": "To use your mind to decide or imagine.",
+    "usage": "Say think before you answer.",
+    "examples": [
+      {
+        "emoji": "🤔",
+        "text": "Think carefully about the question."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Think is on our word list."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Listen for \"think\" in the story."
+      }
+    ]
+  },
+  {
+    "word": "house",
+    "emoji": "🏠",
+    "meaning": "A building where people live.",
+    "usage": "Use house for home.",
+    "examples": [
+      {
+        "emoji": "🏠",
+        "text": "Our house has a red roof."
+      },
+      {
+        "emoji": "🎯",
+        "text": "House is on our word list."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Listen for \"house\" in the story."
+      }
+    ]
+  },
+  {
+    "word": "tooth",
+    "emoji": "🦷",
+    "meaning": "Hard white part in your mouth for biting.",
+    "usage": "Say tooth when brushing.",
+    "examples": [
+      {
+        "emoji": "🦷",
+        "text": "Brush each tooth well."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We read the word tooth in class today."
+      },
+      {
+        "emoji": "👀",
+        "text": "My teacher wrote tooth on the board."
+      }
+    ]
+  },
+  {
+    "word": "thick",
+    "emoji": "📏",
+    "meaning": "Wide from side to side, not thin.",
+    "usage": "Use thick for books, ropes, or fog.",
+    "examples": [
+      {
+        "emoji": "📏",
+        "text": "The thick book has many pages."
+      },
+      {
+        "emoji": "👀",
+        "text": "My thick book has many pages."
+      },
+      {
+        "emoji": "🌟",
+        "text": "Clap your hands when you hear \"thick\"."
+      }
+    ]
+  },
+  {
+    "word": "dry",
+    "emoji": "🏜️",
+    "meaning": "Not wet; without water.",
+    "usage": "Say dry for clothes, land, or weather.",
+    "examples": [
+      {
+        "emoji": "🏜️",
+        "text": "Hang the towel until it is dry."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My teacher wrote dry on the board."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Look for \"dry\" on the page."
+      }
+    ]
+  },
+  {
+    "word": "list",
+    "emoji": "📋",
+    "meaning": "A row of names or things written down.",
+    "usage": "Use list for shopping or class names.",
+    "examples": [
+      {
+        "emoji": "📋",
+        "text": "Make a list of what we need."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We read the word list in class today."
+      },
+      {
+        "emoji": "👀",
+        "text": "My teacher wrote list on the board."
+      }
+    ]
+  },
+  {
+    "word": "left",
+    "emoji": "⬅️",
+    "meaning": "The opposite side from right, or went away.",
+    "usage": "Use left for direction or when someone goes.",
+    "examples": [
+      {
+        "emoji": "⬅️",
+        "text": "Turn left at the corner."
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"left\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word left in class today."
+      }
+    ]
+  },
+  {
+    "word": "where",
+    "emoji": "📍",
+    "meaning": "A word that asks about place.",
+    "usage": "Say where in questions.",
+    "examples": [
+      {
+        "emoji": "📍",
+        "text": "Where is your pencil?"
+      },
+      {
+        "emoji": "🌈",
+        "text": "My teacher wrote where on the board."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Look for \"where\" on the page."
+      }
+    ]
+  },
+  {
+    "word": "cloud",
+    "emoji": "☁️",
+    "meaning": "A white or grey puff in the sky.",
+    "usage": "Use cloud for weather.",
+    "examples": [
+      {
+        "emoji": "☁️",
+        "text": "A fluffy cloud floated by."
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"cloud\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word cloud in class today."
+      }
+    ]
+  },
+  {
+    "word": "shark",
+    "emoji": "🦈",
+    "meaning": "A large fish with sharp teeth in the sea.",
+    "usage": "Say shark in ocean stories.",
+    "examples": [
+      {
+        "emoji": "🦈",
+        "text": "The shark swam in deep water."
+      },
+      {
+        "emoji": "👀",
+        "text": "My shark swam in deep water."
+      },
+      {
+        "emoji": "🌟",
+        "text": "Clap your hands when you hear \"shark\"."
+      }
+    ]
+  },
+  {
+    "word": "school",
+    "emoji": "🏫",
+    "meaning": "A place where children learn.",
+    "usage": "Use school for classes and friends.",
+    "examples": [
+      {
+        "emoji": "🏫",
+        "text": "We walk to school together."
+      },
+      {
+        "emoji": "🌟",
+        "text": "I walk to school together."
+      },
+      {
+        "emoji": "👀",
+        "text": "Clap your hands when you hear \"school\"."
+      }
+    ]
+  },
+  {
+    "word": "short",
+    "emoji": "📐",
+    "meaning": "Not long or not tall.",
+    "usage": "Say short for hair, stories, or people.",
+    "examples": [
+      {
+        "emoji": "📐",
+        "text": "He wrote a short note."
+      },
+      {
+        "emoji": "🎯",
+        "text": "She wrote a short note."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"short\"."
+      }
+    ]
+  },
+  {
+    "word": "tall",
+    "emoji": "🦒",
+    "meaning": "High up; not short.",
+    "usage": "Use tall for trees and buildings.",
+    "examples": [
+      {
+        "emoji": "🦒",
+        "text": "The giraffe is very tall."
+      },
+      {
+        "emoji": "👀",
+        "text": "My giraffe is very tall."
+      },
+      {
+        "emoji": "🌟",
+        "text": "Clap your hands when you hear \"tall\"."
+      }
+    ]
+  },
+  {
+    "word": "stick",
+    "emoji": "🪵",
+    "meaning": "A thin piece of wood, or to attach.",
+    "usage": "Say stick for twigs or glue.",
+    "examples": [
+      {
+        "emoji": "🪵",
+        "text": "The dog fetched the stick."
+      },
+      {
+        "emoji": "🎯",
+        "text": "My dog fetched the stick."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"stick\"."
+      }
+    ]
+  },
+  {
+    "word": "scoff",
+    "emoji": "😏",
+    "meaning": "To eat quickly or laugh in a mean way.",
+    "usage": "Use scoff for gobbling food.",
+    "examples": [
+      {
+        "emoji": "😏",
+        "text": "Do not scoff at others."
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"scoff\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word scoff in class today."
+      }
+    ]
+  },
+  {
+    "word": "buzz",
+    "emoji": "🐝",
+    "meaning": "A low humming sound like a bee.",
+    "usage": "Say buzz for insects.",
+    "examples": [
+      {
+        "emoji": "🐝",
+        "text": "Bees buzz around flowers."
+      },
+      {
+        "emoji": "👀",
+        "text": "Can you say \"buzz\" out loud?"
+      },
+      {
+        "emoji": "🌟",
+        "text": "Buzz is on our word list."
+      }
+    ]
+  },
+  {
+    "word": "use",
+    "emoji": "🛠️",
+    "meaning": "To put something to work for a job.",
+    "usage": "Say use for tools and words.",
+    "examples": [
+      {
+        "emoji": "🛠️",
+        "text": "Use a ruler to draw a line."
+      },
+      {
+        "emoji": "👀",
+        "text": "Can you say \"use\" out loud?"
+      },
+      {
+        "emoji": "🌟",
+        "text": "Use is on our word list."
+      }
+    ]
+  },
+  {
+    "word": "shift",
+    "emoji": "↔️",
+    "meaning": "To move from one place to another.",
+    "usage": "Use shift for seats or gears.",
+    "examples": [
+      {
+        "emoji": "↔️",
+        "text": "Shift the box to the corner."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Shift is on our word list."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Listen for \"shift\" in the story."
+      }
+    ]
+  },
+  {
+    "word": "grape",
+    "emoji": "🍇",
+    "meaning": "A small round fruit that grows in bunches.",
+    "usage": "Say grape for purple or green fruit.",
+    "examples": [
+      {
+        "emoji": "🍇",
+        "text": "She ate a sweet grape."
+      },
+      {
+        "emoji": "🌈",
+        "text": "He ate a sweet grape."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap your hands when you hear \"grape\"."
+      }
+    ]
+  },
+  {
+    "word": "hill",
+    "emoji": "⛰️",
+    "meaning": "A raised area of land, smaller than a mountain.",
+    "usage": "Use hill for rolling countryside.",
+    "examples": [
+      {
+        "emoji": "⛰️",
+        "text": "We rolled down the hill."
+      },
+      {
+        "emoji": "🌈",
+        "text": "I rolled down the hill."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap your hands when you hear \"hill\"."
+      }
+    ]
+  },
+  {
+    "word": "snow",
+    "emoji": "❄️",
+    "meaning": "Soft white flakes that fall in winter.",
+    "usage": "Say snow for cold weather.",
+    "examples": [
+      {
+        "emoji": "❄️",
+        "text": "Snow covered the ground."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My teacher wrote snow on the board."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Look for \"snow\" on the page."
+      }
+    ]
+  },
+  {
+    "word": "stool",
+    "emoji": "🪑",
+    "meaning": "A seat with no back or arms.",
+    "usage": "Use stool at a counter.",
+    "examples": [
+      {
+        "emoji": "🪑",
+        "text": "He sat on a wooden stool."
+      },
+      {
+        "emoji": "👀",
+        "text": "She sat on a wooden stool."
+      },
+      {
+        "emoji": "🌟",
+        "text": "Clap your hands when you hear \"stool\"."
+      }
+    ]
+  },
+  {
+    "word": "wind",
+    "emoji": "💨",
+    "meaning": "Moving air you feel outside.",
+    "usage": "Say wind on breezy days.",
+    "examples": [
+      {
+        "emoji": "💨",
+        "text": "The wind blew the kite high."
+      },
+      {
+        "emoji": "🎯",
+        "text": "My wind blew the kite high."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"wind\"."
+      }
+    ]
+  },
+  {
+    "word": "shell",
+    "emoji": "🐚",
+    "meaning": "A hard cover on some animals or a sea treasure.",
+    "usage": "Use shell for snails or beaches.",
+    "examples": [
+      {
+        "emoji": "🐚",
+        "text": "She found a shell on the sand."
+      },
+      {
+        "emoji": "🎯",
+        "text": "He found a shell on the sand."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"shell\"."
+      }
+    ]
+  },
+  {
+    "word": "new",
+    "emoji": "🆕",
+    "meaning": "Not old; just made or bought.",
+    "usage": "Say new for shoes, books, or friends.",
+    "examples": [
+      {
+        "emoji": "🆕",
+        "text": "I got a new pencil case."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We got a new pencil case."
+      },
+      {
+        "emoji": "👀",
+        "text": "Clap your hands when you hear \"new\"."
+      }
+    ]
+  },
+  {
+    "word": "cry",
+    "emoji": "😢",
+    "meaning": "To shed tears when sad or hurt.",
+    "usage": "Use cry when you feel upset.",
+    "examples": [
+      {
+        "emoji": "😢",
+        "text": "It is okay to cry sometimes."
+      },
+      {
+        "emoji": "📚",
+        "text": "Look for \"cry\" on the page."
+      },
+      {
+        "emoji": "💡",
+        "text": "Can you say \"cry\" out loud?"
+      }
+    ]
+  },
+  {
+    "word": "food",
+    "emoji": "🍎",
+    "meaning": "What we eat to stay healthy.",
+    "usage": "Say food for meals and snacks.",
+    "examples": [
+      {
+        "emoji": "🍎",
+        "text": "Fresh food keeps us strong."
+      },
+      {
+        "emoji": "📚",
+        "text": "Look for \"food\" on the page."
+      },
+      {
+        "emoji": "💡",
+        "text": "Can you say \"food\" out loud?"
+      }
+    ]
+  },
+  {
+    "word": "stamp",
+    "emoji": "📬",
+    "meaning": "A small sticker for mail, or to press down hard.",
+    "usage": "Use stamp on a letter.",
+    "examples": [
+      {
+        "emoji": "📬",
+        "text": "Put a stamp on the envelope."
+      },
+      {
+        "emoji": "👀",
+        "text": "Can you say \"stamp\" out loud?"
+      },
+      {
+        "emoji": "🌟",
+        "text": "Stamp is on our word list."
+      }
+    ]
+  },
+  {
+    "word": "throw",
+    "emoji": "🎯",
+    "meaning": "To send something through the air with your arm.",
+    "usage": "Say throw for balls and beanbags.",
+    "examples": [
+      {
+        "emoji": "🎯",
+        "text": "Throw the ball gently."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We read the word throw in class today."
+      },
+      {
+        "emoji": "👀",
+        "text": "My teacher wrote throw on the board."
+      }
+    ]
+  },
+  {
+    "word": "shape",
+    "emoji": "🔷",
+    "meaning": "The form of something, like a circle or square.",
+    "usage": "Use shape in maths class.",
+    "examples": [
+      {
+        "emoji": "🔷",
+        "text": "Draw the shape of a star."
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"shape\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word shape in class today."
+      }
+    ]
+  },
+  {
+    "word": "cheese",
+    "emoji": "🧀",
+    "meaning": "A food made from milk.",
+    "usage": "Say cheese for sandwiches.",
+    "examples": [
+      {
+        "emoji": "🧀",
+        "text": "Melted cheese tastes yummy."
+      },
+      {
+        "emoji": "👀",
+        "text": "Can you say \"cheese\" out loud?"
+      },
+      {
+        "emoji": "🌟",
+        "text": "Cheese is on our word list."
+      }
+    ]
+  },
+  {
+    "word": "tank",
+    "emoji": "🐠",
+    "meaning": "A large container for water or a strong vehicle.",
+    "usage": "Use tank for fish or army trucks.",
+    "examples": [
+      {
+        "emoji": "🐠",
+        "text": "The fish swim in the tank."
+      },
+      {
+        "emoji": "📚",
+        "text": "My fish swim in the tank."
+      },
+      {
+        "emoji": "💡",
+        "text": "Clap your hands when you hear \"tank\"."
+      }
+    ]
+  },
+  {
+    "word": "wrong",
+    "emoji": "❌",
+    "meaning": "Not correct or not right.",
+    "usage": "Say wrong when an answer needs fixing.",
+    "examples": [
+      {
+        "emoji": "❌",
+        "text": "That sum is wrong; try again."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My teacher wrote wrong on the board."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Look for \"wrong\" on the page."
+      }
+    ]
+  },
+  {
+    "word": "knife",
+    "emoji": "🔪",
+    "meaning": "A tool with a blade for cutting food.",
+    "usage": "Use knife carefully at the table.",
+    "examples": [
+      {
+        "emoji": "🔪",
+        "text": "Cut the apple with a knife."
+      },
+      {
+        "emoji": "👀",
+        "text": "Can you say \"knife\" out loud?"
+      },
+      {
+        "emoji": "🌟",
+        "text": "Knife is on our word list."
+      }
+    ]
+  },
+  {
+    "word": "bench",
+    "emoji": "🪑",
+    "meaning": "A long seat for several people.",
+    "usage": "Say bench in a park.",
+    "examples": [
+      {
+        "emoji": "🪑",
+        "text": "We sat on the bench."
+      },
+      {
+        "emoji": "🎯",
+        "text": "I sat on the bench."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"bench\"."
+      }
+    ]
+  },
+  {
+    "word": "boil",
+    "emoji": "🫖",
+    "meaning": "To heat liquid until bubbles rise.",
+    "usage": "Use boil for water or eggs.",
+    "examples": [
+      {
+        "emoji": "🫖",
+        "text": "Boil the water for tea."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Boil is on our word list."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Listen for \"boil\" in the story."
+      }
+    ]
+  },
+  {
+    "word": "cow",
+    "emoji": "🐄",
+    "meaning": "A farm animal that gives us milk.",
+    "usage": "Say cow in the field.",
+    "examples": [
+      {
+        "emoji": "🐄",
+        "text": "The cow grazed on grass."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My cow grazed on grass."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap your hands when you hear \"cow\"."
+      }
+    ]
+  },
+  {
+    "word": "cold",
+    "emoji": "🥶",
+    "meaning": "Low in temperature; not warm.",
+    "usage": "Use cold for ice, wind, or winter.",
+    "examples": [
+      {
+        "emoji": "🥶",
+        "text": "The water feels cold today."
+      },
+      {
+        "emoji": "📚",
+        "text": "My water feels cold today."
+      },
+      {
+        "emoji": "💡",
+        "text": "Clap your hands when you hear \"cold\"."
+      }
+    ]
+  },
+  {
+    "word": "ground",
+    "emoji": "🌍",
+    "meaning": "The soil or floor under our feet.",
+    "usage": "Say ground for earth or playground.",
+    "examples": [
+      {
+        "emoji": "🌍",
+        "text": "Sit on the ground and rest."
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"ground\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word ground in class today."
+      }
+    ]
+  },
+  {
+    "word": "made",
+    "emoji": "🛠️",
+    "meaning": "Created or built something.",
+    "usage": "Use made for crafts and baking.",
+    "examples": [
+      {
+        "emoji": "🛠️",
+        "text": "She made a card for Mum."
+      },
+      {
+        "emoji": "🌈",
+        "text": "He made a card for Mum."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap your hands when you hear \"made\"."
+      }
+    ]
+  },
+  {
+    "word": "ball",
+    "emoji": "⚽",
+    "meaning": "A round object used in games.",
+    "usage": "Say ball for cricket or catch.",
+    "examples": [
+      {
+        "emoji": "⚽",
+        "text": "Kick the ball to your friend."
+      },
+      {
+        "emoji": "👀",
+        "text": "Can you say \"ball\" out loud?"
+      },
+      {
+        "emoji": "🌟",
+        "text": "Ball is on our word list."
+      }
+    ]
+  },
+  {
+    "word": "torch",
+    "emoji": "🔦",
+    "meaning": "A portable light you carry in the dark.",
+    "usage": "Use torch on a camping trip.",
+    "examples": [
+      {
+        "emoji": "🔦",
+        "text": "Switch on the torch."
+      },
+      {
+        "emoji": "📚",
+        "text": "Look for \"torch\" on the page."
+      },
+      {
+        "emoji": "💡",
+        "text": "Can you say \"torch\" out loud?"
+      }
+    ]
+  },
+  {
+    "word": "farm",
+    "emoji": "🚜",
+    "meaning": "Land where crops grow and animals live.",
+    "usage": "Say farm for fields and barns.",
+    "examples": [
+      {
+        "emoji": "🚜",
+        "text": "We visited a farm on Sunday."
+      },
+      {
+        "emoji": "🎯",
+        "text": "I visited a farm on Sunday."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"farm\"."
+      }
+    ]
+  },
+  {
+    "word": "park",
+    "emoji": "🌳",
+    "meaning": "A green public place to play, or to leave a car.",
+    "usage": "Use park for swings and walks.",
+    "examples": [
+      {
+        "emoji": "🌳",
+        "text": "We play in the park."
+      },
+      {
+        "emoji": "📚",
+        "text": "I play in the park."
+      },
+      {
+        "emoji": "💡",
+        "text": "Clap your hands when you hear \"park\"."
+      }
+    ]
+  },
+  {
+    "word": "girl",
+    "emoji": "👧",
+    "meaning": "A young female child.",
+    "usage": "Say girl for classmates and stories.",
+    "examples": [
+      {
+        "emoji": "👧",
+        "text": "The girl read a story aloud."
+      },
+      {
+        "emoji": "📚",
+        "text": "My girl read a story aloud."
+      },
+      {
+        "emoji": "💡",
+        "text": "Clap your hands when you hear \"girl\"."
+      }
+    ]
+  },
+  {
+    "word": "chest",
+    "emoji": "📦",
+    "meaning": "The front of your body, or a box for treasures.",
+    "usage": "Use chest for breathing or storage.",
+    "examples": [
+      {
+        "emoji": "📦",
+        "text": "He kept toys in a chest."
+      },
+      {
+        "emoji": "💡",
+        "text": "She kept toys in a chest."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"chest\"."
+      }
+    ]
+  },
+  {
+    "word": "teeth",
+    "emoji": "🦷",
+    "meaning": "The hard white parts in your mouth.",
+    "usage": "Say teeth when brushing.",
+    "examples": [
+      {
+        "emoji": "🦷",
+        "text": "Brush your teeth twice a day."
+      },
+      {
+        "emoji": "📚",
+        "text": "Look for \"teeth\" on the page."
+      },
+      {
+        "emoji": "💡",
+        "text": "Can you say \"teeth\" out loud?"
+      }
+    ]
+  },
+  {
+    "word": "bird",
+    "emoji": "🐦",
+    "meaning": "An animal with wings and feathers.",
+    "usage": "Use bird for sparrows and parrots.",
+    "examples": [
+      {
+        "emoji": "🐦",
+        "text": "The bird built a nest."
+      },
+      {
+        "emoji": "👀",
+        "text": "My bird built a nest."
+      },
+      {
+        "emoji": "🌟",
+        "text": "Clap your hands when you hear \"bird\"."
+      }
+    ]
+  },
+  {
+    "word": "round",
+    "emoji": "⭕",
+    "meaning": "Shaped like a circle or ball.",
+    "usage": "Say round for wheels and coins.",
+    "examples": [
+      {
+        "emoji": "⭕",
+        "text": "Roll the round ball."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We read the word round in class today."
+      },
+      {
+        "emoji": "👀",
+        "text": "My teacher wrote round on the board."
+      }
+    ]
+  },
+  {
+    "word": "fell",
+    "emoji": "🍂",
+    "meaning": "Dropped down suddenly.",
+    "usage": "Use fell for trips or leaves in autumn.",
+    "examples": [
+      {
+        "emoji": "🍂",
+        "text": "The leaf fell from the tree."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My leaf fell from the tree."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap your hands when you hear \"fell\"."
+      }
+    ]
+  },
+  {
+    "word": "chick",
+    "emoji": "🐤",
+    "meaning": "A baby chicken.",
+    "usage": "Say chick on a farm.",
+    "examples": [
+      {
+        "emoji": "🐤",
+        "text": "The chick pecked at the grain."
+      },
+      {
+        "emoji": "📚",
+        "text": "My chick pecked at the grain."
+      },
+      {
+        "emoji": "💡",
+        "text": "Clap your hands when you hear \"chick\"."
+      }
+    ]
+  },
+  {
+    "word": "fall",
+    "emoji": "🍁",
+    "meaning": "To drop down, or the season after summer.",
+    "usage": "Use fall for autumn or tumbling.",
+    "examples": [
+      {
+        "emoji": "🍁",
+        "text": "Leaves fall in autumn."
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"fall\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word fall in class today."
+      }
+    ]
+  },
+  {
+    "word": "lunch",
+    "emoji": "🍱",
+    "meaning": "A meal eaten in the middle of the day.",
+    "usage": "Say lunch at school.",
+    "examples": [
+      {
+        "emoji": "🍱",
+        "text": "We eat lunch at noon."
+      },
+      {
+        "emoji": "📚",
+        "text": "I eat lunch at noon."
+      },
+      {
+        "emoji": "💡",
+        "text": "Clap your hands when you hear \"lunch\"."
+      }
+    ]
+  },
+  {
+    "word": "flask",
+    "emoji": "🧴",
+    "meaning": "A bottle that keeps drinks hot or cold.",
+    "usage": "Use flask for trips.",
+    "examples": [
+      {
+        "emoji": "🧴",
+        "text": "Dad filled the flask with tea."
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"flask\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word flask in class today."
+      }
+    ]
+  },
+  {
+    "word": "mouse",
+    "emoji": "🐭",
+    "meaning": "A small rodent, or a computer tool.",
+    "usage": "Say mouse for the tiny animal.",
+    "examples": [
+      {
+        "emoji": "🐭",
+        "text": "The mouse nibbled the cheese."
+      },
+      {
+        "emoji": "💡",
+        "text": "My mouse nibbled the cheese."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"mouse\"."
+      }
+    ]
+  },
+  {
+    "word": "home",
+    "emoji": "🏡",
+    "meaning": "The place where you live with your family.",
+    "usage": "Use home for comfort and rest.",
+    "examples": [
+      {
+        "emoji": "🏡",
+        "text": "I feel safe at home."
+      },
+      {
+        "emoji": "🌈",
+        "text": "We feel safe at home."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap your hands when you hear \"home\"."
+      }
+    ]
+  },
+  {
+    "word": "bold",
+    "emoji": "💥",
+    "meaning": "Brave and not afraid to speak up.",
+    "usage": "Say bold for bright colours or courage.",
+    "examples": [
+      {
+        "emoji": "💥",
+        "text": "Use bold letters for the title."
+      },
+      {
+        "emoji": "👀",
+        "text": "Can you say \"bold\" out loud?"
+      },
+      {
+        "emoji": "🌟",
+        "text": "Bold is on our word list."
+      }
+    ]
+  },
+  {
+    "word": "clay",
+    "emoji": "🏺",
+    "meaning": "Soft earth used to make pots and models.",
+    "usage": "Use clay in art class.",
+    "examples": [
+      {
+        "emoji": "🏺",
+        "text": "She shaped the clay into a bowl."
+      },
+      {
+        "emoji": "🌈",
+        "text": "He shaped the clay into a bowl."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap your hands when you hear \"clay\"."
+      }
+    ]
+  },
+  {
+    "word": "bluff",
+    "emoji": "🏔️",
+    "meaning": "A steep cliff, or to pretend you are stronger.",
+    "usage": "Say bluff for a high river bank.",
+    "examples": [
+      {
+        "emoji": "🏔️",
+        "text": "They stood on the rocky bluff."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My teacher wrote bluff on the board."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Look for \"bluff\" on the page."
+      }
+    ]
+  },
+  {
+    "word": "quick",
+    "emoji": "⚡",
+    "meaning": "Fast; done in a short time.",
+    "usage": "Use quick for rabbits and answers.",
+    "examples": [
+      {
+        "emoji": "⚡",
+        "text": "Give a quick wave hello."
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"quick\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word quick in class today."
+      }
+    ]
+  }
+]

@@ -4,12 +4,13 @@ import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { QuizGame } from "@/components/QuizGame";
 import { useProgress } from "@/components/ProgressProvider";
-import { SIGHT_WORDS_TOPIC_ID } from "@/data/sightWords";
+import { hubTopicLabel, isHubTopic, type HubTopicId } from "@/lib/hubTopics";
 import { buildCompletedProgress } from "@/lib/progress";
 import { isBackKey, isSelectKey, moveFocus } from "@/lib/remoteNavigation";
 import { nextRoundStars, pickQuizQuestions } from "@/lib/quizScoring";
 import { subjectPath, topicPath } from "@/lib/paths";
 import type { QuizQuestion, Subject, Topic } from "@/types/learning";
+import { useSound } from "@/components/SoundProvider";
 
 const answerColumns = 2;
 
@@ -21,6 +22,7 @@ type TopicQuizPageProps = {
 export function TopicQuizPage({ subject, topic }: TopicQuizPageProps) {
   const router = useRouter();
   const { setProgress } = useProgress();
+  const { playSound } = useSound();
   const [quizQuestions] = useState<QuizQuestion[]>(() =>
     pickQuizQuestions(topic.questions),
   );
@@ -31,15 +33,18 @@ export function TopicQuizPage({ subject, topic }: TopicQuizPageProps) {
   );
   const [roundStars, setRoundStars] = useState(0);
 
-  const isSightWords = topic.id === SIGHT_WORDS_TOPIC_ID;
-  const backPath = isSightWords
+  const isHub = isHubTopic(topic.id);
+  const backPath = isHub
     ? topicPath(subject.id, topic.id)
     : subjectPath(subject.id);
-  const backLabel = isSightWords ? "Back to Sight Words" : "Back to topics";
+  const backLabel = isHub
+    ? `Back to ${hubTopicLabel(topic.id as HubTopicId)}`
+    : "Back to topics";
 
   const returnBack = useCallback(() => {
+    playSound("select");
     router.push(backPath);
-  }, [backPath, router]);
+  }, [backPath, playSound, router]);
 
   const finishRound = useCallback(
     (finalStars: number) => {
@@ -65,9 +70,11 @@ export function TopicQuizPage({ subject, topic }: TopicQuizPageProps) {
         return;
       }
 
+      const question = quizQuestions[questionIndex];
+      playSound(index === question.answerIndex ? "correct" : "incorrect");
       setSelectedAnswerIndex(index);
     },
-    [selectedAnswerIndex],
+    [playSound, questionIndex, quizQuestions, selectedAnswerIndex],
   );
 
   const continueQuiz = useCallback(() => {
@@ -84,10 +91,12 @@ export function TopicQuizPage({ subject, topic }: TopicQuizPageProps) {
     );
 
     if (isLastQuestion) {
+      playSound("complete");
       finishRound(updatedStars);
       return;
     }
 
+    playSound("select");
     setRoundStars(updatedStars);
     setQuestionIndex((index) => index + 1);
     setAnswerFocusIndex(0);
@@ -96,6 +105,7 @@ export function TopicQuizPage({ subject, topic }: TopicQuizPageProps) {
     finishRound,
     questionIndex,
     quizQuestions,
+    playSound,
     roundStars,
     selectedAnswerIndex,
   ]);
@@ -124,14 +134,18 @@ export function TopicQuizPage({ subject, topic }: TopicQuizPageProps) {
       }
 
       if (selectedAnswerIndex === null && key.startsWith("Arrow")) {
-        setAnswerFocusIndex((index) =>
-          moveFocus(
-            index,
-            key,
-            quizQuestions[questionIndex].options.length,
-            answerColumns,
-          ),
+        const nextIndex = moveFocus(
+          answerFocusIndex,
+          key,
+          quizQuestions[questionIndex].options.length,
+          answerColumns,
         );
+
+        if (nextIndex !== answerFocusIndex) {
+          playSound("move");
+        }
+
+        setAnswerFocusIndex(nextIndex);
         return;
       }
 
@@ -152,6 +166,7 @@ export function TopicQuizPage({ subject, topic }: TopicQuizPageProps) {
     isComplete,
     questionIndex,
     quizQuestions,
+    playSound,
     returnBack,
     selectAnswer,
     selectedAnswerIndex,

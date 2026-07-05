@@ -1,4 +1,5 @@
 import type { Progress, Subject } from "../types/learning";
+import { ActivityIcon } from "./ActivityIcon";
 
 type SubjectIslandProps = {
   subject: Subject;
@@ -33,6 +34,7 @@ export function SubjectIsland({
     >
       <span className="island-shape" aria-hidden="true" />
       <span className="island-content">
+        <ActivityIcon icon={subject.icon} className="island-icon" />
         <span className="island-title">{subject.title}</span>
         <span className="island-subtitle">{subject.subtitle}</span>
         <span className="island-status">

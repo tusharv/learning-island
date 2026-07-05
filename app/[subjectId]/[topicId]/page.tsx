@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
+import { ReadingHubRoute } from "@/components/pages/ReadingHubRoute";
 import { SightWordsHubRoute } from "@/components/pages/SightWordsHubRoute";
 import { TopicQuizPage } from "@/components/pages/TopicQuizPage";
+import { READING_TOPIC_ID } from "@/data/readingWords";
 import { SIGHT_WORDS_TOPIC_ID } from "@/data/sightWords";
 import { getSubjectById, getTopicById, subjects } from "@/data/subjects";
 
@@ -28,6 +30,10 @@ export default async function TopicRoute({ params }: TopicRouteProps) {
 
   if (topicId === SIGHT_WORDS_TOPIC_ID) {
     return <SightWordsHubRoute subject={subject} />;
+  }
+
+  if (topicId === READING_TOPIC_ID) {
+    return <ReadingHubRoute subject={subject} />;
   }
 
   return <TopicQuizPage subject={subject} topic={topic} />;

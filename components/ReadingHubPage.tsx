@@ -7,7 +7,7 @@ import { ActivityIcon } from "./ActivityIcon";
 import { SoundToggle } from "./SoundToggle";
 import { useSound } from "./SoundProvider";
 
-type SightWordsHubPageProps = {
+type ReadingHubPageProps = {
   subject: Subject;
   focusedIndex: number;
   onFocusMode: (index: number) => void;
@@ -20,27 +20,27 @@ const modes = [
   {
     id: "learn",
     title: "Learn",
-    subtitle: "Read meanings, usage tips, and example sentences for all 100 words.",
+    subtitle: "Read meanings, usage tips, and example sentences for all 154 words.",
     action: "Study",
   },
   {
     id: "play",
-    title: "Play",
-    subtitle: "Take a quick test with 5 random sight word questions.",
+    title: "Test",
+    subtitle: "Take a quick test with 5 random reading word questions.",
     action: "Test",
   },
 ] as const;
 
 const modeColumns = 2;
 
-export function SightWordsHubPage({
+export function ReadingHubPage({
   subject,
   focusedIndex,
   onFocusMode,
   onSelectLearn,
   onSelectPlay,
   onBack,
-}: SightWordsHubPageProps) {
+}: ReadingHubPageProps) {
   const { playSound } = useSound();
 
   useEffect(() => {
@@ -97,12 +97,12 @@ export function SightWordsHubPage({
 
       <header className="subject-header">
         <div className="subject-title-lockup">
-          <ActivityIcon icon="sight-words" className="subject-heading-icon" />
+          <ActivityIcon icon="reading" className="subject-heading-icon" />
           <div>
             <p className="eyebrow">{subject.title}</p>
-            <h1>Sight Words</h1>
+            <h1>Reading</h1>
             <p className="map-subtitle">
-              Choose Learn to study words, or Play to take a test.
+              Choose Learn to study words, or Test to check what you know.
             </p>
           </div>
         </div>
@@ -110,14 +110,14 @@ export function SightWordsHubPage({
           <SoundToggle />
           <div className="subject-progress-chip">
             <span className="progress-label">Word list</span>
-            <strong>100 words</strong>
+            <strong>154 words</strong>
           </div>
         </div>
       </header>
 
       <section
         className="sight-words-mode-grid"
-        aria-label="Sight words activities"
+        aria-label="Reading activities"
         data-focused-index={focusedIndex}
       >
         {modes.map((mode, index) => (
@@ -132,7 +132,7 @@ export function SightWordsHubPage({
             aria-label={`${mode.title}, ${mode.subtitle}`}
           >
             <ActivityIcon
-              icon={mode.id === "learn" ? "sight-words" : "words"}
+              icon={mode.id === "learn" ? "reading" : "words"}
               className="mode-icon"
             />
             <span className="sight-words-mode-title">{mode.title}</span>
