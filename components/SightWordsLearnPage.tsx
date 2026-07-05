@@ -1,6 +1,6 @@
 "use client";
 
-import { sightWordLessons } from "../data/sightWords";
+import { sightWordLessons, SIGHT_WORDS_TOPIC_ID } from "../data/sightWords";
 import type { Subject } from "../types/learning";
 import { WordLearnScreen } from "./WordLearnScreen";
 
@@ -13,9 +13,16 @@ export function SightWordsLearnPage({
   subject,
   onBack,
 }: SightWordsLearnPageProps) {
+  const topic = subject.topics.find((item) => item.id === SIGHT_WORDS_TOPIC_ID);
+
+  if (!topic) {
+    return null;
+  }
+
   return (
     <WordLearnScreen
       subject={subject}
+      topic={topic}
       lessons={sightWordLessons}
       layout="sight-words"
       stripSize={10}

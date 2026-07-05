@@ -217,7 +217,7 @@ export function getStripWindow<T>(
   );
   const half = Math.floor(size / 2);
   let start = Math.max(0, clampedIndex - half);
-  let end = Math.min(filteredLessons.length, start + size);
+  const end = Math.min(filteredLessons.length, start + size);
 
   if (end - start < size) {
     start = Math.max(0, end - size);

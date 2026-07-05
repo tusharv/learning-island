@@ -1,6 +1,6 @@
 import type { Progress, Subject } from "../types/learning";
-import { ActivityIcon } from "./ActivityIcon";
-import { SoundToggle } from "./SoundToggle";
+import { buildAppChromeContext } from "@/lib/breadcrumbs";
+import { AppChrome } from "./AppChrome";
 import { TopicCard } from "./TopicCard";
 
 type SubjectPageProps = {
@@ -22,51 +22,49 @@ export function SubjectPage({
 }: SubjectPageProps) {
   const completedCount = progress.completedTopicsBySubject[subject.id].length;
   const totalTopics = subject.topics.length;
+  const chrome = buildAppChromeContext({ page: "subject", subject });
 
   return (
-    <main className="subject-screen" data-color={subject.color}>
-      <button type="button" className="back-button" onClick={onBack}>
-        Back to map
-      </button>
-
-      <header className="subject-header">
-        <div className="subject-title-lockup">
-          <ActivityIcon icon={subject.icon} className="subject-heading-icon" />
-          <div>
-            <p className="eyebrow">ICSE Class 1</p>
-            <h1>{subject.title}</h1>
-            <p className="map-subtitle">{subject.subtitle}</p>
-          </div>
-        </div>
-        <div className="header-actions">
-          <SoundToggle />
+    <main className="app-screen subject-screen" data-color={subject.color}>
+      <AppChrome
+        crumbs={chrome.crumbs}
+        back={chrome.back}
+        onBack={onBack}
+        heading={{
+          icon: subject.icon,
+          eyebrow: "ICSE Class 1",
+          subtitle: subject.subtitle,
+        }}
+        status={
           <div className="subject-progress-chip">
             <span className="progress-label">Topics done</span>
             <strong>
               {completedCount} / {totalTopics}
             </strong>
           </div>
-        </div>
-      </header>
+        }
+      />
 
-      <section
-        className="topic-grid"
-        aria-label={`${subject.title} topics`}
-        data-focused-index={focusedIndex}
-      >
-        {subject.topics.map((topic, index) => (
-          <TopicCard
-            key={topic.id}
-            subject={subject}
-            topic={topic}
-            index={index}
-            isFocused={focusedIndex === index}
-            progress={progress}
-            onFocus={onFocusTopic}
-            onSelect={onSelectTopic}
-          />
-        ))}
-      </section>
+      <div className="app-screen__body">
+        <section
+          className="topic-grid"
+          aria-label={`${subject.title} topics`}
+          data-focused-index={focusedIndex}
+        >
+          {subject.topics.map((topic, index) => (
+            <TopicCard
+              key={topic.id}
+              subject={subject}
+              topic={topic}
+              index={index}
+              isFocused={focusedIndex === index}
+              progress={progress}
+              onFocus={onFocusTopic}
+              onSelect={onSelectTopic}
+            />
+          ))}
+        </section>
+      </div>
     </main>
   );
 }

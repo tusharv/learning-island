@@ -1,6 +1,6 @@
 "use client";
 
-import { readingWordLessons } from "../data/readingWords";
+import { readingWordLessons, READING_TOPIC_ID } from "../data/readingWords";
 import type { Subject } from "../types/learning";
 import { WordLearnScreen } from "./WordLearnScreen";
 
@@ -10,9 +10,16 @@ type ReadingLearnPageProps = {
 };
 
 export function ReadingLearnPage({ subject, onBack }: ReadingLearnPageProps) {
+  const topic = subject.topics.find((item) => item.id === READING_TOPIC_ID);
+
+  if (!topic) {
+    return null;
+  }
+
   return (
     <WordLearnScreen
       subject={subject}
+      topic={topic}
       lessons={readingWordLessons}
       layout="reading"
       stripSize={7}

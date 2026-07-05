@@ -27,8 +27,9 @@ import {
 } from "../lib/wordListBrowse";
 import { cancelSpeech } from "../lib/textToSpeech";
 import { isBackKey, isSelectKey, moveFocus } from "../lib/remoteNavigation";
-import type { Subject } from "../types/learning";
-import { SoundToggle } from "./SoundToggle";
+import { buildAppChromeContext } from "@/lib/breadcrumbs";
+import type { Subject, Topic } from "../types/learning";
+import { AppChrome } from "./AppChrome";
 import { SpeakButton } from "./SpeakButton";
 import { useSound } from "./SoundProvider";
 import { WordBrowseControls } from "./WordBrowseControls";
@@ -43,6 +44,7 @@ export type WordLearnLesson = {
 
 type WordLearnScreenProps = {
   subject: Subject;
+  topic: Topic;
   lessons: WordLearnLesson[];
   layout: WordBrowseLayout;
   stripSize: number;
@@ -73,6 +75,7 @@ function highlightWord(sentence: string, word: string) {
 
 export function WordLearnScreen({
   subject,
+  topic,
   lessons,
   layout,
   stripSize,
@@ -80,6 +83,7 @@ export function WordLearnScreen({
   onBack,
 }: WordLearnScreenProps) {
   const { playSound } = useSound();
+  const chrome = buildAppChromeContext({ page: "learn", subject, topic });
   const [activeSheetIndex, setActiveSheetIndex] = useState(0);
   const [filters, setFilters] = useState<WordBrowseFilters>(
     DEFAULT_WORD_BROWSE_FILTERS,
@@ -117,8 +121,12 @@ export function WordLearnScreen({
   );
 
   useEffect(() => {
-    setFilters(loadWordBrowseFilters(layout, window.localStorage));
-    setFiltersReady(true);
+    const loadTimer = window.setTimeout(() => {
+      setFilters(loadWordBrowseFilters(layout, window.localStorage));
+      setFiltersReady(true);
+    }, 0);
+
+    return () => window.clearTimeout(loadTimer);
   }, [layout]);
 
   useEffect(() => {
@@ -139,8 +147,14 @@ export function WordLearnScreen({
     );
 
     if (!stillVisible) {
-      setActiveSheetIndex(filteredLessons[0].meta.sheetIndex);
+      const activeTimer = window.setTimeout(() => {
+        setActiveSheetIndex(filteredLessons[0].meta.sheetIndex);
+      }, 0);
+
+      return () => window.clearTimeout(activeTimer);
     }
+
+    return undefined;
   }, [activeSheetIndex, filteredLessons]);
 
   useEffect(() => {
@@ -148,8 +162,12 @@ export function WordLearnScreen({
       return;
     }
 
-    setPickerFocusIndex(filteredIndex);
-    setRemoteZone("picker");
+    const pickerTimer = window.setTimeout(() => {
+      setPickerFocusIndex(filteredIndex);
+      setRemoteZone("picker");
+    }, 0);
+
+    return () => window.clearTimeout(pickerTimer);
   }, [filteredIndex, pickerOpen]);
 
   const selectWord = useCallback(
@@ -449,13 +467,12 @@ export function WordLearnScreen({
   if (!lesson || !meta) {
     return (
       <main className="reading-learn-screen" data-color={subject.color}>
-        <header className="reading-learn-top">
-          <button type="button" className="reading-learn-back" onClick={onBack}>
-            ← Back
-          </button>
-          <p className="reading-learn-progress">No words match</p>
-          <SoundToggle />
-        </header>
+        <AppChrome
+          crumbs={chrome.crumbs}
+          back={chrome.back}
+          onBack={onBack}
+          status={<>No words match your filters</>}
+        />
         <WordBrowseControls
           filters={filters}
           indexedLessons={indexedLessons}
@@ -493,19 +510,20 @@ export function WordLearnScreen({
       data-color={subject.color}
       data-remote-zone={remoteZone}
     >
-      <header className="reading-learn-top">
-        <button type="button" className="reading-learn-back" onClick={onBack}>
-          ← Back
-        </button>
-        <p className="reading-learn-progress">
-          Word <strong>{filteredIndex + 1}</strong> of {filteredLessons.length}
-          <span className="reading-learn-progress-row">
-            {" "}
-            · {getDifficultyLabel(meta.difficulty)}
-          </span>
-        </p>
-        <SoundToggle />
-      </header>
+      <AppChrome
+        crumbs={chrome.crumbs}
+        back={chrome.back}
+        onBack={onBack}
+        status={
+          <>
+            Word <strong>{filteredIndex + 1}</strong> of {filteredLessons.length}
+            <span className="reading-learn-progress-row">
+              {" "}
+              · {getDifficultyLabel(meta.difficulty)}
+            </span>
+          </>
+        }
+      />
 
       <WordBrowseControls
         filters={filters}

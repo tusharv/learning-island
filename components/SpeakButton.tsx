@@ -21,7 +21,11 @@ export function SpeakButton({
   const [supported, setSupported] = useState(false);
 
   useEffect(() => {
-    setSupported(isSpeechSupported());
+    const supportTimer = window.setTimeout(() => {
+      setSupported(isSpeechSupported());
+    }, 0);
+
+    return () => window.clearTimeout(supportTimer);
   }, []);
 
   const handleClick = useCallback(
