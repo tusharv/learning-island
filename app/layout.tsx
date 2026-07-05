@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ProgressProvider } from "@/components/ProgressProvider";
+import { SoundProvider } from "@/components/SoundProvider";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ProgressProvider>{children}</ProgressProvider>
+        <ProgressProvider>
+          <SoundProvider>{children}</SoundProvider>
+        </ProgressProvider>
       </body>
     </html>
   );

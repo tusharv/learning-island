@@ -7,6 +7,7 @@ import { useProgress } from "@/components/ProgressProvider";
 import { isBackKey, isSelectKey, moveFocus } from "@/lib/remoteNavigation";
 import { mapPath, topicPath } from "@/lib/paths";
 import type { Subject } from "@/types/learning";
+import { useSound } from "@/components/SoundProvider";
 
 const topicColumns = 2;
 
@@ -17,11 +18,13 @@ type SubjectTopicsPageProps = {
 export function SubjectTopicsPage({ subject }: SubjectTopicsPageProps) {
   const router = useRouter();
   const { progress } = useProgress();
+  const { playSound } = useSound();
   const [focusedTopicIndex, setFocusedTopicIndex] = useState(0);
 
   const returnToMap = useCallback(() => {
+    playSound("select");
     router.push(mapPath());
-  }, [router]);
+  }, [playSound, router]);
 
   const openTopic = useCallback(
     (index: number) => {
@@ -32,9 +35,10 @@ export function SubjectTopicsPage({ subject }: SubjectTopicsPageProps) {
       }
 
       setFocusedTopicIndex(index);
+      playSound("select");
       router.push(topicPath(subject.id, topic.id));
     },
-    [router, subject],
+    [playSound, router, subject],
   );
 
   useEffect(() => {
@@ -52,9 +56,18 @@ export function SubjectTopicsPage({ subject }: SubjectTopicsPageProps) {
       }
 
       if (key.startsWith("Arrow")) {
-        setFocusedTopicIndex((index) =>
-          moveFocus(index, key, topicCount, topicColumns),
+        const nextIndex = moveFocus(
+          focusedTopicIndex,
+          key,
+          topicCount,
+          topicColumns,
         );
+
+        if (nextIndex !== focusedTopicIndex) {
+          playSound("move");
+        }
+
+        setFocusedTopicIndex(nextIndex);
         return;
       }
 
@@ -65,7 +78,13 @@ export function SubjectTopicsPage({ subject }: SubjectTopicsPageProps) {
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [focusedTopicIndex, openTopic, returnToMap, subject.topics.length]);
+  }, [
+    focusedTopicIndex,
+    openTopic,
+    playSound,
+    returnToMap,
+    subject.topics.length,
+  ]);
 
   return (
     <SubjectPage

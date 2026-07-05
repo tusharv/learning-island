@@ -10,6 +10,10 @@ export function nextRoundStars(
   return selectedAnswerIndex === answerIndex ? currentStars + 1 : currentStars;
 }
 
+export function formatStarsCollected(stars: number): string {
+  return `You collected ${stars} ${stars === 1 ? "star" : "stars"}!`;
+}
+
 export function pickQuizQuestions(
   pool: QuizQuestion[],
   count: number = QUESTIONS_PER_QUIZ,

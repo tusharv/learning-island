@@ -1,4 +1,5 @@
 import type { Progress, Subject } from "../types/learning";
+import { SoundToggle } from "./SoundToggle";
 import { ProgressBadge } from "./ProgressBadge";
 import { SubjectIsland } from "./SubjectIsland";
 
@@ -27,7 +28,10 @@ export function AdventureMap({
             Choose a subject island and collect stars with quick practice games.
           </p>
         </div>
-        <ProgressBadge progress={progress} />
+        <div className="header-actions">
+          <SoundToggle />
+          <ProgressBadge progress={progress} />
+        </div>
       </header>
 
       <section

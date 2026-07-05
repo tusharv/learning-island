@@ -1,602 +1,2002 @@
 [
   {
     "word": "am",
+    "emoji": "🙂",
     "meaning": "Am tells about yourself right now.",
-    "example": "I am happy.",
-    "usage": "Use am with the word I."
+    "usage": "Use am with the word I.",
+    "examples": [
+      {
+        "emoji": "🙂",
+        "text": "I am happy."
+      },
+      {
+        "emoji": "🎯",
+        "text": "We are happy."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"am\"."
+      }
+    ]
   },
   {
     "word": "I",
+    "emoji": "👤",
     "meaning": "I means yourself — the person speaking.",
-    "example": "I can read.",
-    "usage": "Say I when you talk about yourself."
+    "usage": "Say I when you talk about yourself.",
+    "examples": [
+      {
+        "emoji": "👤",
+        "text": "I can read."
+      },
+      {
+        "emoji": "💡",
+        "text": "We can read."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"I\"."
+      }
+    ]
   },
   {
     "word": "can",
+    "emoji": "💪",
     "meaning": "Can means you are able to do something.",
-    "example": "We can play.",
-    "usage": "Use can before an action word like run or jump."
+    "usage": "Use can before an action word like run or jump.",
+    "examples": [
+      {
+        "emoji": "💪",
+        "text": "We can play."
+      },
+      {
+        "emoji": "🌟",
+        "text": "I can play."
+      },
+      {
+        "emoji": "👀",
+        "text": "Clap your hands when you hear \"can\"."
+      }
+    ]
   },
   {
     "word": "we",
+    "emoji": "👨‍👩‍👧",
     "meaning": "We means you and other people together.",
-    "example": "We are friends.",
-    "usage": "Say we when you mean a group that includes you."
+    "usage": "Say we when you mean a group that includes you.",
+    "examples": [
+      {
+        "emoji": "👨‍👩‍👧",
+        "text": "We are friends."
+      },
+      {
+        "emoji": "📚",
+        "text": "I am friends."
+      },
+      {
+        "emoji": "💡",
+        "text": "Clap your hands when you hear \"we\"."
+      }
+    ]
   },
   {
     "word": "the",
+    "emoji": "👉",
     "meaning": "The points to one special thing we already know.",
-    "example": "Look at the cat.",
-    "usage": "Use the before a noun like cat, ball, or book."
+    "usage": "Use the before a noun like cat, ball, or book.",
+    "examples": [
+      {
+        "emoji": "👉",
+        "text": "Look at the cat."
+      },
+      {
+        "emoji": "👀",
+        "text": "See at the cat."
+      },
+      {
+        "emoji": "🌟",
+        "text": "Clap your hands when you hear \"the\"."
+      }
+    ]
   },
   {
     "word": "like",
+    "emoji": "❤️",
     "meaning": "Like means you enjoy something.",
-    "example": "I like ice cream.",
-    "usage": "Say I like when something makes you happy."
+    "usage": "Say I like when something makes you happy.",
+    "examples": [
+      {
+        "emoji": "❤️",
+        "text": "I like ice cream."
+      },
+      {
+        "emoji": "💡",
+        "text": "We like ice cream."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"like\"."
+      }
+    ]
   },
   {
     "word": "a",
+    "emoji": "🔤",
     "meaning": "A means one of something.",
-    "example": "I see a dog.",
-    "usage": "Use a before a word that starts with a consonant sound."
+    "usage": "Use a before a word that starts with a consonant sound.",
+    "examples": [
+      {
+        "emoji": "🔤",
+        "text": "I see a dog."
+      },
+      {
+        "emoji": "💡",
+        "text": "We see a dog."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"a\"."
+      }
+    ]
   },
   {
     "word": "see",
+    "emoji": "👀",
     "meaning": "See means to look with your eyes.",
-    "example": "I see a bird.",
-    "usage": "Use see when you spot something with your eyes."
+    "usage": "Use see when you spot something with your eyes.",
+    "examples": [
+      {
+        "emoji": "👀",
+        "text": "I see a bird."
+      },
+      {
+        "emoji": "🌈",
+        "text": "We see a bird."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap your hands when you hear \"see\"."
+      }
+    ]
   },
   {
     "word": "go",
+    "emoji": "🚶",
     "meaning": "Go means to move from one place to another.",
-    "example": "We go to school.",
-    "usage": "Use go when you leave to visit a place."
+    "usage": "Use go when you leave to visit a place.",
+    "examples": [
+      {
+        "emoji": "🚶",
+        "text": "We go to school."
+      },
+      {
+        "emoji": "📚",
+        "text": "I go to school."
+      },
+      {
+        "emoji": "💡",
+        "text": "Clap your hands when you hear \"go\"."
+      }
+    ]
   },
   {
     "word": "to",
+    "emoji": "➡️",
     "meaning": "To shows where you are going or what you want.",
-    "example": "I want to run.",
-    "usage": "Use to before an action or a place."
+    "usage": "Use to before an action or a place.",
+    "examples": [
+      {
+        "emoji": "➡️",
+        "text": "I want to run."
+      },
+      {
+        "emoji": "🌈",
+        "text": "We want to run."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap your hands when you hear \"to\"."
+      }
+    ]
   },
   {
     "word": "have",
+    "emoji": "🤲",
     "meaning": "Have means you own or hold something.",
-    "example": "I have a book.",
-    "usage": "Say I have when something belongs to you."
+    "usage": "Say I have when something belongs to you.",
+    "examples": [
+      {
+        "emoji": "🤲",
+        "text": "I have a book."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We have a book."
+      },
+      {
+        "emoji": "👀",
+        "text": "Clap your hands when you hear \"have\"."
+      }
+    ]
   },
   {
     "word": "is",
+    "emoji": "✅",
     "meaning": "Is tells about one person, animal, or thing.",
-    "example": "She is kind.",
-    "usage": "Use is with he, she, it, or one name."
+    "usage": "Use is with he, she, it, or one name.",
+    "examples": [
+      {
+        "emoji": "✅",
+        "text": "She is kind."
+      },
+      {
+        "emoji": "📚",
+        "text": "He is kind."
+      },
+      {
+        "emoji": "💡",
+        "text": "Clap your hands when you hear \"is\"."
+      }
+    ]
   },
   {
     "word": "play",
+    "emoji": "🎮",
     "meaning": "Play means to have fun and enjoy games.",
-    "example": "We play outside.",
-    "usage": "Use play when you do something fun."
+    "usage": "Use play when you do something fun.",
+    "examples": [
+      {
+        "emoji": "🎮",
+        "text": "We play outside."
+      },
+      {
+        "emoji": "🌟",
+        "text": "I play outside."
+      },
+      {
+        "emoji": "👀",
+        "text": "Clap your hands when you hear \"play\"."
+      }
+    ]
   },
   {
     "word": "are",
+    "emoji": "👥",
     "meaning": "Are tells about more than one person or thing.",
-    "example": "They are here.",
-    "usage": "Use are with we, you, or they."
+    "usage": "Use are with we, you, or they.",
+    "examples": [
+      {
+        "emoji": "👥",
+        "text": "They are here."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We read the word are in class today."
+      },
+      {
+        "emoji": "👀",
+        "text": "My teacher wrote are on the board."
+      }
+    ]
   },
   {
     "word": "for",
+    "emoji": "🎁",
     "meaning": "For shows who something is meant for.",
-    "example": "This gift is for you.",
-    "usage": "Use for when you give something to someone."
+    "usage": "Use for when you give something to someone.",
+    "examples": [
+      {
+        "emoji": "🎁",
+        "text": "This gift is for you."
+      },
+      {
+        "emoji": "👀",
+        "text": "Can you say \"for\" out loud?"
+      },
+      {
+        "emoji": "🌟",
+        "text": "For is on our word list."
+      }
+    ]
   },
   {
     "word": "you",
+    "emoji": "👆",
     "meaning": "You means the person you are talking to.",
-    "example": "You are my friend.",
-    "usage": "Say you when you speak to another person."
+    "usage": "Say you when you speak to another person.",
+    "examples": [
+      {
+        "emoji": "👆",
+        "text": "You are my friend."
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"you\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word you in class today."
+      }
+    ]
   },
   {
     "word": "on",
+    "emoji": "⬆️",
     "meaning": "On means something is touching the top of a surface.",
-    "example": "The cat is on the mat.",
-    "usage": "Use on when something sits above something else."
+    "usage": "Use on when something sits above something else.",
+    "examples": [
+      {
+        "emoji": "⬆️",
+        "text": "The cat is on the mat."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My cat is on the mat."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap your hands when you hear \"on\"."
+      }
+    ]
   },
   {
     "word": "in",
+    "emoji": "📥",
     "meaning": "In means something is inside a place.",
-    "example": "The ball is in the box.",
-    "usage": "Use in when something is within a space."
+    "usage": "Use in when something is within a space.",
+    "examples": [
+      {
+        "emoji": "📥",
+        "text": "The ball is in the box."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My ball is in the box."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap your hands when you hear \"in\"."
+      }
+    ]
   },
   {
     "word": "so",
+    "emoji": "💬",
     "meaning": "So can mean very or because of that.",
-    "example": "I am so happy.",
-    "usage": "Use so to make a feeling stronger."
+    "usage": "Use so to make a feeling stronger.",
+    "examples": [
+      {
+        "emoji": "💬",
+        "text": "I am so happy."
+      },
+      {
+        "emoji": "📚",
+        "text": "We are so happy."
+      },
+      {
+        "emoji": "💡",
+        "text": "Clap your hands when you hear \"so\"."
+      }
+    ]
   },
   {
     "word": "this",
+    "emoji": "👇",
     "meaning": "This points to something close to you.",
-    "example": "This is my toy.",
-    "usage": "Point and say this for something near you."
+    "usage": "Point and say this for something near you.",
+    "examples": [
+      {
+        "emoji": "👇",
+        "text": "This is my toy."
+      },
+      {
+        "emoji": "🎯",
+        "text": "This is on our word list."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Listen for \"this\" in the story."
+      }
+    ]
   },
   {
     "word": "and",
+    "emoji": "➕",
     "meaning": "And joins two things together.",
-    "example": "Mom and Dad came.",
-    "usage": "Use and to connect two words or ideas."
+    "usage": "Use and to connect two words or ideas.",
+    "examples": [
+      {
+        "emoji": "➕",
+        "text": "Mom and Dad came."
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"and\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word and in class today."
+      }
+    ]
   },
   {
     "word": "what",
+    "emoji": "❓",
     "meaning": "What asks for information or a name.",
-    "example": "What is your name?",
-    "usage": "Start a question with what when you want to know something."
+    "usage": "Start a question with what when you want to know something.",
+    "examples": [
+      {
+        "emoji": "❓",
+        "text": "What is your name?"
+      },
+      {
+        "emoji": "📚",
+        "text": "Look for \"what\" on the page."
+      },
+      {
+        "emoji": "💡",
+        "text": "Can you say \"what\" out loud?"
+      }
+    ]
   },
   {
     "word": "it",
+    "emoji": "📦",
     "meaning": "It means one thing or animal.",
-    "example": "It is a ball.",
-    "usage": "Use it for one object or animal."
+    "usage": "Use it for one object or animal.",
+    "examples": [
+      {
+        "emoji": "📦",
+        "text": "It is a ball."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My teacher wrote it on the board."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Look for \"it\" on the page."
+      }
+    ]
   },
   {
     "word": "at",
+    "emoji": "📍",
     "meaning": "At shows a place or time.",
-    "example": "Look at me.",
-    "usage": "Use at when you point to a spot or moment."
+    "usage": "Use at when you point to a spot or moment.",
+    "examples": [
+      {
+        "emoji": "📍",
+        "text": "Look at me."
+      },
+      {
+        "emoji": "👀",
+        "text": "See at me."
+      },
+      {
+        "emoji": "🌟",
+        "text": "Clap your hands when you hear \"at\"."
+      }
+    ]
   },
   {
     "word": "do",
+    "emoji": "✅",
     "meaning": "Do helps ask or tell about an action.",
-    "example": "Do you like milk?",
-    "usage": "Use do at the start of a yes-or-no question."
+    "usage": "Use do at the start of a yes-or-no question.",
+    "examples": [
+      {
+        "emoji": "✅",
+        "text": "Do you like milk?"
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"do\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word do in class today."
+      }
+    ]
   },
   {
     "word": "an",
+    "emoji": "🔤",
     "meaning": "An means one of something.",
-    "example": "I ate an apple.",
-    "usage": "Use an before a word that starts with a vowel sound."
+    "usage": "Use an before a word that starts with a vowel sound.",
+    "examples": [
+      {
+        "emoji": "🔤",
+        "text": "I ate an apple."
+      },
+      {
+        "emoji": "👀",
+        "text": "We ate an apple."
+      },
+      {
+        "emoji": "🌟",
+        "text": "Clap your hands when you hear \"an\"."
+      }
+    ]
   },
   {
     "word": "no",
+    "emoji": "🚫",
     "meaning": "No means not yes or not any.",
-    "example": "No, thank you.",
-    "usage": "Say no when you refuse or disagree politely."
+    "usage": "Say no when you refuse or disagree politely.",
+    "examples": [
+      {
+        "emoji": "🚫",
+        "text": "No, thank you."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My teacher wrote no on the board."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Look for \"no\" on the page."
+      }
+    ]
   },
   {
     "word": "up",
+    "emoji": "⬆️",
     "meaning": "Up means toward a higher place.",
-    "example": "Stand up, please.",
-    "usage": "Use up when you rise or look higher."
+    "usage": "Use up when you rise or look higher.",
+    "examples": [
+      {
+        "emoji": "⬆️",
+        "text": "Stand up, please."
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"up\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word up in class today."
+      }
+    ]
   },
   {
     "word": "little",
+    "emoji": "🐜",
     "meaning": "Little means small in size.",
-    "example": "A little bird sang.",
-    "usage": "Use little to describe something small."
+    "usage": "Use little to describe something small.",
+    "examples": [
+      {
+        "emoji": "🐜",
+        "text": "A little bird sang."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We read the word little in class today."
+      },
+      {
+        "emoji": "👀",
+        "text": "My teacher wrote little on the board."
+      }
+    ]
   },
   {
     "word": "said",
+    "emoji": "💬",
     "meaning": "Said means spoke words in the past.",
-    "example": "She said hello.",
-    "usage": "Use said when someone already talked."
+    "usage": "Use said when someone already talked.",
+    "examples": [
+      {
+        "emoji": "💬",
+        "text": "She said hello."
+      },
+      {
+        "emoji": "👀",
+        "text": "He said hello."
+      },
+      {
+        "emoji": "🌟",
+        "text": "Clap your hands when you hear \"said\"."
+      }
+    ]
   },
   {
     "word": "here",
+    "emoji": "📍",
     "meaning": "Here means in this place.",
-    "example": "Come here, please.",
-    "usage": "Say here when you want someone close to you."
+    "usage": "Say here when you want someone close to you.",
+    "examples": [
+      {
+        "emoji": "📍",
+        "text": "Come here, please."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We read the word here in class today."
+      },
+      {
+        "emoji": "👀",
+        "text": "My teacher wrote here on the board."
+      }
+    ]
   },
   {
     "word": "was",
+    "emoji": "🕐",
     "meaning": "Was tells about something in the past.",
-    "example": "She was happy.",
-    "usage": "Use was with one person or thing in the past."
+    "usage": "Use was with one person or thing in the past.",
+    "examples": [
+      {
+        "emoji": "🕐",
+        "text": "She was happy."
+      },
+      {
+        "emoji": "💡",
+        "text": "He was happy."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"was\"."
+      }
+    ]
   },
   {
     "word": "she",
+    "emoji": "👧",
     "meaning": "She means one girl or woman.",
-    "example": "She is my sister.",
-    "usage": "Use she for a female person."
+    "usage": "Use she for a female person.",
+    "examples": [
+      {
+        "emoji": "👧",
+        "text": "She is my sister."
+      },
+      {
+        "emoji": "🎯",
+        "text": "He is my sister."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"she\"."
+      }
+    ]
   },
   {
     "word": "he",
+    "emoji": "👦",
     "meaning": "He means one boy or man.",
-    "example": "He is my brother.",
-    "usage": "Use he for a male person."
+    "usage": "Use he for a male person.",
+    "examples": [
+      {
+        "emoji": "👦",
+        "text": "He is my brother."
+      },
+      {
+        "emoji": "💡",
+        "text": "She is my brother."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"he\"."
+      }
+    ]
   },
   {
     "word": "has",
+    "emoji": "🤲",
     "meaning": "Has means someone owns or holds something.",
-    "example": "She has a doll.",
-    "usage": "Use has with he, she, or it."
+    "usage": "Use has with he, she, or it.",
+    "examples": [
+      {
+        "emoji": "🤲",
+        "text": "She has a doll."
+      },
+      {
+        "emoji": "📚",
+        "text": "He has a doll."
+      },
+      {
+        "emoji": "💡",
+        "text": "Clap your hands when you hear \"has\"."
+      }
+    ]
   },
   {
     "word": "look",
+    "emoji": "👀",
     "meaning": "Look means to use your eyes on purpose.",
-    "example": "Look at the sky.",
-    "usage": "Say look when you want someone to see something."
+    "usage": "Say look when you want someone to see something.",
+    "examples": [
+      {
+        "emoji": "👀",
+        "text": "Look at the sky."
+      },
+      {
+        "emoji": "🌈",
+        "text": "See at the sky."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap your hands when you hear \"look\"."
+      }
+    ]
   },
   {
     "word": "with",
+    "emoji": "🤝",
     "meaning": "With means together or using something.",
-    "example": "Come with me.",
-    "usage": "Use with when you are not alone."
+    "usage": "Use with when you are not alone.",
+    "examples": [
+      {
+        "emoji": "🤝",
+        "text": "Come with me."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We read the word with in class today."
+      },
+      {
+        "emoji": "👀",
+        "text": "My teacher wrote with on the board."
+      }
+    ]
   },
   {
     "word": "my",
+    "emoji": "🙋",
     "meaning": "My shows something belongs to me.",
-    "example": "This is my book.",
-    "usage": "Say my before things that are yours."
+    "usage": "Say my before things that are yours.",
+    "examples": [
+      {
+        "emoji": "🙋",
+        "text": "This is my book."
+      },
+      {
+        "emoji": "🎯",
+        "text": "My is on our word list."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Listen for \"my\" in the story."
+      }
+    ]
   },
   {
     "word": "me",
+    "emoji": "🙋",
     "meaning": "Me means yourself when someone does something to you.",
-    "example": "Give me the pen.",
-    "usage": "Use me after words like give, tell, or help."
+    "usage": "Use me after words like give, tell, or help.",
+    "examples": [
+      {
+        "emoji": "🙋",
+        "text": "Give me the pen."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We read the word me in class today."
+      },
+      {
+        "emoji": "👀",
+        "text": "My teacher wrote me on the board."
+      }
+    ]
   },
   {
     "word": "where",
+    "emoji": "📍",
     "meaning": "Where asks about a place.",
-    "example": "Where are you?",
-    "usage": "Start a question with where to find a place."
+    "usage": "Start a question with where to find a place.",
+    "examples": [
+      {
+        "emoji": "📍",
+        "text": "Where are you?"
+      },
+      {
+        "emoji": "🌈",
+        "text": "My teacher wrote where on the board."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Look for \"where\" on the page."
+      }
+    ]
   },
   {
     "word": "went",
+    "emoji": "🚶",
     "meaning": "Went means moved in the past.",
-    "example": "We went home.",
-    "usage": "Use went when go already happened."
+    "usage": "Use went when go already happened.",
+    "examples": [
+      {
+        "emoji": "🚶",
+        "text": "We went home."
+      },
+      {
+        "emoji": "🎯",
+        "text": "I went home."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"went\"."
+      }
+    ]
   },
   {
     "word": "get",
+    "emoji": "🎁",
     "meaning": "Get means to receive or fetch something.",
-    "example": "Please get the ball.",
-    "usage": "Use get when you pick up or receive something."
+    "usage": "Use get when you pick up or receive something.",
+    "examples": [
+      {
+        "emoji": "🎁",
+        "text": "Please get the ball."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Get is on our word list."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Listen for \"get\" in the story."
+      }
+    ]
   },
   {
     "word": "come",
+    "emoji": "👋",
     "meaning": "Come means to move toward the speaker.",
-    "example": "Please come here.",
-    "usage": "Say come when you want someone to move to you."
+    "usage": "Say come when you want someone to move to you.",
+    "examples": [
+      {
+        "emoji": "👋",
+        "text": "Please come here."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We read the word come in class today."
+      },
+      {
+        "emoji": "👀",
+        "text": "My teacher wrote come on the board."
+      }
+    ]
   },
   {
     "word": "got",
+    "emoji": "✅",
     "meaning": "Got means received something in the past.",
-    "example": "I got a star.",
-    "usage": "Use got when you already have something."
+    "usage": "Use got when you already have something.",
+    "examples": [
+      {
+        "emoji": "✅",
+        "text": "I got a star."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We got a star."
+      },
+      {
+        "emoji": "👀",
+        "text": "Clap your hands when you hear \"got\"."
+      }
+    ]
   },
   {
     "word": "had",
+    "emoji": "🤲",
     "meaning": "Had means owned or felt something in the past.",
-    "example": "We had fun.",
-    "usage": "Use had when something was true before."
+    "usage": "Use had when something was true before.",
+    "examples": [
+      {
+        "emoji": "🤲",
+        "text": "We had fun."
+      },
+      {
+        "emoji": "💡",
+        "text": "I had fun."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"had\"."
+      }
+    ]
   },
   {
     "word": "they",
+    "emoji": "👥",
     "meaning": "They means more than one person or thing.",
-    "example": "They are playing.",
-    "usage": "Use they for a group of people or things."
+    "usage": "Use they for a group of people or things.",
+    "examples": [
+      {
+        "emoji": "👥",
+        "text": "They are playing."
+      },
+      {
+        "emoji": "📚",
+        "text": "Look for \"they\" on the page."
+      },
+      {
+        "emoji": "💡",
+        "text": "Can you say \"they\" out loud?"
+      }
+    ]
   },
   {
     "word": "will",
+    "emoji": "🔮",
     "meaning": "Will means something will happen later.",
-    "example": "I will help you.",
-    "usage": "Use will to talk about the future."
+    "usage": "Use will to talk about the future.",
+    "examples": [
+      {
+        "emoji": "🔮",
+        "text": "I will help you."
+      },
+      {
+        "emoji": "🎯",
+        "text": "We will help you."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"will\"."
+      }
+    ]
   },
   {
     "word": "too",
+    "emoji": "➕",
     "meaning": "Too means also or very much.",
-    "example": "I like it too.",
-    "usage": "Say too when you feel the same as someone else."
+    "usage": "Say too when you feel the same as someone else.",
+    "examples": [
+      {
+        "emoji": "➕",
+        "text": "I like it too."
+      },
+      {
+        "emoji": "🎯",
+        "text": "We like it too."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"too\"."
+      }
+    ]
   },
   {
     "word": "all",
+    "emoji": "🌐",
     "meaning": "All means every one with nothing left out.",
-    "example": "We ate all the cake.",
-    "usage": "Use all when you mean the whole group."
+    "usage": "Use all when you mean the whole group.",
+    "examples": [
+      {
+        "emoji": "🌐",
+        "text": "We ate all the cake."
+      },
+      {
+        "emoji": "💡",
+        "text": "I ate all the cake."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"all\"."
+      }
+    ]
   },
   {
     "word": "be",
+    "emoji": "🧘",
     "meaning": "Be means to exist or act in a certain way.",
-    "example": "Please be quiet.",
-    "usage": "Use be after please or can."
+    "usage": "Use be after please or can.",
+    "examples": [
+      {
+        "emoji": "🧘",
+        "text": "Please be quiet."
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"be\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word be in class today."
+      }
+    ]
   },
   {
     "word": "as",
+    "emoji": "🔄",
     "meaning": "As can compare two things.",
-    "example": "Run as fast as you can.",
-    "usage": "Use as…as to show sameness."
+    "usage": "Use as…as to show sameness.",
+    "examples": [
+      {
+        "emoji": "🔄",
+        "text": "Run as fast as you can."
+      },
+      {
+        "emoji": "🎯",
+        "text": "As is on our word list."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Listen for \"as\" in the story."
+      }
+    ]
   },
   {
     "word": "ball",
+    "emoji": "⚽",
     "meaning": "Ball is a round toy you can throw or kick.",
-    "example": "Kick the ball.",
-    "usage": "Say ball when you play with a round toy."
+    "usage": "Say ball when you play with a round toy.",
+    "examples": [
+      {
+        "emoji": "⚽",
+        "text": "Kick the ball."
+      },
+      {
+        "emoji": "👀",
+        "text": "Can you say \"ball\" out loud?"
+      },
+      {
+        "emoji": "🌟",
+        "text": "Ball is on our word list."
+      }
+    ]
   },
   {
     "word": "by",
+    "emoji": "👉",
     "meaning": "By can mean next to or before a time.",
-    "example": "Sit by me.",
-    "usage": "Use by when something is beside you."
+    "usage": "Use by when something is beside you.",
+    "examples": [
+      {
+        "emoji": "👉",
+        "text": "Sit by me."
+      },
+      {
+        "emoji": "👀",
+        "text": "Can you say \"by\" out loud?"
+      },
+      {
+        "emoji": "🌟",
+        "text": "By is on our word list."
+      }
+    ]
   },
   {
     "word": "day",
+    "emoji": "☀️",
     "meaning": "Day is the time when the sun is out.",
-    "example": "Have a nice day.",
-    "usage": "Use day when you talk about daytime."
+    "usage": "Use day when you talk about daytime.",
+    "examples": [
+      {
+        "emoji": "☀️",
+        "text": "Have a nice day."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We read the word day in class today."
+      },
+      {
+        "emoji": "👀",
+        "text": "My teacher wrote day on the board."
+      }
+    ]
   },
   {
     "word": "did",
+    "emoji": "✅",
     "meaning": "Did helps talk about the past.",
-    "example": "What did you do?",
-    "usage": "Use did in past questions."
+    "usage": "Use did in past questions.",
+    "examples": [
+      {
+        "emoji": "✅",
+        "text": "What did you do?"
+      },
+      {
+        "emoji": "🌈",
+        "text": "My teacher wrote did on the board."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Look for \"did\" on the page."
+      }
+    ]
   },
   {
     "word": "not",
+    "emoji": "🚫",
     "meaning": "Not makes a sentence negative.",
-    "example": "I am not sad.",
-    "usage": "Put not after am, is, or are to say no."
+    "usage": "Put not after am, is, or are to say no.",
+    "examples": [
+      {
+        "emoji": "🚫",
+        "text": "I am not sad."
+      },
+      {
+        "emoji": "💡",
+        "text": "We are not sad."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"not\"."
+      }
+    ]
   },
   {
     "word": "her",
+    "emoji": "👧",
     "meaning": "Her means belonging to a girl or woman.",
-    "example": "Give her the book.",
-    "usage": "Use her for a female person."
+    "usage": "Use her for a female person.",
+    "examples": [
+      {
+        "emoji": "👧",
+        "text": "Give her the book."
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"her\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word her in class today."
+      }
+    ]
   },
   {
     "word": "him",
+    "emoji": "👦",
     "meaning": "Him means a boy or man receiving an action.",
-    "example": "Tell him a story.",
-    "usage": "Use him after verbs like tell or help."
+    "usage": "Use him after verbs like tell or help.",
+    "examples": [
+      {
+        "emoji": "👦",
+        "text": "Tell him a story."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We read the word him in class today."
+      },
+      {
+        "emoji": "👀",
+        "text": "My teacher wrote him on the board."
+      }
+    ]
   },
   {
     "word": "fun",
+    "emoji": "🎉",
     "meaning": "Fun means something enjoyable.",
-    "example": "We had fun.",
-    "usage": "Say fun when you enjoy an activity."
+    "usage": "Say fun when you enjoy an activity.",
+    "examples": [
+      {
+        "emoji": "🎉",
+        "text": "We had fun."
+      },
+      {
+        "emoji": "🌈",
+        "text": "I had fun."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap your hands when you hear \"fun\"."
+      }
+    ]
   },
   {
     "word": "eat",
+    "emoji": "🍽️",
     "meaning": "Eat means to put food in your mouth.",
-    "example": "I eat an apple.",
-    "usage": "Use eat when you have food."
+    "usage": "Use eat when you have food.",
+    "examples": [
+      {
+        "emoji": "🍽️",
+        "text": "I eat an apple."
+      },
+      {
+        "emoji": "🎯",
+        "text": "We eat an apple."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"eat\"."
+      }
+    ]
   },
   {
     "word": "if",
+    "emoji": "🤔",
     "meaning": "If starts a condition — when one thing depends on another.",
-    "example": "If you are ready, go.",
-    "usage": "Use if to say something happens only when another thing is true."
+    "usage": "Use if to say something happens only when another thing is true.",
+    "examples": [
+      {
+        "emoji": "🤔",
+        "text": "If you are ready, go."
+      },
+      {
+        "emoji": "👀",
+        "text": "Can you say \"if\" out loud?"
+      },
+      {
+        "emoji": "🌟",
+        "text": "If is on our word list."
+      }
+    ]
   },
   {
     "word": "jump",
+    "emoji": "🦘",
     "meaning": "Jump means to push off the ground with your feet.",
-    "example": "I can jump.",
-    "usage": "Use jump when you leap into the air."
+    "usage": "Use jump when you leap into the air.",
+    "examples": [
+      {
+        "emoji": "🦘",
+        "text": "I can jump."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We can jump."
+      },
+      {
+        "emoji": "👀",
+        "text": "Clap your hands when you hear \"jump\"."
+      }
+    ]
   },
   {
     "word": "man",
+    "emoji": "👨",
     "meaning": "Man means an adult male person.",
-    "example": "The man waved.",
-    "usage": "Use man for a grown-up male."
+    "usage": "Use man for a grown-up male.",
+    "examples": [
+      {
+        "emoji": "👨",
+        "text": "The man waved."
+      },
+      {
+        "emoji": "📚",
+        "text": "My man waved."
+      },
+      {
+        "emoji": "💡",
+        "text": "Clap your hands when you hear \"man\"."
+      }
+    ]
   },
   {
     "word": "or",
+    "emoji": "🔀",
     "meaning": "Or gives a choice between two things.",
-    "example": "Tea or milk?",
-    "usage": "Use or when you pick one of two options."
+    "usage": "Use or when you pick one of two options.",
+    "examples": [
+      {
+        "emoji": "🔀",
+        "text": "Tea or milk?"
+      },
+      {
+        "emoji": "👀",
+        "text": "Can you say \"or\" out loud?"
+      },
+      {
+        "emoji": "🌟",
+        "text": "Or is on our word list."
+      }
+    ]
   },
   {
     "word": "put",
+    "emoji": "📥",
     "meaning": "Put means to place something somewhere.",
-    "example": "Put it here.",
-    "usage": "Say put when you set something down."
+    "usage": "Say put when you set something down.",
+    "examples": [
+      {
+        "emoji": "📥",
+        "text": "Put it here."
+      },
+      {
+        "emoji": "👀",
+        "text": "Can you say \"put\" out loud?"
+      },
+      {
+        "emoji": "🌟",
+        "text": "Put is on our word list."
+      }
+    ]
   },
   {
     "word": "mom",
+    "emoji": "👩",
     "meaning": "Mom means your mother.",
-    "example": "Mom is cooking.",
-    "usage": "Say mom when you talk about your mother."
+    "usage": "Say mom when you talk about your mother.",
+    "examples": [
+      {
+        "emoji": "👩",
+        "text": "Mom is cooking."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My teacher wrote mom on the board."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Look for \"mom\" on the page."
+      }
+    ]
   },
   {
     "word": "out",
+    "emoji": "🚪",
     "meaning": "Out means away from the inside.",
-    "example": "Go out and play.",
-    "usage": "Use out when you leave a room or house."
+    "usage": "Use out when you leave a room or house.",
+    "examples": [
+      {
+        "emoji": "🚪",
+        "text": "Go out and play."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Out is on our word list."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Listen for \"out\" in the story."
+      }
+    ]
   },
   {
     "word": "now",
+    "emoji": "⏰",
     "meaning": "Now means at this moment.",
-    "example": "Do it now.",
-    "usage": "Say now when you mean right away."
+    "usage": "Say now when you mean right away.",
+    "examples": [
+      {
+        "emoji": "⏰",
+        "text": "Do it now."
+      },
+      {
+        "emoji": "📚",
+        "text": "Look for \"now\" on the page."
+      },
+      {
+        "emoji": "💡",
+        "text": "Can you say \"now\" out loud?"
+      }
+    ]
   },
   {
     "word": "of",
+    "emoji": "🔗",
     "meaning": "Of shows what something is made from or part of.",
-    "example": "A cup of milk.",
-    "usage": "Use of to connect two nouns."
+    "usage": "Use of to connect two nouns.",
+    "examples": [
+      {
+        "emoji": "🔗",
+        "text": "A cup of milk."
+      },
+      {
+        "emoji": "👀",
+        "text": "Can you say \"of\" out loud?"
+      },
+      {
+        "emoji": "🌟",
+        "text": "Of is on our word list."
+      }
+    ]
   },
   {
     "word": "yes",
+    "emoji": "✅",
     "meaning": "Yes means you agree.",
-    "example": "Yes, please!",
-    "usage": "Say yes when you accept or agree."
+    "usage": "Say yes when you accept or agree.",
+    "examples": [
+      {
+        "emoji": "✅",
+        "text": "Yes, please!"
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"yes\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word yes in class today."
+      }
+    ]
   },
   {
     "word": "ran",
+    "emoji": "🏃",
     "meaning": "Ran means moved fast on foot in the past.",
-    "example": "The dog ran.",
-    "usage": "Use ran when run already happened."
+    "usage": "Use ran when run already happened.",
+    "examples": [
+      {
+        "emoji": "🏃",
+        "text": "The dog ran."
+      },
+      {
+        "emoji": "👀",
+        "text": "My dog ran."
+      },
+      {
+        "emoji": "🌟",
+        "text": "Clap your hands when you hear \"ran\"."
+      }
+    ]
   },
   {
     "word": "sat",
+    "emoji": "🪑",
     "meaning": "Sat means rested on a chair in the past.",
-    "example": "She sat down.",
-    "usage": "Use sat when sit already happened."
+    "usage": "Use sat when sit already happened.",
+    "examples": [
+      {
+        "emoji": "🪑",
+        "text": "She sat down."
+      },
+      {
+        "emoji": "📚",
+        "text": "He sat down."
+      },
+      {
+        "emoji": "💡",
+        "text": "Clap your hands when you hear \"sat\"."
+      }
+    ]
   },
   {
     "word": "read",
+    "emoji": "📖",
     "meaning": "Read means to look at words in a book.",
-    "example": "I read a book.",
-    "usage": "Use read when you look at written words."
+    "usage": "Use read when you look at written words.",
+    "examples": [
+      {
+        "emoji": "📖",
+        "text": "I read a book."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read a book."
+      },
+      {
+        "emoji": "💡",
+        "text": "Clap your hands when you hear \"read\"."
+      }
+    ]
   },
   {
     "word": "run",
+    "emoji": "🏃",
     "meaning": "Run means to move fast on your feet.",
-    "example": "I can run.",
-    "usage": "Use run when you move quickly."
+    "usage": "Use run when you move quickly.",
+    "examples": [
+      {
+        "emoji": "🏃",
+        "text": "I can run."
+      },
+      {
+        "emoji": "🌈",
+        "text": "We can run."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap your hands when you hear \"run\"."
+      }
+    ]
   },
   {
     "word": "sit",
+    "emoji": "🪑",
     "meaning": "Sit means to rest on a chair or floor.",
-    "example": "Please sit here.",
-    "usage": "Say sit when you want someone to take a seat."
+    "usage": "Say sit when you want someone to take a seat.",
+    "examples": [
+      {
+        "emoji": "🪑",
+        "text": "Please sit here."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We read the word sit in class today."
+      },
+      {
+        "emoji": "👀",
+        "text": "My teacher wrote sit on the board."
+      }
+    ]
   },
   {
     "word": "then",
+    "emoji": "⏭️",
     "meaning": "Then means what happens next.",
-    "example": "First eat, then play.",
-    "usage": "Use then to show the order of events."
+    "usage": "Use then to show the order of events.",
+    "examples": [
+      {
+        "emoji": "⏭️",
+        "text": "First eat, then play."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My teacher wrote then on the board."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Look for \"then\" on the page."
+      }
+    ]
   },
   {
     "word": "his",
+    "emoji": "👦",
     "meaning": "His shows something belongs to a boy or man.",
-    "example": "This is his hat.",
-    "usage": "Use his before things that belong to him."
+    "usage": "Use his before things that belong to him.",
+    "examples": [
+      {
+        "emoji": "👦",
+        "text": "This is his hat."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We read the word his in class today."
+      },
+      {
+        "emoji": "👀",
+        "text": "My teacher wrote his on the board."
+      }
+    ]
   },
   {
     "word": "say",
+    "emoji": "🗣️",
     "meaning": "Say means to speak words.",
-    "example": "Say hello.",
-    "usage": "Use say when you tell someone to speak."
+    "usage": "Use say when you tell someone to speak.",
+    "examples": [
+      {
+        "emoji": "🗣️",
+        "text": "Say hello."
+      },
+      {
+        "emoji": "👀",
+        "text": "Can you say \"say\" out loud?"
+      },
+      {
+        "emoji": "🌟",
+        "text": "Say is on our word list."
+      }
+    ]
   },
   {
     "word": "us",
+    "emoji": "👨‍👩‍👧",
     "meaning": "Us means me and others receiving an action.",
-    "example": "Come with us.",
-    "usage": "Use us after verbs like help or join."
+    "usage": "Use us after verbs like help or join.",
+    "examples": [
+      {
+        "emoji": "👨‍👩‍👧",
+        "text": "Come with us."
+      },
+      {
+        "emoji": "📚",
+        "text": "Look for \"us\" on the page."
+      },
+      {
+        "emoji": "💡",
+        "text": "Can you say \"us\" out loud?"
+      }
+    ]
   },
   {
     "word": "them",
+    "emoji": "👥",
     "meaning": "Them means more than one person or thing receiving an action.",
-    "example": "I see them.",
-    "usage": "Use them after verbs like give or see."
+    "usage": "Use them after verbs like give or see.",
+    "examples": [
+      {
+        "emoji": "👥",
+        "text": "I see them."
+      },
+      {
+        "emoji": "📚",
+        "text": "We see them."
+      },
+      {
+        "emoji": "💡",
+        "text": "Clap your hands when you hear \"them\"."
+      }
+    ]
   },
   {
     "word": "saw",
+    "emoji": "👀",
     "meaning": "Saw means looked with your eyes in the past.",
-    "example": "I saw a rainbow.",
-    "usage": "Use saw when see already happened."
+    "usage": "Use saw when see already happened.",
+    "examples": [
+      {
+        "emoji": "👀",
+        "text": "I saw a rainbow."
+      },
+      {
+        "emoji": "💡",
+        "text": "We saw a rainbow."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"saw\"."
+      }
+    ]
   },
   {
     "word": "girl",
+    "emoji": "👧",
     "meaning": "Girl means a young female child.",
-    "example": "The girl smiled.",
-    "usage": "Use girl for a young female person."
+    "usage": "Use girl for a young female person.",
+    "examples": [
+      {
+        "emoji": "👧",
+        "text": "The girl smiled."
+      },
+      {
+        "emoji": "📚",
+        "text": "My girl smiled."
+      },
+      {
+        "emoji": "💡",
+        "text": "Clap your hands when you hear \"girl\"."
+      }
+    ]
   },
   {
     "word": "how",
+    "emoji": "❓",
     "meaning": "How asks about the way something happens.",
-    "example": "How are you?",
-    "usage": "Start a question with how to learn the way."
+    "usage": "Start a question with how to learn the way.",
+    "examples": [
+      {
+        "emoji": "❓",
+        "text": "How are you?"
+      },
+      {
+        "emoji": "📚",
+        "text": "Look for \"how\" on the page."
+      },
+      {
+        "emoji": "💡",
+        "text": "Can you say \"how\" out loud?"
+      }
+    ]
   },
   {
     "word": "when",
+    "emoji": "🕐",
     "meaning": "When asks about time.",
-    "example": "When will we go?",
-    "usage": "Use when to ask about time."
+    "usage": "Use when to ask about time.",
+    "examples": [
+      {
+        "emoji": "🕐",
+        "text": "When will we go?"
+      },
+      {
+        "emoji": "🎯",
+        "text": "When is on our word list."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Listen for \"when\" in the story."
+      }
+    ]
   },
   {
     "word": "your",
+    "emoji": "👆",
     "meaning": "Your shows something belongs to the listener.",
-    "example": "Is this your bag?",
-    "usage": "Say your when something belongs to the person you talk to."
+    "usage": "Say your when something belongs to the person you talk to.",
+    "examples": [
+      {
+        "emoji": "👆",
+        "text": "Is this your bag?"
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"your\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word your in class today."
+      }
+    ]
   },
   {
     "word": "about",
+    "emoji": "💭",
     "meaning": "About means on the topic of something.",
-    "example": "Tell me about school.",
-    "usage": "Use about when you discuss a topic."
+    "usage": "Use about when you discuss a topic.",
+    "examples": [
+      {
+        "emoji": "💭",
+        "text": "Tell me about school."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My teacher wrote about on the board."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Look for \"about\" on the page."
+      }
+    ]
   },
   {
     "word": "from",
+    "emoji": "📤",
     "meaning": "From shows where something starts.",
-    "example": "I came from home.",
-    "usage": "Use from to show a starting place."
+    "usage": "Use from to show a starting place.",
+    "examples": [
+      {
+        "emoji": "📤",
+        "text": "I came from home."
+      },
+      {
+        "emoji": "📚",
+        "text": "We came from home."
+      },
+      {
+        "emoji": "💡",
+        "text": "Clap your hands when you hear \"from\"."
+      }
+    ]
   },
   {
     "word": "than",
+    "emoji": "⚖️",
     "meaning": "Than compares two things.",
-    "example": "Bigger than before.",
-    "usage": "Use than after bigger, smaller, or more."
+    "usage": "Use than after bigger, smaller, or more.",
+    "examples": [
+      {
+        "emoji": "⚖️",
+        "text": "Bigger than before."
+      },
+      {
+        "emoji": "💡",
+        "text": "Listen for \"than\" in the story."
+      },
+      {
+        "emoji": "📚",
+        "text": "We read the word than in class today."
+      }
+    ]
   },
   {
     "word": "away",
+    "emoji": "👋",
     "meaning": "Away means far from here.",
-    "example": "Go away.",
-    "usage": "Use away when something moves to a distance."
+    "usage": "Use away when something moves to a distance.",
+    "examples": [
+      {
+        "emoji": "👋",
+        "text": "Go away."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Away is on our word list."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Listen for \"away\" in the story."
+      }
+    ]
   },
   {
     "word": "came",
+    "emoji": "👋",
     "meaning": "Came means moved toward a place in the past.",
-    "example": "She came home.",
-    "usage": "Use came when come already happened."
+    "usage": "Use came when come already happened.",
+    "examples": [
+      {
+        "emoji": "👋",
+        "text": "She came home."
+      },
+      {
+        "emoji": "📚",
+        "text": "He came home."
+      },
+      {
+        "emoji": "💡",
+        "text": "Clap your hands when you hear \"came\"."
+      }
+    ]
   },
   {
     "word": "could",
+    "emoji": "💪",
     "meaning": "Could means was able to in the past.",
-    "example": "I could not find it.",
-    "usage": "Use could for ability in the past."
+    "usage": "Use could for ability in the past.",
+    "examples": [
+      {
+        "emoji": "💪",
+        "text": "I could not find it."
+      },
+      {
+        "emoji": "💡",
+        "text": "We could not find it."
+      },
+      {
+        "emoji": "📚",
+        "text": "Clap your hands when you hear \"could\"."
+      }
+    ]
   },
   {
     "word": "big",
+    "emoji": "🐘",
     "meaning": "Big means large in size.",
-    "example": "A big tree.",
-    "usage": "Use big to describe something large."
+    "usage": "Use big to describe something large.",
+    "examples": [
+      {
+        "emoji": "🐘",
+        "text": "A big tree."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We read the word big in class today."
+      },
+      {
+        "emoji": "👀",
+        "text": "My teacher wrote big on the board."
+      }
+    ]
   },
   {
     "word": "been",
+    "emoji": "🕐",
     "meaning": "Been goes with have to show a past visit or state.",
-    "example": "I have been there.",
-    "usage": "Use been after have or has."
+    "usage": "Use been after have or has.",
+    "examples": [
+      {
+        "emoji": "🕐",
+        "text": "I have been there."
+      },
+      {
+        "emoji": "🎯",
+        "text": "We have been there."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"been\"."
+      }
+    ]
   },
   {
     "word": "after",
+    "emoji": "⏭️",
     "meaning": "After means later than something else.",
-    "example": "We play after lunch.",
-    "usage": "Use after to show what comes next in time."
+    "usage": "Use after to show what comes next in time.",
+    "examples": [
+      {
+        "emoji": "⏭️",
+        "text": "We play after lunch."
+      },
+      {
+        "emoji": "🎯",
+        "text": "I play after lunch."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Clap your hands when you hear \"after\"."
+      }
+    ]
   },
   {
     "word": "who",
+    "emoji": "❓",
     "meaning": "Who asks about a person.",
-    "example": "Who is that?",
-    "usage": "Start a question with who to name a person."
+    "usage": "Start a question with who to name a person.",
+    "examples": [
+      {
+        "emoji": "❓",
+        "text": "Who is that?"
+      },
+      {
+        "emoji": "📚",
+        "text": "Look for \"who\" on the page."
+      },
+      {
+        "emoji": "💡",
+        "text": "Can you say \"who\" out loud?"
+      }
+    ]
   },
   {
     "word": "back",
+    "emoji": "🔙",
     "meaning": "Back means returning to a place.",
-    "example": "Come back.",
-    "usage": "Use back when someone returns."
+    "usage": "Use back when someone returns.",
+    "examples": [
+      {
+        "emoji": "🔙",
+        "text": "Come back."
+      },
+      {
+        "emoji": "🌈",
+        "text": "My teacher wrote back on the board."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Look for \"back\" on the page."
+      }
+    ]
   },
   {
     "word": "I'm",
+    "emoji": "👤",
     "meaning": "I'm is a short way to say I am.",
-    "example": "I'm five years old.",
-    "usage": "Use I'm when you talk about yourself quickly."
+    "usage": "Use I'm when you talk about yourself quickly.",
+    "examples": [
+      {
+        "emoji": "👤",
+        "text": "I'm five years old."
+      },
+      {
+        "emoji": "🌈",
+        "text": "We'm five years old."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Clap your hands when you hear \"I'm\"."
+      }
+    ]
   },
   {
     "word": "because",
+    "emoji": "💡",
     "meaning": "Because gives a reason.",
-    "example": "Happy because of you.",
-    "usage": "Use because to explain why."
+    "usage": "Use because to explain why.",
+    "examples": [
+      {
+        "emoji": "💡",
+        "text": "Happy because of you."
+      },
+      {
+        "emoji": "🎯",
+        "text": "Because is on our word list."
+      },
+      {
+        "emoji": "🌈",
+        "text": "Listen for \"because\" in the story."
+      }
+    ]
   },
   {
     "word": "very",
+    "emoji": "⭐",
     "meaning": "Very makes a word stronger.",
-    "example": "I am very happy.",
-    "usage": "Put very before a describing word."
+    "usage": "Put very before a describing word.",
+    "examples": [
+      {
+        "emoji": "⭐",
+        "text": "I am very happy."
+      },
+      {
+        "emoji": "📚",
+        "text": "We are very happy."
+      },
+      {
+        "emoji": "💡",
+        "text": "Clap your hands when you hear \"very\"."
+      }
+    ]
   },
   {
     "word": "over",
+    "emoji": "⬆️",
     "meaning": "Over can mean above or finished.",
-    "example": "Jump over.",
-    "usage": "Use over when you go across something."
+    "usage": "Use over when you go across something.",
+    "examples": [
+      {
+        "emoji": "⬆️",
+        "text": "Jump over."
+      },
+      {
+        "emoji": "🌟",
+        "text": "We read the word over in class today."
+      },
+      {
+        "emoji": "👀",
+        "text": "My teacher wrote over on the board."
+      }
+    ]
   }
 ]

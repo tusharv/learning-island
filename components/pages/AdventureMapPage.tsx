@@ -7,10 +7,12 @@ import { subjects } from "@/data/subjects";
 import { isSelectKey, moveFocus } from "@/lib/remoteNavigation";
 import { subjectPath } from "@/lib/paths";
 import { useProgress } from "@/components/ProgressProvider";
+import { useSound } from "@/components/SoundProvider";
 
 export function AdventureMapPage() {
   const router = useRouter();
   const { progress } = useProgress();
+  const { playSound } = useSound();
   const [focusedSubjectIndex, setFocusedSubjectIndex] = useState(0);
 
   const openSubject = useCallback(
@@ -22,9 +24,10 @@ export function AdventureMapPage() {
       }
 
       setFocusedSubjectIndex(index);
+      playSound("select");
       router.push(subjectPath(subject.id));
     },
-    [router],
+    [playSound, router],
   );
 
   useEffect(() => {
@@ -36,9 +39,18 @@ export function AdventureMapPage() {
       }
 
       if (key.startsWith("Arrow")) {
-        setFocusedSubjectIndex((index) =>
-          moveFocus(index, key, subjects.length, subjects.length),
+        const nextIndex = moveFocus(
+          focusedSubjectIndex,
+          key,
+          subjects.length,
+          subjects.length,
         );
+
+        if (nextIndex !== focusedSubjectIndex) {
+          playSound("move");
+        }
+
+        setFocusedSubjectIndex(nextIndex);
         return;
       }
 
@@ -49,7 +61,7 @@ export function AdventureMapPage() {
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [focusedSubjectIndex, openSubject]);
+  }, [focusedSubjectIndex, openSubject, playSound]);
 
   return (
     <AdventureMap

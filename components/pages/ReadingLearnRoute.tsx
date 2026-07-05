@@ -2,25 +2,26 @@
 
 import { useRouter } from "next/navigation";
 import { useCallback } from "react";
-import { SightWordsLearnPage } from "@/components/SightWordsLearnPage";
+import { ReadingLearnPage } from "@/components/ReadingLearnPage";
+import { READING_TOPIC_ID } from "@/data/readingWords";
 import { topicPath } from "@/lib/paths";
 import type { Subject } from "@/types/learning";
 import { useSound } from "@/components/SoundProvider";
 
-type SightWordsLearnRouteProps = {
+type ReadingLearnRouteProps = {
   subject: Subject;
 };
 
-export function SightWordsLearnRoute({ subject }: SightWordsLearnRouteProps) {
+export function ReadingLearnRoute({ subject }: ReadingLearnRouteProps) {
   const router = useRouter();
   const { playSound } = useSound();
 
-  const returnToSightWordsHub = useCallback(() => {
+  const returnToReadingHub = useCallback(() => {
     playSound("select");
-    router.push(topicPath(subject.id, "sight-words"));
+    router.push(topicPath(subject.id, READING_TOPIC_ID));
   }, [playSound, router, subject.id]);
 
   return (
-    <SightWordsLearnPage subject={subject} onBack={returnToSightWordsHub} />
+    <ReadingLearnPage subject={subject} onBack={returnToReadingHub} />
   );
 }

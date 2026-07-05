@@ -1,4 +1,7 @@
 import type { QuizQuestion, Subject, Topic } from "../types/learning";
+import { formatStarsCollected } from "../lib/quizScoring";
+import { ActivityIcon } from "./ActivityIcon";
+import { SoundToggle } from "./SoundToggle";
 
 type QuizGameProps = {
   subject: Subject;
@@ -37,9 +40,17 @@ export function QuizGame({
         <button type="button" className="back-button" onClick={onBack}>
           {backLabel}
         </button>
+        <SoundToggle className="sound-toggle-floating" />
         <section className="completion-panel" aria-labelledby="complete-title">
+          <div className="reward-burst" aria-hidden="true">
+            <ActivityIcon icon={subject.icon} className="reward-icon" />
+            <span className="reward-spark reward-spark-one" />
+            <span className="reward-spark reward-spark-two" />
+            <span className="reward-spark reward-spark-three" />
+            <span className="reward-spark reward-spark-four" />
+          </div>
           <p className="eyebrow">{topic.title} complete</p>
-          <h1 id="complete-title">You collected {roundStars} stars!</h1>
+          <h1 id="complete-title">{formatStarsCollected(roundStars)}</h1>
           <p>
             Nice practice on {subject.title}. Pick another topic or return to the
             Adventure Map.
@@ -61,12 +72,16 @@ export function QuizGame({
       <button type="button" className="back-button" onClick={onBack}>
         {backLabel}
       </button>
+      <SoundToggle className="sound-toggle-floating" />
 
       <section className="question-stage" aria-labelledby="question-title">
         <div className="quiz-topline">
-          <p className="eyebrow">
-            {subject.title} · {topic.title}
-          </p>
+          <div className="quiz-topic-lockup">
+            <ActivityIcon icon={topic.icon} className="quiz-topic-icon" />
+            <p className="eyebrow">
+              {subject.title} · {topic.title}
+            </p>
+          </div>
           <p>
             Question {questionIndex + 1} / {questions.length}
           </p>
@@ -115,7 +130,12 @@ export function QuizGame({
 
         {isAnswered ? (
           <div className="feedback-panel" data-correct={isCorrect}>
-            <strong>{isCorrect ? "Correct!" : "Good try."}</strong>
+            <strong className="feedback-title">
+              <span className="feedback-icon" aria-hidden="true">
+                {isCorrect ? "✓" : "!"}
+              </span>
+              {isCorrect ? "Correct!" : "Good try."}
+            </strong>
             <span>
               {isCorrect
                 ? question.encouragement

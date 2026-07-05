@@ -1,4 +1,6 @@
 import type { Progress, Subject } from "../types/learning";
+import { ActivityIcon } from "./ActivityIcon";
+import { SoundToggle } from "./SoundToggle";
 import { TopicCard } from "./TopicCard";
 
 type SubjectPageProps = {
@@ -28,16 +30,22 @@ export function SubjectPage({
       </button>
 
       <header className="subject-header">
-        <div>
-          <p className="eyebrow">ICSE Class 1</p>
-          <h1>{subject.title}</h1>
-          <p className="map-subtitle">{subject.subtitle}</p>
+        <div className="subject-title-lockup">
+          <ActivityIcon icon={subject.icon} className="subject-heading-icon" />
+          <div>
+            <p className="eyebrow">ICSE Class 1</p>
+            <h1>{subject.title}</h1>
+            <p className="map-subtitle">{subject.subtitle}</p>
+          </div>
         </div>
-        <div className="subject-progress-chip">
-          <span className="progress-label">Topics done</span>
-          <strong>
-            {completedCount} / {totalTopics}
-          </strong>
+        <div className="header-actions">
+          <SoundToggle />
+          <div className="subject-progress-chip">
+            <span className="progress-label">Topics done</span>
+            <strong>
+              {completedCount} / {totalTopics}
+            </strong>
+          </div>
         </div>
       </header>
 

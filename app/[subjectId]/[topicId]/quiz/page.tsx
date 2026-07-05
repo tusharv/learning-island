@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import { TopicQuizPage } from "@/components/pages/TopicQuizPage";
+import { READING_TOPIC_ID } from "@/data/readingWords";
 import { SIGHT_WORDS_TOPIC_ID } from "@/data/sightWords";
+import { isHubTopic } from "@/lib/hubTopics";
 import { getSubjectById, getTopicById } from "@/data/subjects";
 
 type TopicQuizRouteProps = {
@@ -8,7 +10,10 @@ type TopicQuizRouteProps = {
 };
 
 export function generateStaticParams() {
-  return [{ subjectId: "english", topicId: SIGHT_WORDS_TOPIC_ID }];
+  return [
+    { subjectId: "english", topicId: SIGHT_WORDS_TOPIC_ID },
+    { subjectId: "english", topicId: READING_TOPIC_ID },
+  ];
 }
 
 export default async function TopicQuizRoute({ params }: TopicQuizRouteProps) {
@@ -16,7 +21,7 @@ export default async function TopicQuizRoute({ params }: TopicQuizRouteProps) {
   const subject = getSubjectById(subjectId);
   const topic = getTopicById(subjectId, topicId);
 
-  if (!subject || !topic || topicId !== SIGHT_WORDS_TOPIC_ID) {
+  if (!subject || !topic || !isHubTopic(topicId)) {
     notFound();
   }
 

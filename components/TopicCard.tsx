@@ -1,5 +1,6 @@
 import type { Progress, Subject, Topic } from "../types/learning";
-import { SIGHT_WORDS_TOPIC_ID } from "../data/sightWords";
+import { hubTopicWordCount, isHubTopic, type HubTopicId } from "../lib/hubTopics";
+import { ActivityIcon } from "./ActivityIcon";
 
 type TopicCardProps = {
   subject: Subject;
@@ -24,8 +25,8 @@ export function TopicCard({
     topic.id,
   );
 
-  const isSightWords = topic.id === SIGHT_WORDS_TOPIC_ID;
-  const actionLabel = isCompleted ? "Done" : isSightWords ? "Open" : "Play";
+  const isHub = isHubTopic(topic.id);
+  const actionLabel = isCompleted ? "Done" : isHub ? "Open" : "Play";
 
   return (
     <button
@@ -38,10 +39,15 @@ export function TopicCard({
       onFocus={() => onFocus(index)}
       aria-label={`${topic.title}, ${topic.subtitle}, ${topic.questions.length} questions${isCompleted ? ", completed" : ""}`}
     >
+      <ActivityIcon icon={topic.icon} className="topic-icon" />
       <span className="topic-title">{topic.title}</span>
       <span className="topic-subtitle">{topic.subtitle}</span>
       <span className="topic-meta">
-        <span>{isSightWords ? "100 words" : `${topic.questions.length} questions`}</span>
+        <span>
+          {isHub
+            ? `${hubTopicWordCount(topic.id as HubTopicId)} words`
+            : `${topic.questions.length} questions`}
+        </span>
         <span>{actionLabel}</span>
       </span>
     </button>
