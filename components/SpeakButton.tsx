@@ -21,7 +21,11 @@ export function SpeakButton({
   const [supported, setSupported] = useState(false);
 
   useEffect(() => {
-    setSupported(isSpeechSupported());
+    const supportTimer = window.setTimeout(() => {
+      setSupported(isSpeechSupported());
+    }, 0);
+
+    return () => window.clearTimeout(supportTimer);
   }, []);
 
   const handleClick = useCallback(
@@ -32,8 +36,9 @@ export function SpeakButton({
         return;
       }
 
-      playSound("select");
+      // Speak before other audio so Samsung Browser keeps the user gesture.
       speakText(text);
+      playSound("select");
     },
     [playSound, soundEnabled, supported, text],
   );

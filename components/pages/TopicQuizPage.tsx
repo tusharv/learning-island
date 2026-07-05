@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import { QuizGame } from "@/components/QuizGame";
 import { useProgress } from "@/components/ProgressProvider";
-import { hubTopicLabel, isHubTopic, type HubTopicId } from "@/lib/hubTopics";
+import { isHubTopic } from "@/lib/hubTopics";
 import { buildCompletedProgress } from "@/lib/progress";
 import { isBackKey, isSelectKey, moveFocus } from "@/lib/remoteNavigation";
 import { nextRoundStars, pickQuizQuestions } from "@/lib/quizScoring";
@@ -37,9 +37,6 @@ export function TopicQuizPage({ subject, topic }: TopicQuizPageProps) {
   const backPath = isHub
     ? topicPath(subject.id, topic.id)
     : subjectPath(subject.id);
-  const backLabel = isHub
-    ? `Back to ${hubTopicLabel(topic.id as HubTopicId)}`
-    : "Back to topics";
 
   const returnBack = useCallback(() => {
     playSound("select");
@@ -185,7 +182,6 @@ export function TopicQuizPage({ subject, topic }: TopicQuizPageProps) {
       onSelectAnswer={selectAnswer}
       onContinue={continueQuiz}
       onBack={returnBack}
-      backLabel={backLabel}
     />
   );
 }

@@ -2,9 +2,11 @@
 
 import { useEffect } from "react";
 import type { Subject } from "../types/learning";
-import { isBackKey, isSelectKey, moveFocus } from "../lib/remoteNavigation";
+import { buildAppChromeContext } from "@/lib/breadcrumbs";
+import { hubTopicWordCount } from "@/lib/hubTopics";
+import { isBackKey, isSelectKey } from "@/lib/remoteNavigation";
 import { ActivityIcon } from "./ActivityIcon";
-import { SoundToggle } from "./SoundToggle";
+import { AppChrome } from "./AppChrome";
 import { useSound } from "./SoundProvider";
 
 type ReadingHubPageProps = {
@@ -20,18 +22,16 @@ const modes = [
   {
     id: "learn",
     title: "Learn",
-    subtitle: "Read meanings, usage tips, and example sentences for all 154 words.",
-    action: "Study",
+    subtitle: "Study words one by one",
+    action: "Open learn",
   },
   {
     id: "play",
     title: "Test",
-    subtitle: "Take a quick test with 5 random reading word questions.",
-    action: "Test",
+    subtitle: "Check what you know",
+    action: "Start test",
   },
 ] as const;
-
-const modeColumns = 2;
 
 export function ReadingHubPage({
   subject,
@@ -42,34 +42,43 @@ export function ReadingHubPage({
   onBack,
 }: ReadingHubPageProps) {
   const { playSound } = useSound();
+  const topic = subject.topics.find((item) => item.id === "reading");
+  const chrome = buildAppChromeContext({
+    page: "hub",
+    subject,
+    topic,
+  });
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (isBackKey(event.key)) {
+      const key = event.key;
+
+      if (key.startsWith("Arrow") || isSelectKey(key) || isBackKey(key)) {
         event.preventDefault();
+      }
+
+      if (isBackKey(key)) {
         onBack();
         return;
       }
 
-      if (event.key.startsWith("Arrow")) {
-        event.preventDefault();
-        const nextIndex = moveFocus(
-          focusedIndex,
-          event.key,
-          modes.length,
-          modeColumns,
-        );
-
-        if (nextIndex !== focusedIndex) {
+      if (key === "ArrowLeft" || key === "ArrowUp") {
+        if (focusedIndex !== 0) {
           playSound("move");
         }
-
-        onFocusMode(nextIndex);
+        onFocusMode(0);
         return;
       }
 
-      if (isSelectKey(event.key)) {
-        event.preventDefault();
+      if (key === "ArrowRight" || key === "ArrowDown") {
+        if (focusedIndex !== 1) {
+          playSound("move");
+        }
+        onFocusMode(1);
+        return;
+      }
+
+      if (isSelectKey(key)) {
         if (focusedIndex === 0) {
           onSelectLearn();
         } else {
@@ -90,57 +99,52 @@ export function ReadingHubPage({
   ]);
 
   return (
-    <main className="subject-screen sight-words-hub" data-color={subject.color}>
-      <button type="button" className="back-button" onClick={onBack}>
-        Back to topics
-      </button>
-
-      <header className="subject-header">
-        <div className="subject-title-lockup">
-          <ActivityIcon icon="reading" className="subject-heading-icon" />
-          <div>
-            <p className="eyebrow">{subject.title}</p>
-            <h1>Reading</h1>
-            <p className="map-subtitle">
-              Choose Learn to study words, or Test to check what you know.
-            </p>
-          </div>
-        </div>
-        <div className="header-actions">
-          <SoundToggle />
+    <main className="app-screen subject-screen sight-words-hub" data-color={subject.color}>
+      <AppChrome
+        crumbs={chrome.crumbs}
+        back={chrome.back}
+        onBack={onBack}
+        heading={{
+          icon: "reading",
+          eyebrow: subject.title,
+          subtitle: "Learn words or take a test.",
+        }}
+        status={
           <div className="subject-progress-chip">
             <span className="progress-label">Word list</span>
-            <strong>154 words</strong>
+            <strong>{hubTopicWordCount("reading")} words</strong>
           </div>
-        </div>
-      </header>
+        }
+      />
 
-      <section
-        className="sight-words-mode-grid"
-        aria-label="Reading activities"
-        data-focused-index={focusedIndex}
-      >
-        {modes.map((mode, index) => (
-          <button
-            key={mode.id}
-            type="button"
-            className="sight-words-mode-card"
-            data-color={subject.color}
-            data-focused={focusedIndex === index}
-            onClick={() => (index === 0 ? onSelectLearn() : onSelectPlay())}
-            onFocus={() => onFocusMode(index)}
-            aria-label={`${mode.title}, ${mode.subtitle}`}
-          >
-            <ActivityIcon
-              icon={mode.id === "learn" ? "reading" : "words"}
-              className="mode-icon"
-            />
-            <span className="sight-words-mode-title">{mode.title}</span>
-            <span className="sight-words-mode-subtitle">{mode.subtitle}</span>
-            <span className="sight-words-mode-action">{mode.action}</span>
-          </button>
-        ))}
-      </section>
+      <div className="app-screen__body">
+        <section
+          className="sight-words-mode-grid"
+          aria-label="Reading activities"
+          data-focused-index={focusedIndex}
+        >
+          {modes.map((mode, index) => (
+            <button
+              key={mode.id}
+              type="button"
+              className="sight-words-mode-card"
+              data-color={subject.color}
+              data-focused={focusedIndex === index}
+              onClick={() => (index === 0 ? onSelectLearn() : onSelectPlay())}
+              onFocus={() => onFocusMode(index)}
+              aria-label={`${mode.title}, ${mode.subtitle}`}
+            >
+              <ActivityIcon
+                icon={mode.id === "learn" ? "reading" : "words"}
+                className="mode-icon"
+              />
+              <span className="sight-words-mode-title">{mode.title}</span>
+              <span className="sight-words-mode-subtitle">{mode.subtitle}</span>
+              <span className="sight-words-mode-action">{mode.action}</span>
+            </button>
+          ))}
+        </section>
+      </div>
     </main>
   );
 }
