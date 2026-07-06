@@ -5,6 +5,7 @@ import { useCallback, useEffect, useState } from "react";
 import { SubjectPage } from "@/components/SubjectPage";
 import { useProgress } from "@/components/ProgressProvider";
 import { isBackKey, isSelectKey, moveFocus } from "@/lib/remoteNavigation";
+import { useRemoteFocusRing } from "@/lib/useRemoteFocusRing";
 import { mapPath, topicPath } from "@/lib/paths";
 import type { Subject } from "@/types/learning";
 import { useSound } from "@/components/SoundProvider";
@@ -20,6 +21,8 @@ export function SubjectTopicsPage({ subject }: SubjectTopicsPageProps) {
   const { progress } = useProgress();
   const { playSound } = useSound();
   const [focusedTopicIndex, setFocusedTopicIndex] = useState(0);
+  const { active: showRemoteFocus, activate: activateRemoteFocus } =
+    useRemoteFocusRing();
 
   const returnToMap = useCallback(() => {
     playSound("select");
@@ -48,6 +51,10 @@ export function SubjectTopicsPage({ subject }: SubjectTopicsPageProps) {
 
       if (key.startsWith("Arrow") || isSelectKey(key) || isBackKey(key)) {
         event.preventDefault();
+      }
+
+      if (key.startsWith("Arrow") || isSelectKey(key)) {
+        activateRemoteFocus();
       }
 
       if (isBackKey(key)) {
@@ -83,13 +90,27 @@ export function SubjectTopicsPage({ subject }: SubjectTopicsPageProps) {
     openTopic,
     playSound,
     returnToMap,
+    activateRemoteFocus,
     subject.topics.length,
   ]);
+
+  useEffect(() => {
+    if (!showRemoteFocus) {
+      return;
+    }
+
+    const card = document.querySelector<HTMLElement>(
+      `.topic-grid .topic-card[data-focused="true"]`,
+    );
+
+    card?.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  }, [focusedTopicIndex, showRemoteFocus]);
 
   return (
     <SubjectPage
       subject={subject}
       focusedIndex={focusedTopicIndex}
+      showRemoteFocus={showRemoteFocus}
       progress={progress}
       onFocusTopic={setFocusedTopicIndex}
       onSelectTopic={openTopic}

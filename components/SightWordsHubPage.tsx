@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import type { Subject } from "../types/learning";
 import { buildAppChromeContext } from "@/lib/breadcrumbs";
-import { hubTopicWordCount } from "@/lib/hubTopics";
+import { hubTopicItemLabel } from "@/lib/hubTopics";
 import { isBackKey, isSelectKey } from "@/lib/remoteNavigation";
 import { ActivityIcon } from "./ActivityIcon";
 import { AppChrome } from "./AppChrome";
@@ -104,15 +104,11 @@ export function SightWordsHubPage({
         crumbs={chrome.crumbs}
         back={chrome.back}
         onBack={onBack}
-        heading={{
-          icon: "sight-words",
-          eyebrow: subject.title,
-          subtitle: "Learn words or take a test.",
-        }}
+        heading={{ subtitle: "Learn words or take a test." }}
         status={
           <div className="subject-progress-chip">
             <span className="progress-label">Word list</span>
-            <strong>{hubTopicWordCount("sight-words")} words</strong>
+            <strong>{hubTopicItemLabel(subject.id, "sight-words")}</strong>
           </div>
         }
       />

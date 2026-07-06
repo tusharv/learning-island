@@ -2,9 +2,13 @@ export type SpeakOptions = {
   lang?: string;
   rate?: number;
   pitch?: number;
+  fallbackText?: string;
 };
 
-const PREFERRED_LANGS = ["en-IN", "en-GB", "en-US", "en-AU", "en"];
+const PREFERRED_ENGLISH_LANGS = ["en-IN", "en-GB", "en-US", "en-AU", "en"];
+const PREFERRED_HINDI_LANGS = ["hi-IN", "hi"];
+const PREFERRED_MARATHI_LANGS = ["mr-IN", "mr"];
+const DEVANAGARI_PATTERN = /[\u0900-\u097F]/;
 
 let cachedVoices: SpeechSynthesisVoice[] = [];
 let enginePrepared = false;
@@ -23,30 +27,71 @@ export function isSpeechSupported(): boolean {
   return getSynth() !== null;
 }
 
-export function pickEnglishVoice(
+export function containsDevanagari(text: string): boolean {
+  return DEVANAGARI_PATTERN.test(text);
+}
+
+export function inferSpeechLang(text: string, preferredLang?: string): string {
+  if (preferredLang) {
+    return preferredLang;
+  }
+
+  if (containsDevanagari(text)) {
+    return "hi-IN";
+  }
+
+  return "en-IN";
+}
+
+function preferredLangPrefixes(lang: string): string[] {
+  if (lang.startsWith("mr")) {
+    return [...PREFERRED_MARATHI_LANGS, ...PREFERRED_HINDI_LANGS];
+  }
+
+  if (lang.startsWith("hi")) {
+    return [...PREFERRED_HINDI_LANGS, ...PREFERRED_MARATHI_LANGS];
+  }
+
+  if (lang.startsWith("en")) {
+    return PREFERRED_ENGLISH_LANGS;
+  }
+
+  return [lang];
+}
+
+export function pickVoiceForLang(
   voices: SpeechSynthesisVoice[],
+  lang: string,
 ): SpeechSynthesisVoice | null {
   if (voices.length === 0) {
     return null;
   }
 
-  for (const lang of PREFERRED_LANGS) {
+  const prefixes = preferredLangPrefixes(lang);
+
+  for (const prefix of prefixes) {
     const localMatch = voices.find(
-      (voice) => voice.lang.startsWith(lang) && voice.localService,
+      (voice) => voice.lang.startsWith(prefix) && voice.localService,
     );
     if (localMatch) {
       return localMatch;
     }
   }
 
-  for (const lang of PREFERRED_LANGS) {
-    const match = voices.find((voice) => voice.lang.startsWith(lang));
+  for (const prefix of prefixes) {
+    const match = voices.find((voice) => voice.lang.startsWith(prefix));
     if (match) {
       return match;
     }
   }
 
   return voices[0] ?? null;
+}
+
+export function pickEnglishVoice(
+  voices: SpeechSynthesisVoice[],
+): SpeechSynthesisVoice | null {
+  return pickVoiceForLang(voices, "en-IN");
 }
 
 function refreshVoices(): SpeechSynthesisVoice[] {
@@ -82,19 +127,40 @@ function startResumeGuard(synth: SpeechSynthesis): void {
   }, 120);
 }
 
+function resolveSpeakPayload(
+  text: string,
+  options: SpeakOptions,
+): { text: string; lang: string } {
+  const trimmed = text.trim();
+  const lang = inferSpeechLang(trimmed, options.lang);
+  const voices = refreshVoices();
+  const voice = pickVoiceForLang(voices, lang);
+  const fallback = options.fallbackText?.trim();
+
+  if (!voice && fallback && containsDevanagari(trimmed)) {
+    return {
+      text: fallback,
+      lang: inferSpeechLang(fallback, "en-IN"),
+    };
+  }
+
+  return { text: trimmed, lang };
+}
+
 function buildUtterance(
   text: string,
   options: SpeakOptions,
 ): SpeechSynthesisUtterance {
+  const payload = resolveSpeakPayload(text, options);
   const voices = refreshVoices();
-  const voice = pickEnglishVoice(voices);
-  const utterance = new SpeechSynthesisUtterance(text);
+  const voice = pickVoiceForLang(voices, payload.lang);
+  const utterance = new SpeechSynthesisUtterance(payload.text);
 
   if (voice) {
     utterance.voice = voice;
     utterance.lang = voice.lang;
   } else {
-    utterance.lang = options.lang ?? "en-US";
+    utterance.lang = payload.lang;
   }
 
   utterance.rate = options.rate ?? 0.88;
@@ -121,6 +187,30 @@ function speakNow(text: string, options: SpeakOptions): void {
   const utterance = buildUtterance(text, options);
   synth.speak(utterance);
   startResumeGuard(synth);
+}
+
+function speakWhenVoicesReady(start: () => void): void {
+  const synth = getSynth();
+
+  if (!synth) {
+    return;
+  }
+
+  warmUpSpeechEngine();
+
+  if (refreshVoices().length > 0) {
+    start();
+    return;
+  }
+
+  const onVoicesChanged = () => {
+    synth.removeEventListener("voiceschanged", onVoicesChanged);
+    refreshVoices();
+    start();
+  };
+
+  synth.addEventListener("voiceschanged", onVoicesChanged);
+  refreshVoices();
 }
 
 export function warmUpSpeechEngine(): void {
@@ -183,15 +273,20 @@ export function speakText(text: string, options: SpeakOptions = {}): void {
   }
 
   const trimmed = text.trim();
+  const fallback = options.fallbackText?.trim();
 
-  if (!trimmed) {
+  if (!trimmed && !fallback) {
     return;
   }
 
-  const start = () => speakNow(trimmed, options);
+  const start = () => speakNow(trimmed || fallback || "", options);
+
+  const queueStart = () => {
+    speakWhenVoicesReady(start);
+  };
 
   if (!synth.speaking && !synth.pending) {
-    start();
+    queueStart();
     return;
   }
 
@@ -201,6 +296,6 @@ export function speakText(text: string, options: SpeakOptions = {}): void {
   // Samsung Internet and Chrome on Android often drop speech when cancel()
   // and speak() happen in the same turn.
   requestAnimationFrame(() => {
-    requestAnimationFrame(start);
+    requestAnimationFrame(queueStart);
   });
 }

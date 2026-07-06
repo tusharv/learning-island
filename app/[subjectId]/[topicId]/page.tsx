@@ -1,10 +1,12 @@
 import { notFound } from "next/navigation";
+import { LetterHubRoute } from "@/components/pages/LetterHubRoute";
 import { ReadingHubRoute } from "@/components/pages/ReadingHubRoute";
 import { SightWordsHubRoute } from "@/components/pages/SightWordsHubRoute";
 import { TopicQuizPage } from "@/components/pages/TopicQuizPage";
 import { READING_TOPIC_ID } from "@/data/readingWords";
 import { SIGHT_WORDS_TOPIC_ID } from "@/data/sightWords";
 import { getSubjectById, getTopicById, subjects } from "@/data/subjects";
+import { isLetterHubTopic } from "@/lib/letterHubTopics";
 
 type TopicRouteProps = {
   params: Promise<{ subjectId: string; topicId: string }>;
@@ -26,6 +28,10 @@ export default async function TopicRoute({ params }: TopicRouteProps) {
 
   if (!subject || !topic) {
     notFound();
+  }
+
+  if (isLetterHubTopic(subjectId, topicId)) {
+    return <LetterHubRoute subject={subject} topicId={topicId} />;
   }
 
   if (topicId === SIGHT_WORDS_TOPIC_ID) {

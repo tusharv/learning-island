@@ -9,6 +9,8 @@ type SpeakButtonProps = {
   label: string;
   className?: string;
   size?: "sm" | "md" | "lg";
+  lang?: string;
+  fallbackText?: string;
 };
 
 export function SpeakButton({
@@ -16,6 +18,8 @@ export function SpeakButton({
   label,
   className = "",
   size = "md",
+  lang,
+  fallbackText,
 }: SpeakButtonProps) {
   const { soundEnabled, playSound } = useSound();
   const [supported, setSupported] = useState(false);
@@ -32,15 +36,18 @@ export function SpeakButton({
     (event: MouseEvent<HTMLButtonElement>) => {
       event.stopPropagation();
 
-      if (!soundEnabled || !supported) {
+      if (!supported) {
         return;
       }
 
       // Speak before other audio so Samsung Browser keeps the user gesture.
-      speakText(text);
-      playSound("select");
+      speakText(text, { lang, fallbackText });
+
+      if (soundEnabled) {
+        playSound("select");
+      }
     },
-    [playSound, soundEnabled, supported, text],
+    [fallbackText, lang, playSound, soundEnabled, supported, text],
   );
 
   if (!supported) {
@@ -58,7 +65,6 @@ export function SpeakButton({
       onClick={handleClick}
       aria-label={label}
       title={label}
-      disabled={!soundEnabled}
     >
       <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false">
         <path className="speak-button-speaker" d="M8 20h8l10-9v26l-10-9H8z" />

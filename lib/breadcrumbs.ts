@@ -1,7 +1,10 @@
 import type { ActivityIconName, Subject, Topic } from "../types/learning";
 
+const ABCD_TOPIC_ID = "abcd";
+const ABCD_SMALL_TOPIC_ID = "abcd-small";
 const SIGHT_WORDS_TOPIC_ID = "sight-words";
 const READING_TOPIC_ID = "reading";
+const DEVANAGARI_HUB_TOPIC_IDS = ["swar", "vyanjan", "akshar"] as const;
 
 function mapPath(): string {
   return "/";
@@ -40,7 +43,13 @@ export type AppChromePage =
   | "quiz";
 
 function isHubTopicId(topicId: string): boolean {
-  return topicId === SIGHT_WORDS_TOPIC_ID || topicId === READING_TOPIC_ID;
+  return (
+    topicId === ABCD_TOPIC_ID ||
+    topicId === ABCD_SMALL_TOPIC_ID ||
+    topicId === SIGHT_WORDS_TOPIC_ID ||
+    topicId === READING_TOPIC_ID ||
+    (DEVANAGARI_HUB_TOPIC_IDS as readonly string[]).includes(topicId)
+  );
 }
 
 function homeCrumb(): BreadcrumbSegment {
@@ -72,7 +81,7 @@ export function buildAppChromeContext(options: {
   if (!subject) {
     return {
       crumbs: [{ label: "Learning Island", icon: "home", current: true }],
-      back: { label: "Map", href: mapPath() },
+      back: { label: "Back", href: mapPath() },
     };
   }
 
@@ -86,7 +95,7 @@ export function buildAppChromeContext(options: {
           current: true,
         },
       ],
-      back: { label: "Map", href: mapPath() },
+      back: { label: "Back", href: mapPath() },
     };
   }
 

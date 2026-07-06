@@ -1,16 +1,17 @@
 "use client";
 
 import { useEffect } from "react";
-import type { Subject } from "../types/learning";
 import { buildAppChromeContext } from "@/lib/breadcrumbs";
-import { hubTopicItemLabel } from "@/lib/hubTopics";
+import { getLetterHubConfig, getLetterHubItemLabel } from "@/lib/letterHubTopics";
 import { isBackKey, isSelectKey } from "@/lib/remoteNavigation";
+import type { Subject } from "@/types/learning";
 import { ActivityIcon } from "./ActivityIcon";
 import { AppChrome } from "./AppChrome";
 import { useSound } from "./SoundProvider";
 
-type ReadingHubPageProps = {
+type LetterHubPageProps = {
   subject: Subject;
+  topicId: string;
   focusedIndex: number;
   onFocusMode: (index: number) => void;
   onSelectLearn: () => void;
@@ -22,7 +23,7 @@ const modes = [
   {
     id: "learn",
     title: "Learn",
-    subtitle: "Study words one by one",
+    subtitle: "",
     action: "Open learn",
   },
   {
@@ -33,16 +34,23 @@ const modes = [
   },
 ] as const;
 
-export function ReadingHubPage({
+export function LetterHubPage({
   subject,
+  topicId,
   focusedIndex,
   onFocusMode,
   onSelectLearn,
   onSelectPlay,
   onBack,
-}: ReadingHubPageProps) {
+}: LetterHubPageProps) {
   const { playSound } = useSound();
-  const topic = subject.topics.find((item) => item.id === "reading");
+  const topic = subject.topics.find((item) => item.id === topicId);
+  const config = getLetterHubConfig(subject.id, topicId);
+
+  if (!config) {
+    return null;
+  }
+
   const chrome = buildAppChromeContext({
     page: "hub",
     subject,
@@ -104,11 +112,11 @@ export function ReadingHubPage({
         crumbs={chrome.crumbs}
         back={chrome.back}
         onBack={onBack}
-        heading={{ subtitle: "Learn words or take a test." }}
+        heading={{ subtitle: config.headingSubtitle }}
         status={
           <div className="subject-progress-chip">
-            <span className="progress-label">Word list</span>
-            <strong>{hubTopicItemLabel(subject.id, "reading")}</strong>
+            <span className="progress-label">{config.statusLabel}</span>
+            <strong>{getLetterHubItemLabel(subject.id, topicId)}</strong>
           </div>
         }
       />
@@ -116,7 +124,7 @@ export function ReadingHubPage({
       <div className="app-screen__body">
         <section
           className="sight-words-mode-grid"
-          aria-label="Reading activities"
+          aria-label={config.ariaLabel}
           data-focused-index={focusedIndex}
         >
           {modes.map((mode, index) => (
@@ -128,14 +136,18 @@ export function ReadingHubPage({
               data-focused={focusedIndex === index}
               onClick={() => (index === 0 ? onSelectLearn() : onSelectPlay())}
               onFocus={() => onFocusMode(index)}
-              aria-label={`${mode.title}, ${mode.subtitle}`}
+              aria-label={`${mode.title}, ${
+                index === 0 ? config.learnSubtitle : mode.subtitle
+              }`}
             >
               <ActivityIcon
-                icon={mode.id === "learn" ? "reading" : "words"}
+                icon={index === 0 ? config.learnIcon : "words"}
                 className="mode-icon"
               />
               <span className="sight-words-mode-title">{mode.title}</span>
-              <span className="sight-words-mode-subtitle">{mode.subtitle}</span>
+              <span className="sight-words-mode-subtitle">
+                {index === 0 ? config.learnSubtitle : mode.subtitle}
+              </span>
               <span className="sight-words-mode-action">{mode.action}</span>
             </button>
           ))}

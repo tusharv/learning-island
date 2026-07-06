@@ -77,6 +77,9 @@ export function AppChrome({ crumbs, back, onBack, heading, status }: AppChromePr
     router.push(href);
   };
 
+  const pageTitle = heading?.title ?? heading?.subtitle;
+  const pageTitleId = heading?.titleId;
+
   return (
     <header className="app-chrome">
       <div className="app-chrome__row">
@@ -90,101 +93,91 @@ export function AppChrome({ crumbs, back, onBack, heading, status }: AppChromePr
             <Image
               src={BRAND_ASSETS.markPath}
               alt={`${BRAND_NAME} mark`}
-              width={96}
-              height={96}
+              width={48}
+              height={48}
               priority
               className="app-brand__logo"
             />
           </button>
 
-          <div className="app-chrome__back">
-            {back ? (
-              <button type="button" className="app-chrome-back" onClick={handleBack}>
-                ← {back.label}
-              </button>
-            ) : (
-              <span className="app-chrome-back-placeholder" aria-hidden="true" />
-            )}
-          </div>
+          {back ? (
+            <button type="button" className="app-chrome-back" onClick={handleBack}>
+              ← {back.label}
+            </button>
+          ) : null}
         </div>
 
-        <nav className="app-chrome__crumbs" aria-label="Where you are">
-          <ol className="breadcrumb-trail">
-            {crumbs.map((segment, index) => {
-              const key = `${segment.label}-${index}`;
-              const isCurrent = segment.current === true;
+        <div className="app-chrome__center">
+          <nav className="app-chrome__crumbs" aria-label="Where you are">
+            <ol className="breadcrumb-trail">
+              {crumbs.map((segment, index) => {
+                const key = `${segment.label}-${index}`;
+                const isCurrent = segment.current === true;
 
-              if (isCurrent || !segment.href) {
+                if (isCurrent || !segment.href) {
+                  return (
+                    <li key={key} className="breadcrumb-item">
+                      <span
+                        className="breadcrumb-segment"
+                        data-current={isCurrent ? "true" : undefined}
+                        aria-current={isCurrent ? "page" : undefined}
+                      >
+                        <SegmentIcon icon={segment.icon} />
+                        <span className="breadcrumb-segment-label">{segment.label}</span>
+                      </span>
+                      {index < crumbs.length - 1 ? (
+                        <span className="breadcrumb-separator" aria-hidden="true">
+                          ›
+                        </span>
+                      ) : null}
+                    </li>
+                  );
+                }
+
                 return (
                   <li key={key} className="breadcrumb-item">
-                    <span
+                    <button
+                      type="button"
                       className="breadcrumb-segment"
-                      data-current={isCurrent ? "true" : undefined}
-                      aria-current={isCurrent ? "page" : undefined}
+                      onClick={() => handleCrumbClick(segment.href!)}
                     >
                       <SegmentIcon icon={segment.icon} />
                       <span className="breadcrumb-segment-label">{segment.label}</span>
+                    </button>
+                    <span className="breadcrumb-separator" aria-hidden="true">
+                      ›
                     </span>
-                    {index < crumbs.length - 1 ? (
-                      <span className="breadcrumb-separator" aria-hidden="true">
-                        ›
-                      </span>
-                    ) : null}
                   </li>
                 );
-              }
+              })}
+            </ol>
+          </nav>
 
-              return (
-                <li key={key} className="breadcrumb-item">
-                  <button
-                    type="button"
-                    className="breadcrumb-segment"
-                    onClick={() => handleCrumbClick(segment.href!)}
-                  >
-                    <SegmentIcon icon={segment.icon} />
-                    <span className="breadcrumb-segment-label">{segment.label}</span>
-                  </button>
-                  <span className="breadcrumb-separator" aria-hidden="true">
-                    ›
-                  </span>
-                </li>
-              );
-            })}
-          </ol>
-        </nav>
-
-        <div className="app-chrome__actions">
-          <SoundToggle />
-        </div>
-      </div>
-
-      {heading || status ? (
-        <div className="app-chrome__page-head">
-          {heading ? (
-            <div className="page-title-lockup">
+          {heading && pageTitle ? (
+            <div className="app-chrome__inline-title">
               {heading.icon ? (
-                <ActivityIcon icon={heading.icon} className="subject-heading-icon" />
+                <ActivityIcon icon={heading.icon} className="app-chrome__title-icon" />
               ) : null}
-              <div>
-                {heading.eyebrow ? <p className="eyebrow">{heading.eyebrow}</p> : null}
-                {heading.title ? (
-                  <>
-                    <h1 id={heading.titleId}>{heading.title}</h1>
-                    {heading.subtitle ? (
-                      <p className="map-subtitle">{heading.subtitle}</p>
-                    ) : null}
-                  </>
-                ) : heading.subtitle ? (
-                  <h1 id={heading.titleId} className="page-heading">
-                    {heading.subtitle}
-                  </h1>
+              <div className="app-chrome__title-copy">
+                {heading.eyebrow ? (
+                  <span className="app-chrome__eyebrow">{heading.eyebrow}</span>
+                ) : null}
+                <h1 id={pageTitleId} className="app-chrome__page-title">
+                  {pageTitle}
+                </h1>
+                {heading.title && heading.subtitle ? (
+                  <p className="app-chrome__page-subtitle">{heading.subtitle}</p>
                 ) : null}
               </div>
             </div>
           ) : null}
-          {status}
         </div>
-      ) : null}
+
+        <div className="app-chrome__actions">
+          {status}
+          <SoundToggle />
+        </div>
+      </div>
     </header>
   );
 }

@@ -4,6 +4,11 @@ import type {
   Subject,
   Topic,
 } from "../types/learning";
+import {
+  DEVANAGARI_AKSHAR,
+  DEVANAGARI_SWAR,
+  DEVANAGARI_VYANJAN,
+} from "./devanagariLetters.ts";
 import readingWordLessons from "./readingWords.json" with { type: "json" };
 import sightWordLessons from "./sightWords.json" with { type: "json" };
 
@@ -293,43 +298,9 @@ function englishReadingWordQuestions(): RawQuestion[] {
   });
 }
 
-const HINDI_LETTERS: Array<{ char: string; tr: string }> = [
-  { char: "अ", tr: "a" },
-  { char: "आ", tr: "aa" },
-  { char: "इ", tr: "i" },
-  { char: "ई", tr: "ee" },
-  { char: "उ", tr: "u" },
-  { char: "ऊ", tr: "oo" },
-  { char: "ए", tr: "e" },
-  { char: "ऐ", tr: "ai" },
-  { char: "ओ", tr: "o" },
-  { char: "औ", tr: "au" },
-  { char: "क", tr: "ka" },
-  { char: "ख", tr: "kha" },
-  { char: "ग", tr: "ga" },
-  { char: "घ", tr: "gha" },
-  { char: "च", tr: "cha" },
-  { char: "छ", tr: "chha" },
-  { char: "ज", tr: "ja" },
-  { char: "झ", tr: "jha" },
-  { char: "ट", tr: "ta" },
-  { char: "ठ", tr: "tha" },
-  { char: "ड", tr: "da" },
-  { char: "ढ", tr: "dha" },
-  { char: "त", tr: "ta" },
-  { char: "थ", tr: "tha" },
-  { char: "द", tr: "da" },
-  { char: "ध", tr: "dha" },
-  { char: "न", tr: "na" },
-  { char: "प", tr: "pa" },
-  { char: "फ", tr: "pha" },
-  { char: "ब", tr: "ba" },
-  { char: "भ", tr: "bha" },
-  { char: "म", tr: "ma" },
-];
-
-const HINDI_SWAR = HINDI_LETTERS.slice(0, 10);
-const HINDI_VYANJAN = HINDI_LETTERS.slice(10);
+const HINDI_LETTERS = DEVANAGARI_AKSHAR;
+const HINDI_SWAR = DEVANAGARI_SWAR;
+const HINDI_VYANJAN = DEVANAGARI_VYANJAN;
 
 function devanagariRecognitionQuestions(
   letters: Array<{ char: string; tr: string }>,

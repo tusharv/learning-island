@@ -1,5 +1,5 @@
 import type { Progress, Subject, Topic } from "../types/learning";
-import { hubTopicWordCount, isHubTopic, type HubTopicId } from "../lib/hubTopics";
+import { hubTopicItemLabel, isHubTopicForSubject } from "../lib/hubTopics";
 import { ActivityIcon } from "./ActivityIcon";
 
 type TopicCardProps = {
@@ -7,6 +7,7 @@ type TopicCardProps = {
   topic: Topic;
   index: number;
   isFocused: boolean;
+  showRemoteFocus?: boolean;
   progress: Progress;
   onFocus: (index: number) => void;
   onSelect: (index: number) => void;
@@ -17,6 +18,7 @@ export function TopicCard({
   topic,
   index,
   isFocused,
+  showRemoteFocus = false,
   progress,
   onFocus,
   onSelect,
@@ -25,7 +27,7 @@ export function TopicCard({
     topic.id,
   );
 
-  const isHub = isHubTopic(topic.id);
+  const isHub = isHubTopicForSubject(subject.id, topic.id);
   const actionLabel = isCompleted ? "Done" : isHub ? "Open" : "Play";
 
   return (
@@ -33,7 +35,7 @@ export function TopicCard({
       type="button"
       className="topic-card"
       data-color={subject.color}
-      data-focused={isFocused}
+      data-focused={showRemoteFocus && isFocused}
       data-completed={isCompleted}
       onClick={() => onSelect(index)}
       onFocus={() => onFocus(index)}
@@ -45,7 +47,7 @@ export function TopicCard({
       <span className="topic-meta">
         <span>
           {isHub
-            ? `${hubTopicWordCount(topic.id as HubTopicId)} words`
+            ? hubTopicItemLabel(subject.id, topic.id)
             : `${topic.questions.length} questions`}
         </span>
         <span>{actionLabel}</span>

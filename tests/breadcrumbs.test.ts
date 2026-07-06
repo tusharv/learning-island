@@ -25,7 +25,7 @@ test("subject page links back to the map", () => {
     },
   });
 
-  assert.equal(context.back?.label, "Map");
+  assert.equal(context.back?.label, "Back");
   assert.equal(context.back?.href, "/");
   assert.deepEqual(
     context.crumbs.map((crumb) => crumb.label),

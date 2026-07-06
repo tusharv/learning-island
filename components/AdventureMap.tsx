@@ -27,7 +27,6 @@ export function AdventureMap({
         crumbs={chrome.crumbs}
         back={chrome.back}
         heading={{
-          eyebrow: "ICSE Class 1",
           subtitle: "Choose a subject island and collect stars.",
           titleId: "map-title",
         }}

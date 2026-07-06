@@ -6,6 +6,7 @@ import { TopicCard } from "./TopicCard";
 type SubjectPageProps = {
   subject: Subject;
   focusedIndex: number;
+  showRemoteFocus?: boolean;
   progress: Progress;
   onFocusTopic: (index: number) => void;
   onSelectTopic: (index: number) => void;
@@ -15,6 +16,7 @@ type SubjectPageProps = {
 export function SubjectPage({
   subject,
   focusedIndex,
+  showRemoteFocus = false,
   progress,
   onFocusTopic,
   onSelectTopic,
@@ -30,11 +32,7 @@ export function SubjectPage({
         crumbs={chrome.crumbs}
         back={chrome.back}
         onBack={onBack}
-        heading={{
-          icon: subject.icon,
-          eyebrow: "ICSE Class 1",
-          subtitle: subject.subtitle,
-        }}
+        heading={{ subtitle: subject.subtitle }}
         status={
           <div className="subject-progress-chip">
             <span className="progress-label">Topics done</span>
@@ -58,6 +56,7 @@ export function SubjectPage({
               topic={topic}
               index={index}
               isFocused={focusedIndex === index}
+              showRemoteFocus={showRemoteFocus}
               progress={progress}
               onFocus={onFocusTopic}
               onSelect={onSelectTopic}
